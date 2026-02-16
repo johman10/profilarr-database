@@ -1,5 +1,5 @@
 name: Radarr - Upscaled
-pattern: (?<=\b[12]\d{3}\b).*\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b
+pattern: (?<=\b[12]\d{3}\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b
 description: ''
 tags:
 - Radarr

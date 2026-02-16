@@ -1,5 +1,5 @@
 name: Sonarr - Upscaled
-pattern: (?<=\b\d{3,4}p\b).*\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b
+pattern: (?<=\b\d{3,4}p\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b
 description: ''
 tags:
 - Sonarr
