@@ -82,7 +82,7 @@ qualities:
   name: Bluray 1080p
   description: ''
   qualities:
-  - id: 8
+  - id: null
     name: Bluray-1080p Remux
   - id: 10
     name: Bluray-1080p

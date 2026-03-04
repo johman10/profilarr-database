@@ -60,7 +60,7 @@ custom_formats:
 - name: Radarr - Upscaled
   score: -10000
 qualities:
-- id: null
+- id: 8
   name: Remux-1080p
 - id: -1
   name: Bluray|WEB 1080p
@@ -73,6 +73,6 @@ qualities:
   - id: 9
     name: WEBDL-1080p
 upgrade_until:
-  id: null
+  id: 8
   name: Remux-1080p
 language: original

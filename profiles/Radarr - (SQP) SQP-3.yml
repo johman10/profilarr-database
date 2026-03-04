@@ -59,7 +59,7 @@ qualities:
   name: WEB|Remux|2160p
   description: ''
   qualities:
-  - id: null
+  - id: 3
     name: Remux-2160p
   - id: 6
     name: WEBRip-2160p
@@ -69,7 +69,7 @@ qualities:
     name: WEBRip-1080p
   - id: 9
     name: WEBDL-1080p
-- id: null
+- id: 8
   name: Remux-1080p
 upgrade_until:
   id: -1
