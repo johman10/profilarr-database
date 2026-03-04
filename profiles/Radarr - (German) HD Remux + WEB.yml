@@ -77,7 +77,7 @@ qualities:
   name: Merged QPs
   description: ''
   qualities:
-  - id: 8
+  - id: null
     name: Remux-1080p
   - id: 11
     name: WEBRip-1080p

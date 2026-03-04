@@ -58,7 +58,7 @@ def _collect_qualities(items):
                 )
         qualities.append(quality)
 
-    return list(reversed(qualities))
+    return list(qualities)
 
 
 def _get_upgrade_until(quality_name, profile_qualities):

@@ -15,7 +15,7 @@ QUALITIES = [
     },
     {
         "id": 3,
-        "name": "Remux-2160p",
+        "name": "Bluray-2160p Remux",
         "description": "4K Ultra HD Blu-ray disc content remuxed into a playable file format",
         "radarr": True,
         "sonarr": True,
@@ -50,7 +50,7 @@ QUALITIES = [
     },
     {
         "id": 8,
-        "name": "Remux-1080p",
+        "name": "Bluray-1080p Remux",
         "description": "1080p Blu-ray disc content remuxed into a playable file format",
         "radarr": True,
         "sonarr": True,

@@ -47,8 +47,6 @@ custom_formats:
 - name: Radarr - Upscaled
   score: -10000
 qualities:
-- id: 13
-  name: Bluray-720p
 - id: -1
   name: Bluray|WEB 1080p
   description: ''
@@ -59,6 +57,8 @@ qualities:
     name: WEBRip-1080p
   - id: 9
     name: WEBDL-1080p
+- id: 13
+  name: Bluray-720p
 upgrade_until:
   id: -1
   name: Bluray|WEB 1080p

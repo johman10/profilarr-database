@@ -87,8 +87,16 @@ custom_formats:
 - name: Radarr - x265 (no HDR-DV)
   score: -10000
 qualities:
-- id: 13
-  name: Bluray-720p
+- id: 4
+  name: Bluray-2160p
+- id: -1
+  name: WEB 2160p
+  description: ''
+  qualities:
+  - id: 6
+    name: WEBRip-2160p
+  - id: 5
+    name: WEBDL-2160p
 - id: -2
   name: Bluray|WEB-1080p
   description: ''
@@ -103,16 +111,8 @@ qualities:
     name: WEBDL-720p
   - id: 15
     name: WEBRip-720p
-- id: -1
-  name: WEB 2160p
-  description: ''
-  qualities:
-  - id: 6
-    name: WEBRip-2160p
-  - id: 5
-    name: WEBDL-2160p
-- id: 4
-  name: Bluray-2160p
+- id: 13
+  name: Bluray-720p
 upgrade_until:
   id: 4
   name: Bluray-2160p
