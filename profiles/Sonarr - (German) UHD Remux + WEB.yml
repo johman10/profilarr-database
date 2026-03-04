@@ -73,7 +73,7 @@ qualities:
   name: Merged QPs
   description: ''
   qualities:
-  - id: null
+  - id: 3
     name: Bluray-2160p Remux
   - id: 5
     name: WEBDL-2160p

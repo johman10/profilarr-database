@@ -4,7 +4,7 @@ import yaml
 from markdownify import markdownify
 
 from utils.file_utils import iterate_json_files
-from utils.mappings.qualities import QUALITIES
+from utils.mappings.qualities import QUALITIES, SERVICE_QUALITY_TO_PROFILARR_QUALITY
 from utils.strings import get_name
 
 
@@ -29,32 +29,42 @@ def _collect_profile_formats(
     )
 
 
-def _get_quality_id(quality_name):
+def _get_quality_id(service, quality_name):
+    safe_quality_name = SERVICE_QUALITY_TO_PROFILARR_QUALITY[service].get(
+        quality_name, quality_name
+    )
     return next(
-        (quality["id"] for quality in QUALITIES if quality["name"] == quality_name),
-        None,
+        (
+            quality["id"]
+            for quality in QUALITIES
+            if quality["name"] == safe_quality_name
+        )
     )
 
 
-def _collect_qualities(items):
+def _collect_qualities(service, items):
     qualities = []
     quality_collection_id = -1
     for item in items:
         if item.get("allowed", False) is False:
             continue
 
+        quality_id = (
+            _get_quality_id(service, item.get("name", ""))
+            if item.get("items") is None
+            else quality_collection_id
+        )
         quality = {
-            "id": _get_quality_id(item.get("name", "")),
+            "id": quality_id,
             "name": item.get("name", ""),
         }
         if item.get("items") is not None:
-            quality["id"] = quality_collection_id
             quality_collection_id -= 1
             quality["description"] = ""
             quality["qualities"] = []
             for sub_item in item["items"]:
                 quality["qualities"].append(
-                    {"id": _get_quality_id(sub_item), "name": sub_item}
+                    {"id": _get_quality_id(service, sub_item), "name": sub_item}
                 )
         qualities.append(quality)
 
@@ -76,7 +86,7 @@ def _get_upgrade_until(quality_name, profile_qualities):
 def _collect_profile(service, input_json, output_dir, trash_id_to_scoring_mapping):
     # Compose YAML structure
     name = input_json.get("name", "")
-    profile_qualities = _collect_qualities(input_json.get("items", []))
+    profile_qualities = _collect_qualities(service, input_json.get("items", []))
     yml_data = {
         "name": get_name(service, name),
         "description": f"""[Profile from TRaSH-Guides.](https://trash-guides.info/{service.capitalize()}/{service}-setup-quality-profiles)

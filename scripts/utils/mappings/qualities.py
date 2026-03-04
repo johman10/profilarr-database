@@ -1,3 +1,12 @@
+SERVICE_QUALITY_TO_PROFILARR_QUALITY = {
+    "sonarr": {
+        "Bluray-1080p Remux": "Remux-1080p",
+        "Bluray-2160p Remux": "Remux-2160p",
+    },
+    "radarr": {},
+}
+
+
 QUALITIES = [
     {
         "id": 1,
