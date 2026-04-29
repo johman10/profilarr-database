@@ -88,6 +88,7 @@ def _collect_profile(service, input_json, output_dir, trash_id_to_scoring_mappin
     # Compose YAML structure
     name = input_json.get("name", "")
     profile_trash_id = input_json.get("trash_id")
+    profile_score_set = input_json.get("trash_score_set")
     profile_qualities = _collect_qualities(service, input_json.get("items", []))
 
     # Collect mandatory formats from formatItems
@@ -117,9 +118,9 @@ def _collect_profile(service, input_json, output_dir, trash_id_to_scoring_mappin
 
             # Get score from CF definition
             scoring = trash_id_to_scoring_mapping.get(cf_trash_id, {})
-            score = scoring.get("default", 0)
+            score = scoring.get(profile_score_set, scoring.get("default", 0))
 
-            # Skip if no default score
+            # Skip if no score
             if score == 0:
                 continue
 
