@@ -70,9 +70,15 @@ custom_formats:
   score: -10000
 - name: Radarr - AV1
   score: -10000
+- name: Radarr - Bad Dual Groups
+  score: -10000
+- name: Radarr - Black and White Editions
+  score: -10000
 - name: Radarr - BR-DISK
   score: -10000
 - name: Radarr - Extras
+  score: -10000
+- name: Radarr - Generated Dynamic HDR
   score: -10000
 - name: Radarr - LQ
   score: -10000
@@ -80,7 +86,11 @@ custom_formats:
   score: -10000
 - name: Radarr - Sing-Along Versions
   score: -10000
+- name: Radarr - Upscaled
+  score: -10000
 - name: Radarr - Wrong Language
+  score: -10000
+- name: Radarr - x265 (no HDR-DV)
   score: -10000
 qualities:
 - id: -1

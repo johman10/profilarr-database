@@ -91,6 +91,22 @@ custom_formats:
   score: 1
 - name: Sonarr - v0
   score: -51
+- name: Sonarr - AV1
+  score: -10000
+- name: Sonarr - Bad Dual Groups
+  score: -10000
+- name: Sonarr - BR-DISK
+  score: -10000
+- name: Sonarr - BR-DISK (BTN)
+  score: -10000
+- name: Sonarr - Extras
+  score: -10000
+- name: Sonarr - LQ
+  score: -10000
+- name: Sonarr - LQ (Release Title)
+  score: -10000
+- name: Sonarr - Upscaled
+  score: -10000
 - name: Sonarr - Anime LQ Groups
   score: -35000
 - name: Sonarr - Anime Raws

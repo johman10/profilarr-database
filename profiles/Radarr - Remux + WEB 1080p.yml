@@ -26,6 +26,30 @@ custom_formats:
   score: 6
 - name: Radarr - Repack-Proper
   score: 5
+- name: Radarr - 3D
+  score: -10000
+- name: Radarr - AV1
+  score: -10000
+- name: Radarr - Bad Dual Groups
+  score: -10000
+- name: Radarr - Black and White Editions
+  score: -10000
+- name: Radarr - BR-DISK
+  score: -10000
+- name: Radarr - Extras
+  score: -10000
+- name: Radarr - Generated Dynamic HDR
+  score: -10000
+- name: Radarr - LQ
+  score: -10000
+- name: Radarr - LQ (Release Title)
+  score: -10000
+- name: Radarr - Sing-Along Versions
+  score: -10000
+- name: Radarr - Upscaled
+  score: -10000
+- name: Radarr - x265 (HD)
+  score: -10000
 qualities:
 - id: 8
   name: Remux-1080p

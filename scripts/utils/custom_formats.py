@@ -135,14 +135,17 @@ def _collect_custom_format(
 
 def collect_custom_formats(service, input_dir, output_dir, custom_regex_patterns):
     trash_id_to_scoring_mapping = {}
+    trash_id_to_name_mapping = {}
     for _, file_stem, data in iterate_json_files(input_dir):
         trash_id = data.get("trash_id")
+        name = data.get("name")
         trash_scores = data.get("trash_scores", {})
         if trash_id:
             trash_id_to_scoring_mapping[trash_id] = trash_scores
+            trash_id_to_name_mapping[trash_id] = name
 
         _collect_custom_format(
             service, file_stem, data, output_dir, custom_regex_patterns
         )
 
-    return trash_id_to_scoring_mapping
+    return trash_id_to_scoring_mapping, trash_id_to_name_mapping

@@ -93,6 +93,28 @@ custom_formats:
   score: 1
 - name: Radarr - v0
   score: -51
+- name: Radarr - 3D
+  score: -10000
+- name: Radarr - AV1
+  score: -10000
+- name: Radarr - Bad Dual Groups
+  score: -10000
+- name: Radarr - Black and White Editions
+  score: -10000
+- name: Radarr - BR-DISK
+  score: -10000
+- name: Radarr - Extras
+  score: -10000
+- name: Radarr - Generated Dynamic HDR
+  score: -10000
+- name: Radarr - LQ
+  score: -10000
+- name: Radarr - LQ (Release Title)
+  score: -10000
+- name: Radarr - Sing-Along Versions
+  score: -10000
+- name: Radarr - Upscaled
+  score: -10000
 - name: Radarr - Anime LQ Groups
   score: -35000
 - name: Radarr - Anime Raws

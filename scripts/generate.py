@@ -2,6 +2,7 @@ import os
 import sys
 
 import yaml
+from utils.cf_groups import collect_cf_groups
 from utils.custom_formats import collect_custom_formats
 from utils.media_management import collect_media_management
 from utils.profiles import collect_profiles
@@ -72,14 +73,21 @@ def main():
                 f"Custom format directory {trash_profiles_dir} does not exist, skipping."
             )
             continue
-        trash_id_to_scoring_mapping = collect_custom_formats(
+        trash_id_to_scoring_mapping, trash_id_to_name_mapping = collect_custom_formats(
             service, trash_custom_formats_dir, custom_formats_dir, regex_patterns
         )
+
+        # Collect cf-groups with default flag
+        cf_groups_dir = os.path.join(input_dir, f"{service}/cf-groups")
+        cf_group_additions = collect_cf_groups(service, cf_groups_dir)
+
         collect_profiles(
             service,
             trash_profiles_dir,
             profiles_dir,
             trash_id_to_scoring_mapping,
+            trash_id_to_name_mapping,
+            cf_group_additions,
         )
 
     collect_media_management(input_dir, media_management_dir)

@@ -10,7 +10,27 @@ minCustomFormatScore: 0
 upgradeUntilScore: 10000
 minScoreIncrement: 1
 custom_formats:
+- name: Sonarr - HD Streaming Boost
+  score: 75
+- name: Sonarr - UHD Streaming Boost
+  score: 75
+- name: Sonarr - AV1
+  score: -10000
+- name: Sonarr - Bad Dual Groups
+  score: -10000
+- name: Sonarr - BR-DISK
+  score: -10000
+- name: Sonarr - BR-DISK (BTN)
+  score: -10000
 - name: Sonarr - Extras
+  score: -10000
+- name: Sonarr - LQ
+  score: -10000
+- name: Sonarr - LQ (Release Title)
+  score: -10000
+- name: Sonarr - Upscaled
+  score: -10000
+- name: Sonarr - x265 (no HDR-DV)
   score: -10000
 qualities:
 - id: 3

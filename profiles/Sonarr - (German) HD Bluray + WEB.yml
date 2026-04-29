@@ -51,6 +51,24 @@ custom_formats:
   score: 5
 - name: Sonarr - Repack-Proper
   score: 5
+- name: Sonarr - AV1
+  score: -10000
+- name: Sonarr - Bad Dual Groups
+  score: -10000
+- name: Sonarr - BR-DISK
+  score: -10000
+- name: Sonarr - BR-DISK (BTN)
+  score: -10000
+- name: Sonarr - Extras
+  score: -10000
+- name: Sonarr - LQ
+  score: -10000
+- name: Sonarr - LQ (Release Title)
+  score: -10000
+- name: Sonarr - Upscaled
+  score: -10000
+- name: Sonarr - x265 (HD)
+  score: -10000
 - name: Sonarr - German LQ
   score: -35000
 - name: Sonarr - German LQ (release title)

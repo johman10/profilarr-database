@@ -9,7 +9,7 @@ from utils.strings import get_name
 
 
 def _collect_profile_formats(
-    service, trash_score_name, format_items, trash_id_to_scoring_mapping
+    service, trash_score_name, format_items, trash_id_to_scoring_mapping, trash_id_to_name_mapping
 ):
     profile_formats = []
     for name, trash_id in format_items.items():
@@ -18,7 +18,8 @@ def _collect_profile_formats(
         if score == 0:
             continue
 
-        profile_formats.append({"name": get_name(service, name), "score": score})
+        cf_name = trash_id_to_name_mapping[trash_id]
+        profile_formats.append({"name": get_name(service, cf_name), "score": score})
     return sorted(
         profile_formats,
         key=lambda profile_format: (
@@ -83,10 +84,57 @@ def _get_upgrade_until(quality_name, profile_qualities):
     return found_quality
 
 
-def _collect_profile(service, input_json, output_dir, trash_id_to_scoring_mapping):
+def _collect_profile(service, input_json, output_dir, trash_id_to_scoring_mapping, trash_id_to_name_mapping, cf_group_additions=None):
     # Compose YAML structure
     name = input_json.get("name", "")
+    profile_trash_id = input_json.get("trash_id")
     profile_qualities = _collect_qualities(service, input_json.get("items", []))
+
+    # Collect mandatory formats from formatItems
+    profile_formats = _collect_profile_formats(
+        service,
+        input_json.get("trash_score_set"),
+        input_json.get("formatItems", {}),
+        trash_id_to_scoring_mapping,
+        trash_id_to_name_mapping,
+    )
+
+    # Merge cf-group additions
+    if cf_group_additions and profile_trash_id in cf_group_additions:
+        # Build set of existing CF names for deduplication
+        existing_cf_names = {fmt["name"] for fmt in profile_formats}
+
+        for cf_trash_id in cf_group_additions[profile_trash_id]:
+            # Skip if CF not in mappings (shouldn't happen but safety check)
+            if cf_trash_id not in trash_id_to_name_mapping:
+                continue
+
+            cf_name = get_name(service, trash_id_to_name_mapping[cf_trash_id])
+
+            # Skip if already present (from formatItems)
+            if cf_name in existing_cf_names:
+                continue
+
+            # Get score from CF definition
+            scoring = trash_id_to_scoring_mapping.get(cf_trash_id, {})
+            score = scoring.get("default", 0)
+
+            # Skip if no default score
+            if score == 0:
+                continue
+
+            profile_formats.append({"name": cf_name, "score": score})
+
+        # Re-sort after merging
+        profile_formats = sorted(
+            profile_formats,
+            key=lambda profile_format: (
+                -profile_format["score"],
+                profile_format["name"].lower(),
+            ),
+            reverse=False,
+        )
+
     yml_data = {
         "name": get_name(service, name),
         "description": f"""[Profile from TRaSH-Guides.](https://trash-guides.info/{service.capitalize()}/{service}-setup-quality-profiles)
@@ -97,12 +145,7 @@ def _collect_profile(service, input_json, output_dir, trash_id_to_scoring_mappin
         "minCustomFormatScore": input_json.get("minFormatScore", 0),
         "upgradeUntilScore": input_json.get("cutoffFormatScore", 0),
         "minScoreIncrement": input_json.get("minUpgradeFormatScore", 0),
-        "custom_formats": _collect_profile_formats(
-            service,
-            input_json.get("trash_score_set"),
-            input_json.get("formatItems", {}),
-            trash_id_to_scoring_mapping,
-        ),
+        "custom_formats": profile_formats,
         "qualities": profile_qualities,
         "upgrade_until": _get_upgrade_until(input_json.get("cutoff"), profile_qualities),
         "language": input_json.get("language", "any").lower(),
@@ -120,6 +163,8 @@ def collect_profiles(
     input_dir,
     output_dir,
     trash_id_to_scoring_mapping,
+    trash_id_to_name_mapping,
+    cf_group_additions=None,
 ):
     for _, _, data in iterate_json_files(input_dir):
-        _collect_profile(service, data, output_dir, trash_id_to_scoring_mapping)
+        _collect_profile(service, data, output_dir, trash_id_to_scoring_mapping, trash_id_to_name_mapping, cf_group_additions)
