@@ -87,7 +87,7 @@ def main():
             profiles_dir,
             trash_id_to_scoring_mapping,
             trash_id_to_name_mapping,
-            cf_group_additions,
+            cf_group_additions=cf_group_additions,
         )
 
     collect_media_management(input_dir, media_management_dir)

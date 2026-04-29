@@ -31,7 +31,7 @@ def collect_cf_groups(service, cf_groups_dir):
             continue  # No default CFs in this group
 
         # Map to quality profiles
-        for profile_name, profile_trash_id in data.get("quality_profiles", {}).get("include", {}).items():
+        for _profile_name, profile_trash_id in data.get("quality_profiles", {}).get("include", {}).items():
             if profile_trash_id not in profile_to_cfs:
                 profile_to_cfs[profile_trash_id] = []
             profile_to_cfs[profile_trash_id].extend(default_cf_ids)
