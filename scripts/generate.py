@@ -198,6 +198,17 @@ SOURCE_MAPPING = {
     },
 }
 
+QUALITY_MODIFIER_MAPPING = {
+    "radarr": {
+        0: "none",
+        1: "regional",
+        2: "screener",
+        3: "rawhd",
+        4: "brdisk",
+        5: "remux",
+    }
+}
+
 
 class RegexEntry(TypedDict):
     name: str
@@ -240,6 +251,10 @@ def _map_numeric_value(implementation: str, service_key: str, numeric_value: int
         return SOURCE_MAPPING.get(service_key, {}).get(numeric_value)
     if implementation == "ReleaseTypeSpecification":
         return RELEASE_TYPE_MAPPING.get(service_key, {}).get(numeric_value)
+    if implementation == "QualityModifierSpecification":
+        return QUALITY_MODIFIER_MAPPING.get(service_key, {}).get(numeric_value)
+    if implementation == "ResolutionSpecification":
+        return f"{numeric_value}p"
     return None
 
 
