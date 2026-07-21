@@ -40,6 +40,11 @@ jobs:
         run: |
           uv run pytest tests/ -v
 
+      - name: Run Docker import validation tests
+        run: |
+          RUN_DOCKER_TESTS=1 uv run pytest tests/test_pcd_docker_import.py -v
+        continue-on-error: true
+
       - name: Check for uncommitted changes (PR)
         if: github.event_name == 'pull_request'
         run: |

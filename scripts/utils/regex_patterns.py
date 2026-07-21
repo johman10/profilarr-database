@@ -68,7 +68,7 @@ def _collect_regex_pattern(service, file_name, input_json):
                 _update_existing_pattern_for_service(existing_data, service)
             continue
 
-        initial_name = get_name(service, spec_name, remove_not=True)
+        initial_name = get_name(service, spec_name, remove_not=True, skip_service_prefix=True)
         final_name = _generate_unique_pattern_name(initial_name, pattern)
 
         if final_name:

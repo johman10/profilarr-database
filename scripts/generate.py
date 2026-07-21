@@ -96,6 +96,7 @@ def main():
     for service in ["radarr", "sonarr"]:
         sql_buffer.add_insert("tags", ["name"], [service.capitalize()], section="TAGS")
 
+    regex_patterns_added_to_sql = False
     for service in ["radarr", "sonarr"]:
         trash_custom_formats_dir = os.path.join(input_dir, f"{service}/cf")
         if not os.path.exists(trash_custom_formats_dir):
@@ -103,8 +104,9 @@ def main():
 
         regex_patterns = all_regex_patterns.get(service, {})
         collect_regex_patterns(
-            service, trash_custom_formats_dir, sql_buffer=sql_buffer
+            service, trash_custom_formats_dir, sql_buffer=sql_buffer if not regex_patterns_added_to_sql else None
         )
+        regex_patterns_added_to_sql = True
 
     for service in ["radarr", "sonarr"]:
         trash_custom_formats_dir = os.path.join(input_dir, f"{service}/cf")

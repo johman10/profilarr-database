@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  profilarr:
+    image: dictionarry/profilarr:latest
+    container_name: profilarr-test
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      LOG_LEVEL: debug
+    volumes:
+      - ./ops/1.initial.sql:/app/init.sql
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s

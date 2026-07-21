@@ -13,5 +13,8 @@ def _get_safe_name(name, remove_not=False):
     )
 
 
-def get_name(service, name, remove_not=False):
-    return f"{service.capitalize()} - {_get_safe_name(name, remove_not)}"
+def get_name(service, name, remove_not=False, skip_service_prefix=False):
+    safe_name = _get_safe_name(name, remove_not)
+    if skip_service_prefix:
+        return safe_name
+    return f"{service.capitalize()} - {safe_name}"

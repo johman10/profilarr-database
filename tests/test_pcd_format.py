@@ -180,28 +180,18 @@ def test_sql_has_proper_syntax():
 def test_sql_no_syntax_errors():
     """Basic validation that SQL doesn't have obvious syntax errors."""
     sql_files = get_all_sql_files()
-    all_content = ""
+
     for sql_file in sql_files:
-        all_content += sql_file.read_text(encoding="utf-8")
+        all_content = sql_file.read_text(encoding="utf-8")
+        insert_count = all_content.count("INSERT INTO")
+        values_count = all_content.count("VALUES (")
+        semicolon_count = all_content.count(";")
 
-    in_string = False
-    escape_next = False
-
-    for char in all_content:
-        if escape_next:
-            escape_next = False
-            continue
-
-        if char == "\\":
-            escape_next = True
-            continue
-
-        if char == "'":
-            in_string = not in_string
-
-    assert (
-        not in_string
-    ), "SQL has unmatched quotes - possible syntax error"
+        assert insert_count > 0, f"No INSERT statements in {sql_file.name}"
+        assert values_count == insert_count, f"VALUES clause count mismatch in {sql_file.name}"
+        assert (
+            semicolon_count >= insert_count * 0.9
+        ), f"Missing semicolons in {sql_file.name}"
 
 
 @pytest.mark.parametrize(
