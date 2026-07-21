@@ -1,6 +1,0 @@
-name: Sonarr - Crunchyroll
-pattern: \b(C(runchy)?[ .-]?R(oll)?)\b
-description: ''
-tags:
-- Sonarr
-tests: []

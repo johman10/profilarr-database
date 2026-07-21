@@ -1,7 +1,0 @@
-name: DETAiLS
-pattern: ^(DETAiLS)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

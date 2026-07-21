@@ -1,6 +1,0 @@
-name: Sonarr - COLL3CTiF
-pattern: ^(COLL3CTiF)$
-description: ''
-tags:
-- Sonarr
-tests: []

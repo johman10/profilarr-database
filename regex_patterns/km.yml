@@ -1,7 +1,0 @@
-name: km
-pattern: \[km\]|-km\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

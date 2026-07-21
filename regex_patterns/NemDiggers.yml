@@ -1,7 +1,0 @@
-name: NemDiggers
-pattern: \b(NemDiggers)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

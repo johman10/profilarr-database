@@ -1,6 +1,0 @@
-name: Radarr - GuyZo (1)
-pattern: \b(GuyZo|BR-GuyZo)\b
-description: ''
-tags:
-- Radarr
-tests: []

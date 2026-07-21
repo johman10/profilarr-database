@@ -1,7 +1,0 @@
-name: WBDP
-pattern: \b(WBDP)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

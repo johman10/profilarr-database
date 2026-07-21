@@ -1,7 +1,0 @@
-name: CNLP
-pattern: \b(CNLP)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

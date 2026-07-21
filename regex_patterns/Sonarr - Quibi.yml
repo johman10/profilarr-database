@@ -1,6 +1,0 @@
-name: Sonarr - Quibi
-pattern: \b(qibi|quibi)\b
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: muhHD
-pattern: ^(muhHD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

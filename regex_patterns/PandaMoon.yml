@@ -1,7 +1,0 @@
-name: PandaMoon
-pattern: ^(PandaMoon)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: TFARC
-pattern: ^(TFARC)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

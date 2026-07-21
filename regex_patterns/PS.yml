@@ -1,7 +1,0 @@
-name: PS
-pattern: ^(PS)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

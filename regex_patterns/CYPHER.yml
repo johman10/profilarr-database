@@ -1,7 +1,0 @@
-name: CYPHER
-pattern: ^(CYPHER)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

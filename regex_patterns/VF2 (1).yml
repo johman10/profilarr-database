@@ -1,7 +1,0 @@
-name: VF2 (1)
-pattern: \b(VF2|(VF(F|Q)[ .]VF(F|Q)))\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - beAst
-pattern: ^(beAst)$
-description: ''
-tags:
-- Radarr
-tests: []

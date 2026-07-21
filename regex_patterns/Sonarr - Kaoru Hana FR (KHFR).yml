@@ -1,6 +1,0 @@
-name: Sonarr - Kaoru Hana FR (KHFR)
-pattern: \b(KHFR)\b
-description: ''
-tags:
-- Sonarr
-tests: []

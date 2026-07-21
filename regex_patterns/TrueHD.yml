@@ -1,7 +1,0 @@
-name: TrueHD
-pattern: True[ .-]?HD
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

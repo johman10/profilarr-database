@@ -1,7 +1,0 @@
-name: DIY
-pattern: \[DIY\]|-DIY\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

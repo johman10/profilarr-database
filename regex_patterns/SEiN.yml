@@ -1,7 +1,0 @@
-name: SEiN
-pattern: \[SEiN\]|-SEiN\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

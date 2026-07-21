@@ -1,6 +1,0 @@
-name: Sonarr - Scaph
-pattern: ^(Scaph)$
-description: ''
-tags:
-- Sonarr
-tests: []

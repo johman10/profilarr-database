@@ -1,7 +1,0 @@
-name: VECTOR
-pattern: ^(VECTOR)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Rando235
-pattern: \b(Rando235)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

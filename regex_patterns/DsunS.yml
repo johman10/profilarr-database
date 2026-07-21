@@ -1,7 +1,0 @@
-name: DsunS
-pattern: \b(DsunS)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

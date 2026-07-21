@@ -1,6 +1,0 @@
-name: Radarr - PATOMiEL
-pattern: ^(PATOMiEL)$
-description: ''
-tags:
-- Radarr
-tests: []

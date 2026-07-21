@@ -1,7 +1,0 @@
-name: MADSKY
-pattern: ^(MADSKY)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

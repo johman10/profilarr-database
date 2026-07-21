@@ -1,7 +1,0 @@
-name: Starbez
-pattern: \b(Starbez)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

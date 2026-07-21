@@ -1,6 +1,0 @@
-name: Radarr - SoW
-pattern: ^(SoW)$
-description: ''
-tags:
-- Radarr
-tests: []

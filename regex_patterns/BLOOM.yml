@@ -1,7 +1,0 @@
-name: BLOOM
-pattern: ^(BLOOM)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

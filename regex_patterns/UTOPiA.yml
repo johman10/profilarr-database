@@ -1,7 +1,0 @@
-name: UTOPiA
-pattern: ^(UTOPiA)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

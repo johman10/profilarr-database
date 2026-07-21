@@ -1,7 +1,0 @@
-name: E
-pattern: ^(ENJOi|EUBDS)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

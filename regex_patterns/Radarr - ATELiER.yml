@@ -1,6 +1,0 @@
-name: Radarr - ATELiER
-pattern: ^(ATELiER)$
-description: ''
-tags:
-- Radarr
-tests: []

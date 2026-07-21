@@ -1,7 +1,0 @@
-name: Mindus
-pattern: ^(Mindus)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

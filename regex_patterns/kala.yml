@@ -1,7 +1,0 @@
-name: kala
-pattern: ^(kala)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

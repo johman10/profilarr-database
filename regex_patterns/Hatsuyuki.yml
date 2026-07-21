@@ -1,7 +1,0 @@
-name: Hatsuyuki
-pattern: \[Hatsuyuki\]|-Hatsuyuki\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

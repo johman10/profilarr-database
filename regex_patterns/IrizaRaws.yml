@@ -1,7 +1,0 @@
-name: IrizaRaws
-pattern: Iriza[ ._-]?(Raws)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

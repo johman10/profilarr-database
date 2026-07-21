@@ -1,7 +1,0 @@
-name: Version Québécoise
-pattern: \b(VQ)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - Low Channel Count
-pattern: (?<=\b[12]\d{3}\b.*?)(?<!repac)[^0-9][1-4][ .][0-1]\b|\b(Stereo|Mono)\b
-description: ''
-tags:
-- Radarr
-tests: []

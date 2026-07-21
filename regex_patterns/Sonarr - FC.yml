@@ -1,6 +1,0 @@
-name: Sonarr - FC
-pattern: ^(FC)$
-description: ''
-tags:
-- Sonarr
-tests: []

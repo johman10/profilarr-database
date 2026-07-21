@@ -1,6 +1,0 @@
-name: Sonarr - dRuIdE
-pattern: ^(dRuIdE)$
-description: ''
-tags:
-- Sonarr
-tests: []

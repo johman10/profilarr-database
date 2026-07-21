@@ -1,6 +1,0 @@
-name: Radarr - SAViOURHD
-pattern: ^(SAViOURHD)$
-description: ''
-tags:
-- Radarr
-tests: []

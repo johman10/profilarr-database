@@ -1,6 +1,0 @@
-name: Radarr - BiTOR
-pattern: ^(BiTOR)$
-description: ''
-tags:
-- Radarr
-tests: []

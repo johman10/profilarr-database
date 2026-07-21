@@ -1,6 +1,0 @@
-name: Radarr - TvR (1)
-pattern: (TvR)$
-description: ''
-tags:
-- Radarr
-tests: []

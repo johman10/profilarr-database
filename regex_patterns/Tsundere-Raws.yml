@@ -1,7 +1,0 @@
-name: Tsundere-Raws
-pattern: \b(Tsundere[ .-]?Raws)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

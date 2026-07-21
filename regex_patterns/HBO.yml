@@ -1,7 +1,0 @@
-name: HBO
-pattern: ^(HBO)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

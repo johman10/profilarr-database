@@ -1,7 +1,0 @@
-name: A-Destiny
-pattern: \b(A-Destiny)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

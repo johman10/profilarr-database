@@ -1,7 +1,0 @@
-name: NTb
-pattern: ^(NTb)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

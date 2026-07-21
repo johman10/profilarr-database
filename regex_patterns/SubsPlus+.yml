@@ -1,7 +1,0 @@
-name: SubsPlus+
-pattern: \b(SubsPlus\+?)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

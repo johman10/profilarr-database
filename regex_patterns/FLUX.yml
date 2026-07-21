@@ -1,7 +1,0 @@
-name: FLUX
-pattern: ^(FLUX)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Sonarr - Scrambled
-pattern: (?<=\bS\d+\b).*(Scrambled)\b
-description: ''
-tags:
-- Sonarr
-tests: []

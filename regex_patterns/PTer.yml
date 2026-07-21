@@ -1,7 +1,0 @@
-name: PTer
-pattern: ^(PTer)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

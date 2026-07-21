@@ -1,7 +1,0 @@
-name: shincaps
-pattern: \b(shincaps)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

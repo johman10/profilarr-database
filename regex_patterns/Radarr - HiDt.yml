@@ -1,6 +1,0 @@
-name: Radarr - HiDt
-pattern: ^(HiDt)$
-description: ''
-tags:
-- Radarr
-tests: []

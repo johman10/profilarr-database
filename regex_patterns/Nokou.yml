@@ -1,7 +1,0 @@
-name: Nokou
-pattern: \b(Nokou)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

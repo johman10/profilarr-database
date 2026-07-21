@@ -1,6 +1,0 @@
-name: Radarr - Liber8
-pattern: ^(Liber8)$
-description: ''
-tags:
-- Radarr
-tests: []

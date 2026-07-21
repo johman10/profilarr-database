@@ -1,6 +1,0 @@
-name: Radarr - GPTHD
-pattern: ^(GPTHD)$
-description: ''
-tags:
-- Radarr
-tests: []

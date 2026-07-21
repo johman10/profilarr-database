@@ -1,6 +1,0 @@
-name: Radarr - N
-pattern: ^(NERDHD|NERO|NrZ|NTK)$
-description: ''
-tags:
-- Radarr
-tests: []

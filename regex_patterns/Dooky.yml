@@ -1,7 +1,0 @@
-name: Dooky
-pattern: \b(Dooky)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

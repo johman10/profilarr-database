@@ -1,7 +1,0 @@
-name: DMPD
-pattern: ^(DMPD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

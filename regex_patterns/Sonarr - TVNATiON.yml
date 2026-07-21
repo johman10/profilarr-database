@@ -1,6 +1,0 @@
-name: Sonarr - TVNATiON
-pattern: ^(TVNATiON)$
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: SbR (1)
-pattern: ^(SbR)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

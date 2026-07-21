@@ -1,7 +1,0 @@
-name: OurTV
-pattern: ^(OurTV)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

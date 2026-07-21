@@ -1,6 +1,0 @@
-name: Radarr - C4K
-pattern: ^(C4K)$
-description: ''
-tags:
-- Radarr
-tests: []

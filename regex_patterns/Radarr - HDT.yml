@@ -1,6 +1,0 @@
-name: Radarr - HDT
-pattern: ^(HDT)$
-description: ''
-tags:
-- Radarr
-tests: []

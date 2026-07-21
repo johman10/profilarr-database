@@ -1,7 +1,0 @@
-name: SAUERKRAUT
-pattern: ^(SAUERKRAUT)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

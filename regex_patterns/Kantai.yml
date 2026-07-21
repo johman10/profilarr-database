@@ -1,7 +1,0 @@
-name: Kantai
-pattern: \[Kantai\]|-Kantai\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

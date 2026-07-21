@@ -1,6 +1,0 @@
-name: Sonarr - GERMAN
-pattern: \b(GERMAN)$
-description: ''
-tags:
-- Sonarr
-tests: []

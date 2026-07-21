@@ -1,7 +1,0 @@
-name: Dolby Digital Plus (1)
-pattern: \bDD[P+](?!A)|\b(e[-_. ]?ac-?3)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: WETV
-pattern: \b(WETV)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

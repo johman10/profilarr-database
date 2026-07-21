@@ -1,7 +1,0 @@
-name: SoM
-pattern: \[SoM\]|-SoM\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

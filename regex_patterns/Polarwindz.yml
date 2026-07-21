@@ -1,7 +1,0 @@
-name: Polarwindz
-pattern: \b(Polarwindz)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

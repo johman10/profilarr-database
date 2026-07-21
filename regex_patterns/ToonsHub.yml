@@ -1,7 +1,0 @@
-name: ToonsHub
-pattern: \b(ToonsHub)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

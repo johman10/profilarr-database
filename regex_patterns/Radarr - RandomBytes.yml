@@ -1,6 +1,0 @@
-name: Radarr - RandomBytes
-pattern: ^(RandomBytes)$
-description: ''
-tags:
-- Radarr
-tests: []

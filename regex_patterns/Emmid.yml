@@ -1,7 +1,0 @@
-name: Emmid
-pattern: \[Emmid\]|-Emmid\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

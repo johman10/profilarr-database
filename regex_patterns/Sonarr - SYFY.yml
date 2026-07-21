@@ -1,6 +1,0 @@
-name: Sonarr - SYFY
-pattern: \b(SYFY)\b
-description: ''
-tags:
-- Sonarr
-tests: []

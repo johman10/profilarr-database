@@ -1,7 +1,0 @@
-name: CtrlHD
-pattern: ^(CtrlHD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

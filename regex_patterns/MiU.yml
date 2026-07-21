@@ -1,7 +1,0 @@
-name: MiU
-pattern: ^(MiU)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

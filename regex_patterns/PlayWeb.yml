@@ -1,7 +1,0 @@
-name: PlayWeb
-pattern: \b(PlayWeb)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

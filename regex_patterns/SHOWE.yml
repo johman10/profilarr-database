@@ -1,7 +1,0 @@
-name: SHOWE
-pattern: ^(SHOWE)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

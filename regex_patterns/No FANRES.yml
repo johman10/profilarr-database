@@ -1,7 +1,0 @@
-name: No FANRES
-pattern: \b(FANRES)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

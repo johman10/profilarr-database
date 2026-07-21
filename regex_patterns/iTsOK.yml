@@ -1,7 +1,0 @@
-name: iTsOK
-pattern: ^(iTsOK)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

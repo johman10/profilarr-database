@@ -1,7 +1,0 @@
-name: phazer11
-pattern: \b(phazer11)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

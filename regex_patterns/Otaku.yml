@@ -1,7 +1,0 @@
-name: Otaku
-pattern: ^(Otaku)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

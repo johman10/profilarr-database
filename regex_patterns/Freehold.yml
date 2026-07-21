@@ -1,7 +1,0 @@
-name: Freehold
-pattern: \b(Freehold)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

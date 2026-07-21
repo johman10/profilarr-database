@@ -1,7 +1,0 @@
-name: _nzb
-pattern: _nzb\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

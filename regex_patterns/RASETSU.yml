@@ -1,7 +1,0 @@
-name: RASETSU
-pattern: \b(RASETSU)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

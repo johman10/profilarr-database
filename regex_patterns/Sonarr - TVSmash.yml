@@ -1,6 +1,0 @@
-name: Sonarr - TVSmash
-pattern: ^(TVSmash)$
-description: ''
-tags:
-- Sonarr
-tests: []

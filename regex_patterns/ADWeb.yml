@@ -1,7 +1,0 @@
-name: ADWeb
-pattern: ^(ADWeb)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

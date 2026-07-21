@@ -1,7 +1,0 @@
-name: TyrellCorp
-pattern: ^(TyrellCorp)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

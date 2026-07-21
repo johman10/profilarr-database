@@ -1,7 +1,0 @@
-name: JKCT
-pattern: ^(JKCT)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

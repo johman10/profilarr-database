@@ -1,7 +1,0 @@
-name: Galactic
-pattern: \b(Galactic)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

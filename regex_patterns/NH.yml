@@ -1,7 +1,0 @@
-name: NH
-pattern: \b(NH)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

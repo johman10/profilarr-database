@@ -1,6 +1,0 @@
-name: Sonarr - 4OD
-pattern: \b(4OD)\b
-description: ''
-tags:
-- Sonarr
-tests: []

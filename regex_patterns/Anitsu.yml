@@ -1,7 +1,0 @@
-name: Anitsu
-pattern: \b(Anitsu)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

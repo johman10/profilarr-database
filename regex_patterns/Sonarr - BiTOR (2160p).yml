@@ -1,6 +1,0 @@
-name: Sonarr - BiTOR (2160p)
-pattern: (?=.*?(\b2160p\b))(?=.*?(\bBiTOR\b))
-description: ''
-tags:
-- Sonarr
-tests: []

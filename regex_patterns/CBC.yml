@@ -1,7 +1,0 @@
-name: CBC
-pattern: \b(CBC)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

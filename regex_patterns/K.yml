@@ -1,7 +1,0 @@
-name: K
-pattern: ^(KAZETV)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

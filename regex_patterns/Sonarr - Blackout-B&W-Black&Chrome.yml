@@ -1,6 +1,0 @@
-name: Sonarr - Blackout-B&W-Black&Chrome
-pattern: (?<=\bS\d+(E\d+)?\b).*\b((B(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(W(hite)?|Chrome))))\b(?!$)
-description: ''
-tags:
-- Sonarr
-tests: []

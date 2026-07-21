@@ -1,7 +1,0 @@
-name: TVS
-pattern: ^(TVS)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

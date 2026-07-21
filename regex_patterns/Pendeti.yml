@@ -1,7 +1,0 @@
-name: Pendeti
-pattern: ^(Pendeti)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

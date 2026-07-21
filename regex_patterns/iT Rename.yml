@@ -1,7 +1,0 @@
-name: iT Rename
-pattern: \[(iT)(?![+])\b|\b(?<![+])(iT)\]
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

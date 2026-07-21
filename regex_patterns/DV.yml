@@ -1,7 +1,0 @@
-name: DV
-pattern: \b(dv|dovi|dolby[ .]?v(ision)?)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

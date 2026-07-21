@@ -1,7 +1,0 @@
-name: Star+
-pattern: \b(STRP)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

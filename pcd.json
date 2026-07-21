@@ -1,6 +1,6 @@
 {
-  "name": "trash-pcd",
-  "version": "1.0.2",
+  "name": "profilarr-trash-guides",
+  "version": "1.0.0",
   "description": "TRaSH Guides converted to PCD format for Profilarr",
   "arr_types": [
     "radarr",
@@ -11,24 +11,20 @@
   },
   "authors": [
     {
-      "name": "TRaSH"
-    },
-    {
-      "name": "Dictionarry Team"
+      "name": "Johman10"
     }
   ],
   "license": "MIT",
-  "repository": "https://github.com/dictionarry-hub/trash-pcd",
+  "repository": "https://github.com/johman10/profilarr-trash-guides",
   "tags": [
-    "trash",
-    "guides",
+    "trash-guides",
     "quality",
     "custom-formats",
     "profiles"
   ],
   "links": {
     "homepage": "https://trash-guides.info",
-    "issues": "https://github.com/dictionarry-hub/trash-pcd/issues"
+    "issues": "https://github.com/johman10/profilarr-trash-guides/issues"
   },
   "profilarr": {
     "minimum_version": "2.0.0"

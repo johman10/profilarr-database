@@ -1,7 +1,0 @@
-name: Hami
-pattern: \b(hami|HamiVideo)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: MisFiTS
-pattern: ^(MisFiTS)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

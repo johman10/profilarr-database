@@ -1,6 +1,0 @@
-name: Sonarr - Paramount+
-pattern: \b(pmtp|Paramount\+)\b
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - Zeus
-pattern: ^(Zeus)$
-description: ''
-tags:
-- Radarr
-tests: []

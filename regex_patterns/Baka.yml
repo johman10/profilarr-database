@@ -1,7 +1,0 @@
-name: Baka
-pattern: ^(Baka)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

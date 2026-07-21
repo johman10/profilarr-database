@@ -1,7 +1,0 @@
-name: MK
-pattern: \b(MK)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

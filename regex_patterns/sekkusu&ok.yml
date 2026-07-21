@@ -1,7 +1,0 @@
-name: sekkusu&ok
-pattern: \b(sekkusu&ok)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

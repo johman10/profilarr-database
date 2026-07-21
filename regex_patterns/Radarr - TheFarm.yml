@@ -1,6 +1,0 @@
-name: Radarr - TheFarm
-pattern: ^(TheFarm)$
-description: ''
-tags:
-- Radarr
-tests: []

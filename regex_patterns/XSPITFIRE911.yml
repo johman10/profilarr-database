@@ -1,7 +1,0 @@
-name: XSPITFIRE911
-pattern: \b(XSPITFIRE911)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

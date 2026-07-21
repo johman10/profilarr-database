@@ -1,6 +1,0 @@
-name: Radarr - LeetHD
-pattern: ^(LeetHD)$
-description: ''
-tags:
-- Radarr
-tests: []

@@ -1,7 +1,0 @@
-name: OPUS Release Group
-pattern: OPUS
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

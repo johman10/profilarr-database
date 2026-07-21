@@ -1,7 +1,0 @@
-name: VP9
-pattern: \bVP9\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

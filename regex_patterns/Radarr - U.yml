@@ -1,6 +1,0 @@
-name: Radarr - U
-pattern: ^(UKDHD|UKDTV|ULSHD|Ulysse|(US)?UNSKiLLED|URY)$
-description: ''
-tags:
-- Radarr
-tests: []

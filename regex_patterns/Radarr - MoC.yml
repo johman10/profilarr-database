@@ -1,6 +1,0 @@
-name: Radarr - MoC
-pattern: \b(MoC)\b
-description: ''
-tags:
-- Radarr
-tests: []

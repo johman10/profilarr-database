@@ -1,7 +1,0 @@
-name: v1
-pattern: (\b|\d)(v1)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

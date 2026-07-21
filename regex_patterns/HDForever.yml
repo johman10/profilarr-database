@@ -1,7 +1,0 @@
-name: HDForever
-pattern: ^(HDForever)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

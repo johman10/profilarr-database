@@ -1,7 +1,0 @@
-name: Noiy
-pattern: \b(Noiy)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

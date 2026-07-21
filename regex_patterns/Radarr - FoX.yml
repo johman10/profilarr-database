@@ -1,6 +1,0 @@
-name: Radarr - FoX
-pattern: ^(FoX)$
-description: ''
-tags:
-- Radarr
-tests: []

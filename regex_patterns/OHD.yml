@@ -1,7 +1,0 @@
-name: OHD
-pattern: ^(OHD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

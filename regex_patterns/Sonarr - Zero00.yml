@@ -1,6 +1,0 @@
-name: Sonarr - Zero00
-pattern: ^(Zero00)$
-description: ''
-tags:
-- Sonarr
-tests: []

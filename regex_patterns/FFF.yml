@@ -1,7 +1,0 @@
-name: FFF
-pattern: \b(FFF)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

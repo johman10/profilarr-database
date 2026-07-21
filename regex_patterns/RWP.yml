@@ -1,7 +1,0 @@
-name: RWP
-pattern: ^(RWP)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: CONTRiBUTiON
-pattern: ^(CONTRiBUTiON)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

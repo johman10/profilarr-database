@@ -1,7 +1,0 @@
-name: My5
-pattern: \b(MY5)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Pahe
-pattern: Pahe(\.(ph|in))?\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

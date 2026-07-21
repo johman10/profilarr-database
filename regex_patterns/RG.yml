@@ -1,7 +1,0 @@
-name: RG
-pattern: ^(RG)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

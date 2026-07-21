@@ -1,6 +1,0 @@
-name: Radarr - ORARBG
-pattern: \b(ORARBG)\b
-description: ''
-tags:
-- Radarr
-tests: []

@@ -1,7 +1,0 @@
-name: FGT
-pattern: ^(FGT)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

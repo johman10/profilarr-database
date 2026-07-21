@@ -1,6 +1,0 @@
-name: Radarr - YIFY
-pattern: ^(YIFY)$
-description: ''
-tags:
-- Radarr
-tests: []

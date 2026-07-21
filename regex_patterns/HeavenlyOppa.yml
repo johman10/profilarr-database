@@ -1,7 +1,0 @@
-name: HeavenlyOppa
-pattern: ^(HeavenlyOppa)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Prof
-pattern: \[Prof\]|-Prof\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

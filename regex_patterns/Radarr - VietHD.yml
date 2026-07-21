@@ -1,6 +1,0 @@
-name: Radarr - VietHD
-pattern: ^(VietHD)$
-description: ''
-tags:
-- Radarr
-tests: []

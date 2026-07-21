@@ -1,7 +1,0 @@
-name: B00BA
-pattern: \b(B00BA)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

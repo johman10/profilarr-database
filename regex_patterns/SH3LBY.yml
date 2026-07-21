@@ -1,7 +1,0 @@
-name: SH3LBY
-pattern: ^(SH3LBY)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: x265-HEVC
-pattern: '[xh][ ._-]?265|\bHEVC(\b|\d)'
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

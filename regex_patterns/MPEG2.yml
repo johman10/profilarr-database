@@ -1,7 +1,0 @@
-name: MPEG2
-pattern: MPEG[-.]?2
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

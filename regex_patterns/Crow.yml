@@ -1,7 +1,0 @@
-name: Crow
-pattern: \[Crow\]|-Crow\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

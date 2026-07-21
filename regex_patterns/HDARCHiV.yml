@@ -1,7 +1,0 @@
-name: HDARCHiV
-pattern: ^(HDARCHiV)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

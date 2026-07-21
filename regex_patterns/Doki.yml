@@ -1,7 +1,0 @@
-name: Doki
-pattern: \[Doki\]|-Doki\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

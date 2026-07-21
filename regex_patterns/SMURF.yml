@@ -1,7 +1,0 @@
-name: SMURF
-pattern: ^(SMURF)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

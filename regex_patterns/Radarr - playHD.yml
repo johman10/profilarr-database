@@ -1,6 +1,0 @@
-name: Radarr - playHD
-pattern: ^(playHD)$
-description: ''
-tags:
-- Radarr
-tests: []

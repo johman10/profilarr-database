@@ -1,6 +1,0 @@
-name: Radarr - Shush Cut
-pattern: (?<=\b[12]\d{3}\b).*\b(Shush[ ._-]?Cut)\b(?!$)
-description: ''
-tags:
-- Radarr
-tests: []

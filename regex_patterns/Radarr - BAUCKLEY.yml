@@ -1,6 +1,0 @@
-name: Radarr - BAUCKLEY
-pattern: ^(BAUCKLEY)$
-description: ''
-tags:
-- Radarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - E (1)
-pattern: ^(E)$
-description: ''
-tags:
-- Radarr
-tests: []

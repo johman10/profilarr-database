@@ -1,7 +1,0 @@
-name: BYNDR
-pattern: ^(BYNDR)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

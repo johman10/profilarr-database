@@ -1,7 +1,0 @@
-name: Monkey-D.Lulu
-pattern: \b(Monkey[ .-]?D[ .-]?Lulu)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

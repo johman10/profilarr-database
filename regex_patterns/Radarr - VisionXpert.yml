@@ -1,6 +1,0 @@
-name: Radarr - VisionXpert
-pattern: ^(VisionXpert)$
-description: ''
-tags:
-- Radarr
-tests: []

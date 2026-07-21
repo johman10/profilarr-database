@@ -1,7 +1,0 @@
-name: ABJ
-pattern: ^(ABJ)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

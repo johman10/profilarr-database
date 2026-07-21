@@ -1,7 +1,0 @@
-name: Metaljerk
-pattern: \b(Metaljerk)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

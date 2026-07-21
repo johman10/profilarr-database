@@ -1,7 +1,0 @@
-name: RAWR
-pattern: ^(RAWR)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: vnlls
-pattern: ^(vnlls)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

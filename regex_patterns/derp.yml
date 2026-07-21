@@ -1,7 +1,0 @@
-name: derp
-pattern: \[derp\]|-derp\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

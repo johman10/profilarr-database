@@ -1,6 +1,0 @@
-name: Radarr - NoNE
-pattern: ^(NoNE)$
-description: ''
-tags:
-- Radarr
-tests: []

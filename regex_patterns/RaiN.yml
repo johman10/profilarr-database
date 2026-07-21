@@ -1,7 +1,0 @@
-name: RaiN
-pattern: \[RaiN\]|-RaiN\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

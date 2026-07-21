@@ -1,6 +1,0 @@
-name: Sonarr - HiQVE
-pattern: ^(HiQVE)$
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: playBD
-pattern: ^(playBD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - CiNE
-pattern: ^(CiNE)$
-description: ''
-tags:
-- Radarr
-tests: []

@@ -1,7 +1,0 @@
-name: EXP
-pattern: \[EXP\]|-EXP\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

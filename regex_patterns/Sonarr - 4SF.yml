@@ -1,6 +1,0 @@
-name: Sonarr - 4SF
-pattern: ^(4SF)$
-description: ''
-tags:
-- Sonarr
-tests: []

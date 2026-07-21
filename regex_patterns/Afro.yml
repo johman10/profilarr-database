@@ -1,7 +1,0 @@
-name: Afro
-pattern: \[Afro\]|-Afro\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: ECLiPSE
-pattern: ^(ECLiPSE)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: v4
-pattern: (\b|\d)(v4)\b|\b((repack|proper)3)\b|\b(REAL\.REAL\.(PROPER|REPACK))\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Pao
-pattern: \[Pao\]|-Pao\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

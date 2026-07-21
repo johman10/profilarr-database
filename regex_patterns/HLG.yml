@@ -1,7 +1,0 @@
-name: HLG
-pattern: \b(HLG)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

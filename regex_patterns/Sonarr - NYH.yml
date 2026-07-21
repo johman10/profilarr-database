@@ -1,6 +1,0 @@
-name: Sonarr - NYH
-pattern: ^(NYH)$
-description: ''
-tags:
-- Sonarr
-tests: []

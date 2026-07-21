@@ -1,7 +1,0 @@
-name: Flugel
-pattern: \b(Flugel)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

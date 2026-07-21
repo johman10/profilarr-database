@@ -1,6 +1,0 @@
-name: Radarr - GNOMiSSiON
-pattern: ^(GNOMiSSiON)$
-description: ''
-tags:
-- Radarr
-tests: []

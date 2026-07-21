@@ -1,6 +1,0 @@
-name: Radarr - YODA
-pattern: ^(YODA)$
-description: ''
-tags:
-- Radarr
-tests: []

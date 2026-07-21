@@ -1,6 +1,0 @@
-name: Radarr - HHWEB (No MA)
-pattern: ^(?!.*\bMA\b.*\bWEB-?DL\b).*\b(HHWEB)\b
-description: ''
-tags:
-- Radarr
-tests: []

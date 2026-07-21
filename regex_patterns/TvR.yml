@@ -1,7 +1,0 @@
-name: TvR
-pattern: ^(TvR)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

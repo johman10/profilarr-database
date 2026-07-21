@@ -1,7 +1,0 @@
-name: Baws (1)
-pattern: \b(Baws)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

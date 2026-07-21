@@ -1,6 +1,0 @@
-name: Sonarr - WELP
-pattern: ^(WELP)$
-description: ''
-tags:
-- Sonarr
-tests: []

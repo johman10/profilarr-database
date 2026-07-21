@@ -1,7 +1,0 @@
-name: omikron
-pattern: ^(omikron)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

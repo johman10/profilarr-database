@@ -1,7 +1,0 @@
-name: RDR
-pattern: ^(RDR)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - Leffe
-pattern: ^(Leffe)$
-description: ''
-tags:
-- Radarr
-tests: []

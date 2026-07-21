@@ -1,7 +1,0 @@
-name: NekoYu'
-pattern: \b(NekoYu\'?)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

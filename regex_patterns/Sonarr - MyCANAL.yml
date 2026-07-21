@@ -1,6 +1,0 @@
-name: Sonarr - MyCANAL
-pattern: \b(MyCANAL)\b
-description: ''
-tags:
-- Sonarr
-tests: []

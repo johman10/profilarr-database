@@ -1,6 +1,0 @@
-name: Sonarr - BALENCiAGA
-pattern: ^(BALENCiAGA)$
-description: ''
-tags:
-- Sonarr
-tests: []

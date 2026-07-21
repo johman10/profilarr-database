@@ -1,7 +1,0 @@
-name: deanzel
-pattern: \b(deanzel)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: British Sign Language
-pattern: \b((WiTH)[ ._-](BSL))\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

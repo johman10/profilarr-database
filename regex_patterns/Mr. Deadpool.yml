@@ -1,7 +1,0 @@
-name: Mr. Deadpool
-pattern: \b(Mr\.Deadpool)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

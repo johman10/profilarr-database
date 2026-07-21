@@ -1,7 +1,0 @@
-name: KiNGS
-pattern: ^(KiNGS)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

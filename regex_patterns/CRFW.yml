@@ -1,7 +1,0 @@
-name: CRFW
-pattern: ^(CRFW)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

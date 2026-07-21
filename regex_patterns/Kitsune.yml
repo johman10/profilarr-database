@@ -1,7 +1,0 @@
-name: Kitsune
-pattern: \[Kitsune\]|-Kitsune\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

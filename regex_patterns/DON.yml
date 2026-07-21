@@ -1,7 +1,0 @@
-name: DON
-pattern: ^(DON)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: DTS-ES (1)
-pattern: dts.?es
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

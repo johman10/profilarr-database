@@ -1,6 +1,0 @@
-name: Radarr - Sicario
-pattern: ^(Sicario)$
-description: ''
-tags:
-- Radarr
-tests: []

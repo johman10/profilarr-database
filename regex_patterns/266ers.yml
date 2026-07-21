@@ -1,7 +1,0 @@
-name: 266ers
-pattern: ^(266ers)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

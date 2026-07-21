@@ -1,7 +1,0 @@
-name: Samir755
-pattern: \b(Samir755)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Mehul
-pattern: \[Mehul\]|-Mehul\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Sonarr - iJP
-pattern: ^(iJP)$
-description: ''
-tags:
-- Sonarr
-tests: []

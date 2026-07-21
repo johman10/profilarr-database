@@ -1,7 +1,0 @@
-name: KawaSubs
-pattern: \b(KawaSubs)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

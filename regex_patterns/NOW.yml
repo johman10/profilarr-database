@@ -1,7 +1,0 @@
-name: NOW
-pattern: \b(now)\b[ ._-]web[ ._-]?(dl|rip)?\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

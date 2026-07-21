@@ -1,7 +1,0 @@
-name: RSG
-pattern: ^(RSG)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

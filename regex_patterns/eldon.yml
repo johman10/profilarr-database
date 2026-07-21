@@ -1,7 +1,0 @@
-name: eldon
-pattern: \b(eldon)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

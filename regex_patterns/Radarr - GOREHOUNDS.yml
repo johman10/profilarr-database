@@ -1,6 +1,0 @@
-name: Radarr - GOREHOUNDS
-pattern: ^(GOREHOUNDS)$
-description: ''
-tags:
-- Radarr
-tests: []

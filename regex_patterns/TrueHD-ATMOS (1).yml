@@ -1,7 +1,0 @@
-name: TrueHD-ATMOS (1)
-pattern: \b(True[ .-]?HD|ATMOS|DDPA)(\b|\d)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

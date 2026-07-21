@@ -1,7 +1,0 @@
-name: HDR-DV
-pattern: \b(dv|dovi|dolby[ .]?v(ision)?|hdr(10(P(lus)?)?)?|pq)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

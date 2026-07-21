@@ -1,7 +1,0 @@
-name: U-NEXT
-pattern: \b(u-next)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

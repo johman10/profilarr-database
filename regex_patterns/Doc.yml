@@ -1,7 +1,0 @@
-name: Doc
-pattern: \[Doc\]|-Doc\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

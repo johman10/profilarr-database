@@ -1,7 +1,0 @@
-name: Arid
-pattern: \[Arid\]|-Arid\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Sonarr - pERsO
-pattern: ^(pERsO)$
-description: ''
-tags:
-- Sonarr
-tests: []

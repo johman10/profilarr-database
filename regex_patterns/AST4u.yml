@@ -1,7 +1,0 @@
-name: AST4u
-pattern: ^(AST4u)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

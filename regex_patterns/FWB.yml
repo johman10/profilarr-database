@@ -1,7 +1,0 @@
-name: FWB
-pattern: ^(FWB)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

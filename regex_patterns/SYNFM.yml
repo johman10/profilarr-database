@@ -1,7 +1,0 @@
-name: SYNFM
-pattern: ^(SYNFM)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

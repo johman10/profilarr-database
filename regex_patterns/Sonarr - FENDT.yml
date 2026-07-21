@@ -1,6 +1,0 @@
-name: Sonarr - FENDT
-pattern: ^(FENDT)$
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: ZigZag (1)
-pattern: ^(ZigZag)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

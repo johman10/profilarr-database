@@ -1,7 +1,0 @@
-name: TheUpscaler
-pattern: \b(The[ ._-]?Upscaler)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

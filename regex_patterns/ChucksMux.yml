@@ -1,7 +1,0 @@
-name: ChucksMux
-pattern: \b(ChucksMux)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

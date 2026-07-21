@@ -1,7 +1,0 @@
-name: NanakoRaws
-pattern: Nanako[ ._-]?(Raws)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

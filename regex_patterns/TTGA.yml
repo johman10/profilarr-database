@@ -1,7 +1,0 @@
-name: TTGA
-pattern: \b(TTGA)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

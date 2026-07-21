@@ -1,7 +1,0 @@
-name: CNY
-pattern: ^(CNY)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

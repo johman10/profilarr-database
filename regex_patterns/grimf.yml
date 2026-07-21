@@ -1,7 +1,0 @@
-name: grimf
-pattern: \b(grimf)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

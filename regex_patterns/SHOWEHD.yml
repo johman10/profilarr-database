@@ -1,7 +1,0 @@
-name: SHOWEHD
-pattern: ^(SHOWEHD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

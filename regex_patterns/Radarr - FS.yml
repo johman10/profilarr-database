@@ -1,6 +1,0 @@
-name: Radarr - FS
-pattern: ^(FS)$
-description: ''
-tags:
-- Radarr
-tests: []

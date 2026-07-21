@@ -1,7 +1,0 @@
-name: BlueLobster
-pattern: \b(BlueLobster)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

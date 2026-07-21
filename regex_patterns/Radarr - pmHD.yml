@@ -1,6 +1,0 @@
-name: Radarr - pmHD
-pattern: (pmHD)$
-description: ''
-tags:
-- Radarr
-tests: []

@@ -1,7 +1,0 @@
-name: koala
-pattern: \[koala\]|-koala\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

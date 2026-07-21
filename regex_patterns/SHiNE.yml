@@ -1,7 +1,0 @@
-name: SHiNE
-pattern: ^(SHiNE)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

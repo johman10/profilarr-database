@@ -1,7 +1,0 @@
-name: RiLE
-pattern: ^(RiLE)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

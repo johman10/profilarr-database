@@ -1,7 +1,0 @@
-name: MP3
-pattern: mp3
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

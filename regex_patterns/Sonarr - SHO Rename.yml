@@ -1,6 +1,0 @@
-name: Sonarr - SHO Rename
-pattern: \[(SHO)\b|\b(SHO)\]
-description: ''
-tags:
-- Sonarr
-tests: []

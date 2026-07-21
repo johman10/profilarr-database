@@ -1,7 +1,0 @@
-name: SiXTYNiNE
-pattern: ^(SiXTYNiNE)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

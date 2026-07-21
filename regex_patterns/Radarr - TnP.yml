@@ -1,6 +1,0 @@
-name: Radarr - TnP
-pattern: ^(TnP)$
-description: ''
-tags:
-- Radarr
-tests: []

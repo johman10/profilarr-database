@@ -1,7 +1,0 @@
-name: WOMBAT
-pattern: ^(WOMBAT)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

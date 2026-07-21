@@ -1,7 +1,0 @@
-name: iNTENSO
-pattern: ^(iNTENSO)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

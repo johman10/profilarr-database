@@ -1,7 +1,0 @@
-name: HENiL
-pattern: \b(HENiL)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

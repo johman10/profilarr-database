@@ -1,7 +1,0 @@
-name: NeoSG
-pattern: \b(NeoSG)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

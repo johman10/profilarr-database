@@ -1,7 +1,0 @@
-name: postbot
-pattern: -postbot\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

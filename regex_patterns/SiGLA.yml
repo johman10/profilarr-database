@@ -1,7 +1,0 @@
-name: SiGLA
-pattern: ^(SiGLA)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

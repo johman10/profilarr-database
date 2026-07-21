@@ -1,6 +1,0 @@
-name: Sonarr - DEFLATE
-pattern: ^(DEFLATE)$
-description: ''
-tags:
-- Sonarr
-tests: []

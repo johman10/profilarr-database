@@ -1,6 +1,0 @@
-name: Radarr - S
-pattern: ^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|S4LVE|SPINE|SPOiLER|STRINGERBELL|Sunday26th|SUNRiSE)$
-description: ''
-tags:
-- Radarr
-tests: []

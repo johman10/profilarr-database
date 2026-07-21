@@ -1,6 +1,0 @@
-name: Radarr - Tigole
-pattern: ^(Tigole)$
-description: ''
-tags:
-- Radarr
-tests: []

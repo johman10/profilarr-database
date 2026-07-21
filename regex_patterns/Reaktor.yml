@@ -1,7 +1,0 @@
-name: Reaktor
-pattern: \b(Reaktor)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

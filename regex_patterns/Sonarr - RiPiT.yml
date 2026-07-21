@@ -1,6 +1,0 @@
-name: Sonarr - RiPiT
-pattern: ^(RiPiT)$
-description: ''
-tags:
-- Sonarr
-tests: []

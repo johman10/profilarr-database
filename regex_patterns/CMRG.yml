@@ -1,7 +1,0 @@
-name: CMRG
-pattern: ^(CMRG)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

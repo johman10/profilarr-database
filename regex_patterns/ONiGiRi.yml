@@ -1,7 +1,0 @@
-name: ONiGiRi
-pattern: ^(ONiGiRi)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

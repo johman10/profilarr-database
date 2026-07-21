@@ -1,7 +1,0 @@
-name: RiiR Aliases
-pattern: \b(TOJ)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

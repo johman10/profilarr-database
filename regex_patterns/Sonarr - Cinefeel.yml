@@ -1,6 +1,0 @@
-name: Sonarr - Cinefeel
-pattern: ^(Cinefeel)$
-description: ''
-tags:
-- Sonarr
-tests: []

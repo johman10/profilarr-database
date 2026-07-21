@@ -1,7 +1,0 @@
-name: B
-pattern: ^(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK|BTT)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

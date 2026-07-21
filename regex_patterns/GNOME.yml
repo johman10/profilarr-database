@@ -1,7 +1,0 @@
-name: GNOME
-pattern: ^(GNOME)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

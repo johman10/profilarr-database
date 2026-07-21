@@ -1,7 +1,0 @@
-name: FRATERNiTY
-pattern: ^(FRATERNiTY)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

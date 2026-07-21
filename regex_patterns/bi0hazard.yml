@@ -1,7 +1,0 @@
-name: bi0hazard
-pattern: ^(bi0hazard)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

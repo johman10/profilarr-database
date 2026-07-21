@@ -1,7 +1,0 @@
-name: 3MINA
-pattern: ^(3MINA)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

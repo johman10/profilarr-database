@@ -1,7 +1,0 @@
-name: Sekkon
-pattern: \b(Sekkon)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

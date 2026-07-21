@@ -1,7 +1,0 @@
-name: BiGiNT
-pattern: ^(BiGiNT)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: HFR
-pattern: \b(HFR)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: MLH
-pattern: ^(MLH)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

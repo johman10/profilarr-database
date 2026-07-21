@@ -1,7 +1,0 @@
-name: WAYNE
-pattern: ^(WAYNE)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

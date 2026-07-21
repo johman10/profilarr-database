@@ -1,6 +1,0 @@
-name: Radarr - RlsGrp (TrueHD only)
-pattern: \b(CtrlHD|W4NK3R|DON)\b
-description: ''
-tags:
-- Radarr
-tests: []

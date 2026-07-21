@@ -1,6 +1,0 @@
-name: Radarr - KTM
-pattern: ^(KTM)$
-description: ''
-tags:
-- Radarr
-tests: []

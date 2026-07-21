@@ -1,7 +1,0 @@
-name: 4Baka
-pattern: ^(4Baka)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

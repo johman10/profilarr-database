@@ -1,7 +1,0 @@
-name: AO
-pattern: ^(AO)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

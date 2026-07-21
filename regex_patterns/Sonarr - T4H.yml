@@ -1,6 +1,0 @@
-name: Sonarr - T4H
-pattern: ^(T4H)$
-description: ''
-tags:
-- Sonarr
-tests: []

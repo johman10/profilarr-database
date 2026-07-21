@@ -1,7 +1,0 @@
-name: R&H
-pattern: \b(R&H)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

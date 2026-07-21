@@ -1,7 +1,0 @@
-name: Kametsu
-pattern: \b(Kametsu)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

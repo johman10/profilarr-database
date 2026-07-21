@@ -1,6 +1,0 @@
-name: Sonarr - LAZARUS
-pattern: ^(LAZARUS)$
-description: ''
-tags:
-- Sonarr
-tests: []

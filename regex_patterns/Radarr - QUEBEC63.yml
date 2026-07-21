@@ -1,6 +1,0 @@
-name: Radarr - QUEBEC63
-pattern: ^(Q(UEBE)?C63)$
-description: ''
-tags:
-- Radarr
-tests: []

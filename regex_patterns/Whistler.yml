@@ -1,7 +1,0 @@
-name: Whistler
-pattern: ^(Whistler)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

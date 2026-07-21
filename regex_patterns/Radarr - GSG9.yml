@@ -1,6 +1,0 @@
-name: Radarr - GSG9
-pattern: ^(GSG9)$
-description: ''
-tags:
-- Radarr
-tests: []

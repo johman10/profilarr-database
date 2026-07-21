@@ -1,7 +1,0 @@
-name: FateSucks
-pattern: \b(FateSucks)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

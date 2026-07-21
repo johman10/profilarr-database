@@ -1,7 +1,0 @@
-name: pmHD (1)
-pattern: ^(pmHD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

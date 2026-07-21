@@ -1,7 +1,0 @@
-name: iNCEPTION
-pattern: ^(iNCEPTION)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

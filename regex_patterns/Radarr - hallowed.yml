@@ -1,6 +1,0 @@
-name: Radarr - hallowed
-pattern: ^(hallowed)$
-description: ''
-tags:
-- Radarr
-tests: []

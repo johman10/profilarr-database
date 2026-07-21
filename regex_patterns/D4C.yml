@@ -1,7 +1,0 @@
-name: D4C
-pattern: \b(D4C)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

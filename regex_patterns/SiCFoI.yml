@@ -1,7 +1,0 @@
-name: SiCFoI
-pattern: ^(SiCFoI)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

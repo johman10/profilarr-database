@@ -1,7 +1,0 @@
-name: TVP
-pattern: ^(TVP)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

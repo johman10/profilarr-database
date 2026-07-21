@@ -1,6 +1,0 @@
-name: Radarr - 4SF
-pattern: (4SF)$
-description: ''
-tags:
-- Radarr
-tests: []

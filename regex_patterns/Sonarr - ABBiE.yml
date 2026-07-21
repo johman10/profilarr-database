@@ -1,6 +1,0 @@
-name: Sonarr - ABBiE
-pattern: ^(ABBiE)$
-description: ''
-tags:
-- Sonarr
-tests: []

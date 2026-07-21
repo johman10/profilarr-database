@@ -1,6 +1,0 @@
-name: Radarr - mSD
-pattern: ^(mSD)$
-description: ''
-tags:
-- Radarr
-tests: []

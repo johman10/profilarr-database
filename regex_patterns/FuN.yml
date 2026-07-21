@@ -1,7 +1,0 @@
-name: FuN
-pattern: ^(FuN)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

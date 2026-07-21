@@ -1,7 +1,0 @@
-name: Taengoo
-pattern: ^(Taengoo)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

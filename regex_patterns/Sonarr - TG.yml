@@ -1,6 +1,0 @@
-name: Sonarr - TG
-pattern: ^(TG)$
-description: ''
-tags:
-- Sonarr
-tests: []

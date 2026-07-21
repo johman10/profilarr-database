@@ -1,7 +1,0 @@
-name: HHWEB
-pattern: ^(HHWEB)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

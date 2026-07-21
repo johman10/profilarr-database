@@ -1,6 +1,0 @@
-name: Sonarr - nhanc3
-pattern: ^(nhanc3)$
-description: ''
-tags:
-- Sonarr
-tests: []

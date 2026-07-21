@@ -1,7 +1,0 @@
-name: LizardSquad
-pattern: ^(LizardSquad)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

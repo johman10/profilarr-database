@@ -1,7 +1,0 @@
-name: Funimation
-pattern: \b(FUNi(mation)?)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

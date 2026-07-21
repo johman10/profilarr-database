@@ -1,7 +1,0 @@
-name: VULCAN
-pattern: \[VULCAN\]|-VULCAN\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

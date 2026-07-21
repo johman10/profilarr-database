@@ -1,7 +1,0 @@
-name: Koi-Raws
-pattern: Koi[ ._-]?(Raws)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

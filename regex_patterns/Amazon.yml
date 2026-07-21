@@ -1,7 +1,0 @@
-name: Amazon
-pattern: \b(amzn|amazon(hd)?)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

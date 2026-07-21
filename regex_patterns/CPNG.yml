@@ -1,7 +1,0 @@
-name: CPNG
-pattern: \b(CPNG)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

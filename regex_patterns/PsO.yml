@@ -1,7 +1,0 @@
-name: PsO
-pattern: ^(PsO)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

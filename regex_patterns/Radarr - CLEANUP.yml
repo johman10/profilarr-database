@@ -1,6 +1,0 @@
-name: Radarr - CLEANUP
-pattern: ^(CLEANUP)$
-description: ''
-tags:
-- Radarr
-tests: []

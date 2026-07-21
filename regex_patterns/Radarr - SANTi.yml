@@ -1,6 +1,0 @@
-name: Radarr - SANTi
-pattern: ^(SANTi)$
-description: ''
-tags:
-- Radarr
-tests: []

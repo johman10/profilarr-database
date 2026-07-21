@@ -1,7 +1,0 @@
-name: American Sign Language
-pattern: \b((WiTH)[ ._-](ASL))\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

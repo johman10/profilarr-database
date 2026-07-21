@@ -1,7 +1,0 @@
-name: P9
-pattern: \b(P9)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Archie
-pattern: ^(Archie)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

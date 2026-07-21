@@ -1,6 +1,0 @@
-name: Radarr - SiC
-pattern: \bSiC\b
-description: ''
-tags:
-- Radarr
-tests: []

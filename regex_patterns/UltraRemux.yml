@@ -1,7 +1,0 @@
-name: UltraRemux
-pattern: \b(UltraRemux)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

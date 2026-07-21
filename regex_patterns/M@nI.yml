@@ -1,7 +1,0 @@
-name: M@nI
-pattern: \b(M@nI)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

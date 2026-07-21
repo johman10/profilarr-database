@@ -1,7 +1,0 @@
-name: Darki
-pattern: \b(Darki)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

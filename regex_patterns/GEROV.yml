@@ -1,7 +1,0 @@
-name: GEROV
-pattern: -GEROV\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

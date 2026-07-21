@@ -1,7 +1,0 @@
-name: KEKMASTERS
-pattern: \b(KEKMASTERS)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

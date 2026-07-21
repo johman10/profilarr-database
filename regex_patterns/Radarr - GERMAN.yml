@@ -1,6 +1,0 @@
-name: Radarr - GERMAN
-pattern: \b(GERMAN)\b
-description: ''
-tags:
-- Radarr
-tests: []

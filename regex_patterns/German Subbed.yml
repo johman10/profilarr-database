@@ -1,7 +1,0 @@
-name: German Subbed
-pattern: \b(German|Ger)(?:(?!Dub)[a-zA-Z\.\-_ ])*?(?:Sub(?:bed|s)?|OmU)(?:\b|(?=_))
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

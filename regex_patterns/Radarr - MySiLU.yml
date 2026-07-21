@@ -1,6 +1,0 @@
-name: Radarr - MySiLU
-pattern: ^(MySiLU)$
-description: ''
-tags:
-- Radarr
-tests: []

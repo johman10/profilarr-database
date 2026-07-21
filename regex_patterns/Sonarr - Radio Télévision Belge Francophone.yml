@@ -1,6 +1,0 @@
-name: Sonarr - Radio Télévision Belge Francophone
-pattern: \b(RTBF)\b
-description: ''
-tags:
-- Sonarr
-tests: []

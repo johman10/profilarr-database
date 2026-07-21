@@ -1,7 +1,0 @@
-name: Asakura
-pattern: \[Asakura\]|-Asakura\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Virtuality
-pattern: \b(Virtuality)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

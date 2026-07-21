@@ -1,7 +1,0 @@
-name: HDR10 (1)
-pattern: \bHDR10(?!\+|Plus)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Sonarr - DMM-TV
-pattern: \b(DMM-TV)\b
-description: ''
-tags:
-- Sonarr
-tests: []

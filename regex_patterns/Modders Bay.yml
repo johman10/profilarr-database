@@ -1,7 +1,0 @@
-name: Modders Bay
-pattern: \b(Modders[ .-]?Bay)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: LaCroiX
-pattern: \b(LaCroiX)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

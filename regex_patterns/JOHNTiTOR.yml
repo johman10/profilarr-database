@@ -1,7 +1,0 @@
-name: JOHNTiTOR
-pattern: \b(JOHNTiTOR)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

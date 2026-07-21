@@ -1,7 +1,0 @@
-name: ARC
-pattern: \[ARC\]|-ARC\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Phanteam
-pattern: ^(Phanteam)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

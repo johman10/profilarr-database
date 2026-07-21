@@ -1,7 +1,0 @@
-name: Mysteria
-pattern: \[Mysteria\]|-Mysteria\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

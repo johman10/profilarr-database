@@ -1,6 +1,0 @@
-name: Radarr - QfG
-pattern: (QfG)$
-description: ''
-tags:
-- Radarr
-tests: []

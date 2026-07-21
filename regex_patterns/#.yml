@@ -1,7 +1,0 @@
-name: '#'
-pattern: ^(4FR)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

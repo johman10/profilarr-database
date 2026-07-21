@@ -1,6 +1,0 @@
-name: Sonarr - CREATiVE24
-pattern: \b(CREATiVE24)\b
-description: ''
-tags:
-- Sonarr
-tests: []

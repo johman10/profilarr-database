@@ -1,7 +1,0 @@
-name: FUJiSAN
-pattern: \b(FUJiSAN)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

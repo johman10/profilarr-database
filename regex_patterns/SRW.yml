@@ -1,7 +1,0 @@
-name: SRW
-pattern: \b(SRW)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

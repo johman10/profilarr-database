@@ -1,6 +1,0 @@
-name: Sonarr - Extras
-pattern: (?<=\bS\d+\b).*\b(Extras|Bonus|Extended[ ._-]Clip)\b
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: LoveBug
-pattern: ^(LoveBug)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

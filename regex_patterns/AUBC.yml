@@ -1,7 +1,0 @@
-name: AUBC
-pattern: \b(AUBC)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

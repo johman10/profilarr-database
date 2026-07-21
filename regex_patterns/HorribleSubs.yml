@@ -1,7 +1,0 @@
-name: HorribleSubs
-pattern: \b(HorribleSubs)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

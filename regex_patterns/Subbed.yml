@@ -1,7 +1,0 @@
-name: Subbed
-pattern: (?=.*(German|Ger))(?=.*(Sub|Multi(ple)?Sub))
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

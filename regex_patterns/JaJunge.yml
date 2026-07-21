@@ -1,7 +1,0 @@
-name: JaJunge
-pattern: ^(JaJunge)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

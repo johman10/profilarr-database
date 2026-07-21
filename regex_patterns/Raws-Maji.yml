@@ -1,7 +1,0 @@
-name: Raws-Maji
-pattern: \b(Raws-Maji)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

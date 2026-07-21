@@ -1,6 +1,0 @@
-name: Radarr - TrueHD (1)
-pattern: True[ .-]?HD|W4NK3R|HQMUX
-description: ''
-tags:
-- Radarr
-tests: []

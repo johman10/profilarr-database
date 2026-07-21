@@ -1,7 +1,0 @@
-name: Arukoru
-pattern: \b(Arukoru)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

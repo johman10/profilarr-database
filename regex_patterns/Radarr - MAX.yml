@@ -1,6 +1,0 @@
-name: Radarr - MAX
-pattern: ^(MAX)$
-description: ''
-tags:
-- Radarr
-tests: []

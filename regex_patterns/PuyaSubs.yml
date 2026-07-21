@@ -1,7 +1,0 @@
-name: PuyaSubs
-pattern: \b(PuyaSubs)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - MarkII
-pattern: ^(MarkII)$
-description: ''
-tags:
-- Radarr
-tests: []

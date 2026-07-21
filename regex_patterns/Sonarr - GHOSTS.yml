@@ -1,6 +1,0 @@
-name: Sonarr - GHOSTS
-pattern: ^(GHOSTS)$
-description: ''
-tags:
-- Sonarr
-tests: []

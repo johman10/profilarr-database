@@ -1,6 +1,0 @@
-name: Radarr - BDHD
-pattern: ^(BDHD)$
-description: ''
-tags:
-- Radarr
-tests: []

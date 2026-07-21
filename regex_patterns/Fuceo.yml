@@ -1,7 +1,0 @@
-name: Fuceo
-pattern: \b(Fuceo)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

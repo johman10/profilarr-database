@@ -1,6 +1,0 @@
-name: Radarr - BARC0DE
-pattern: ^(BARC0DE)$
-description: ''
-tags:
-- Radarr
-tests: []

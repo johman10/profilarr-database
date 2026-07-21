@@ -1,7 +1,0 @@
-name: MARK
-pattern: ^(MARK)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

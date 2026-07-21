@@ -1,6 +1,0 @@
-name: Radarr - ABBIE
-pattern: ^(ABBIE)$
-description: ''
-tags:
-- Radarr
-tests: []

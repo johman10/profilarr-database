@@ -1,6 +1,0 @@
-name: Sonarr - SDCC
-pattern: ^(SDCC)$
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - CRiT
-pattern: \b(CRiT)\b
-description: ''
-tags:
-- Radarr
-tests: []

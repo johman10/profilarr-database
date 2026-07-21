@@ -1,7 +1,0 @@
-name: HELD
-pattern: ^(HELD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: APEX
-pattern: ^(APEX|PAXA|PEXA|XEPA)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

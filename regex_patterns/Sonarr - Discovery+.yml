@@ -1,6 +1,0 @@
-name: Sonarr - Discovery+
-pattern: \b((dscp|dcp|disc)\b|dscv\+?)[ ._-]web[ ._-]?(dl|rip)?\b
-description: ''
-tags:
-- Sonarr
-tests: []

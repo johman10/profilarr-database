@@ -1,6 +1,0 @@
-name: Radarr - CiNEPHiLES
-pattern: ^(CiNEPHiLES)$
-description: ''
-tags:
-- Radarr
-tests: []

@@ -1,7 +1,0 @@
-name: v2
-pattern: (\b|\d)(v2)\b|\b(Repack|Proper|Rerip)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

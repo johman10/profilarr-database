@@ -1,7 +1,0 @@
-name: QM
-pattern: \b(QM)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

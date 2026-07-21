@@ -1,7 +1,0 @@
-name: FF
-pattern: ^(FF)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

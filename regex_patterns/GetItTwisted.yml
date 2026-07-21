@@ -1,7 +1,0 @@
-name: GetItTwisted
-pattern: \b(GetItTwisted)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: RobertDeNiro
-pattern: ^(RobertDeNiro)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

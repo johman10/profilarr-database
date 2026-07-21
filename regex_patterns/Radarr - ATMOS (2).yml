@@ -1,6 +1,0 @@
-name: Radarr - ATMOS (2)
-pattern: \b(ATMOS|CtrlHD|W4NK3R|DON)(\b|\d)
-description: ''
-tags:
-- Radarr
-tests: []

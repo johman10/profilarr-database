@@ -1,7 +1,0 @@
-name: Max (1)
-pattern: \b((?<!hbo[ ._-])max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

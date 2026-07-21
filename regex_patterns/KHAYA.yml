@@ -1,7 +1,0 @@
-name: KHAYA
-pattern: \b(KHAYA)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

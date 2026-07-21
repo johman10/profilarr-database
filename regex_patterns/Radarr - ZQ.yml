@@ -1,6 +1,0 @@
-name: Radarr - ZQ
-pattern: ^(ZQ)$
-description: ''
-tags:
-- Radarr
-tests: []

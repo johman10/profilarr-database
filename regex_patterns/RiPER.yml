@@ -1,7 +1,0 @@
-name: RiPER
-pattern: ^(RiPER)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

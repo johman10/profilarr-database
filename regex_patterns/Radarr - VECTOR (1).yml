@@ -1,6 +1,0 @@
-name: Radarr - VECTOR (1)
-pattern: (VECTOR)$
-description: ''
-tags:
-- Radarr
-tests: []

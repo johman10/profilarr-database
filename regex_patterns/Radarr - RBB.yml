@@ -1,6 +1,0 @@
-name: Radarr - RBB
-pattern: ^(RBB)$
-description: ''
-tags:
-- Radarr
-tests: []

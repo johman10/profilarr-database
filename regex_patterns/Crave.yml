@@ -1,7 +1,0 @@
-name: Crave
-pattern: \b(crav(e)?)\b[ ._-]web[ ._-]?(dl|rip)?\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: PTHome
-pattern: ^(PTHome)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

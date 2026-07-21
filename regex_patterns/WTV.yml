@@ -1,7 +1,0 @@
-name: WTV
-pattern: ^(WTV)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

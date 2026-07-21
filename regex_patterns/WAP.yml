@@ -1,7 +1,0 @@
-name: WAP
-pattern: \b(WAP)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: BlackBit
-pattern: ^(BlackBit)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

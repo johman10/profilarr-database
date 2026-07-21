@@ -1,6 +1,0 @@
-name: Radarr - MainFrame
-pattern: ^(MainFrame)$
-description: ''
-tags:
-- Radarr
-tests: []

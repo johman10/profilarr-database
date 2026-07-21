@@ -1,7 +1,0 @@
-name: HeavyWeight
-pattern: ^(HeavyWeight)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

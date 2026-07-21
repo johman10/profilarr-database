@@ -1,7 +1,0 @@
-name: Yoghurt
-pattern: \b(Yoghurt)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

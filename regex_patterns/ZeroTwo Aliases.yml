@@ -1,7 +1,0 @@
-name: ZeroTwo Aliases
-pattern: \b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

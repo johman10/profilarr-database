@@ -1,7 +1,0 @@
-name: PHM
-pattern: ^(PHM)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

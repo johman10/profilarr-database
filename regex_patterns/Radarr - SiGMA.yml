@@ -1,6 +1,0 @@
-name: Radarr - SiGMA
-pattern: ^(SiGMA)$
-description: ''
-tags:
-- Radarr
-tests: []

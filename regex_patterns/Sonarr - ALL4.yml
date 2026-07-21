@@ -1,6 +1,0 @@
-name: Sonarr - ALL4
-pattern: \b(ALL4)\b
-description: ''
-tags:
-- Sonarr
-tests: []

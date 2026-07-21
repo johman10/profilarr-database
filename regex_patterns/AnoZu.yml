@@ -1,7 +1,0 @@
-name: AnoZu
-pattern: \b(AnoZu)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

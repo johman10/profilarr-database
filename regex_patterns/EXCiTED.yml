@@ -1,7 +1,0 @@
-name: EXCiTED
-pattern: ^(EXCiTED)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

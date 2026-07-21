@@ -1,7 +1,0 @@
-name: FLE
-pattern: \b(FLE)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

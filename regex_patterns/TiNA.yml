@@ -1,7 +1,0 @@
-name: TiNA
-pattern: ^(TiNA)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

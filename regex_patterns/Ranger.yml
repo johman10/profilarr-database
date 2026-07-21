@@ -1,7 +1,0 @@
-name: Ranger
-pattern: \[Ranger\]|-Ranger\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

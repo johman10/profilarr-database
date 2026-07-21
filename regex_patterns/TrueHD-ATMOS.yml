@@ -1,7 +1,0 @@
-name: TrueHD-ATMOS
-pattern: True[ .-]?HD|\bATMOS(\b|\d)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

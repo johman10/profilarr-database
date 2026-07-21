@@ -1,6 +1,0 @@
-name: Radarr - TEKNO3D
-pattern: \b(TEKNO3D)\b
-description: ''
-tags:
-- Radarr
-tests: []

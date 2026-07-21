@@ -1,7 +1,0 @@
-name: ATAX
-pattern: ^(ATAX)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

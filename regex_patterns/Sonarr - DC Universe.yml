@@ -1,6 +1,0 @@
-name: Sonarr - DC Universe
-pattern: \b(dcu|DC Universe)\b
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: RUDY
-pattern: \[RUDY\]|-RUDY\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

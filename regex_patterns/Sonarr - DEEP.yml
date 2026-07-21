@@ -1,6 +1,0 @@
-name: Sonarr - DEEP
-pattern: ^(DEEP)$
-description: ''
-tags:
-- Sonarr
-tests: []

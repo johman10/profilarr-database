@@ -1,6 +1,0 @@
-name: Radarr - NoGroup
-pattern: NoGr(ou)?p
-description: ''
-tags:
-- Radarr
-tests: []

@@ -1,7 +1,0 @@
-name: Serendipity
-pattern: \[Serendipity\]|-Serendipity\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

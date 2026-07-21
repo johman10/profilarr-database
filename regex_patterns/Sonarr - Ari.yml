@@ -1,6 +1,0 @@
-name: Sonarr - Ari
-pattern: ^\[Ari\]|-Ari$
-description: ''
-tags:
-- Sonarr
-tests: []

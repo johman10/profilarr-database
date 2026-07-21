@@ -1,7 +1,0 @@
-name: neko-kBaraka
-pattern: \b(neko-kBaraka)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

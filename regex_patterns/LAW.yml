@@ -1,7 +1,0 @@
-name: LAW
-pattern: ^(LAW)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

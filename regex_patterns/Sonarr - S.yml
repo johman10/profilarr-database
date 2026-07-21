@@ -1,6 +1,0 @@
-name: Sonarr - S
-pattern: ^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SharpHD|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|S4LVE|SPINE|SPOiLER|STRINGERBELL|Sunday26th|SUNRiSE)$
-description: ''
-tags:
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Belgian French
-pattern: \b(VFB)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

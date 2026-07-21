@@ -1,7 +1,0 @@
-name: MagicStar
-pattern: ^(MagicStar)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

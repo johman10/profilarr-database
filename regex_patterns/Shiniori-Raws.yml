@@ -1,7 +1,0 @@
-name: Shiniori-Raws
-pattern: Shiniori[ ._-]?(Raws)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

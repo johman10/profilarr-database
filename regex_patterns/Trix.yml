@@ -1,7 +1,0 @@
-name: Trix
-pattern: \[Trix\]|-Trix\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: Multi (1)
-pattern: \b(Multi)(?![ ._-]?sub(s)?)(\b|\d)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

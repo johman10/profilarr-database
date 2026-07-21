@@ -1,7 +1,0 @@
-name: Radarr - IMAX Enhanced
-pattern: ^(?=.*\b((DSNP|BC|B?CORE)\b|Disney\+)(?=.*\bWEB[ ._-]?(DL|Rip)\b))(?=.*\b((?<!NON[
-  ._-])IMAX)\b)|^(?=.*\b(IMAX[ ._-]Enhanced)\b)
-description: ''
-tags:
-- Radarr
-tests: []

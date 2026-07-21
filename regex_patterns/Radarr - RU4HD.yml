@@ -1,6 +1,0 @@
-name: Radarr - RU4HD
-pattern: ^(RU4HD)$
-description: ''
-tags:
-- Radarr
-tests: []

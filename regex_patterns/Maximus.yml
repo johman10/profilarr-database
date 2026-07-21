@@ -1,7 +1,0 @@
-name: Maximus
-pattern: \[Maximus\]|-Maximus\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

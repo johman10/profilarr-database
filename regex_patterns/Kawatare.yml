@@ -1,7 +1,0 @@
-name: Kawatare
-pattern: \[Kawatare\]|-Kawatare\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: FOD
-pattern: \b(fod)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

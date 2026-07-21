@@ -1,7 +1,0 @@
-name: BB
-pattern: ^(BB)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

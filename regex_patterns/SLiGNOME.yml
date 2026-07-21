@@ -1,7 +1,0 @@
-name: SLiGNOME
-pattern: ^(SLiGNOME)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

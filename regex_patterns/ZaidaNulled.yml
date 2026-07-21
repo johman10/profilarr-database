@@ -1,7 +1,0 @@
-name: ZaidaNulled
-pattern: ^(ZaidaNulled)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

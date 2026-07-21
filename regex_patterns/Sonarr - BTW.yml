@@ -1,6 +1,0 @@
-name: Sonarr - BTW
-pattern: ^(BTW)$
-description: ''
-tags:
-- Sonarr
-tests: []

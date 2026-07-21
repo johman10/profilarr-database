@@ -1,7 +1,0 @@
-name: SUBARU
-pattern: ^(SUBARU)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

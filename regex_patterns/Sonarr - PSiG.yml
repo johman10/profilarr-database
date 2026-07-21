@@ -1,6 +1,0 @@
-name: Sonarr - PSiG
-pattern: ^(PSiG)$
-description: ''
-tags:
-- Sonarr
-tests: []

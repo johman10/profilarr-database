@@ -1,6 +1,0 @@
-name: Radarr - Scene
-pattern: ^(Scene)$
-description: ''
-tags:
-- Radarr
-tests: []

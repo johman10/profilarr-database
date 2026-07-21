@@ -1,6 +1,0 @@
-name: Radarr - LAMA
-pattern: ^(LAMA)$
-description: ''
-tags:
-- Radarr
-tests: []

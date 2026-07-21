@@ -1,7 +1,0 @@
-name: 6.1 Surround (1)
-pattern: '[^0-9]6[ .][0-1]'
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - x0r
-pattern: ^(x0r)$
-description: ''
-tags:
-- Radarr
-tests: []

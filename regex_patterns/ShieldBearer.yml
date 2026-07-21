@@ -1,7 +1,0 @@
-name: ShieldBearer
-pattern: ^(ShieldBearer)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

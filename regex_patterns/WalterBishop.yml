@@ -1,7 +1,0 @@
-name: WalterBishop
-pattern: ^(WalterBishop)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

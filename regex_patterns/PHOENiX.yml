@@ -1,7 +1,0 @@
-name: PHOENiX
-pattern: ^(PHOENiX)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

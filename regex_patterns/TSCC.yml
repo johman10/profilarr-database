@@ -1,7 +1,0 @@
-name: TSCC
-pattern: ^(TSCC)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

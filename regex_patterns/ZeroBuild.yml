@@ -1,7 +1,0 @@
-name: ZeroBuild
-pattern: \b(ZeroBuild)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

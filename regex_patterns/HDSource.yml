@@ -1,7 +1,0 @@
-name: HDSource
-pattern: ^(HDSource)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

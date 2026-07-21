@@ -1,6 +1,0 @@
-name: Radarr - Choco
-pattern: ^(Choco)$
-description: ''
-tags:
-- Radarr
-tests: []

@@ -1,6 +1,0 @@
-name: Radarr - D3US
-pattern: (-D3US|D3US-)
-description: ''
-tags:
-- Radarr
-tests: []

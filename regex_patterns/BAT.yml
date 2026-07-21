@@ -1,7 +1,0 @@
-name: BAT
-pattern: ^(BAT)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

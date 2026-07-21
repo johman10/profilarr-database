@@ -1,7 +1,0 @@
-name: STARS
-pattern: ^(STARS)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

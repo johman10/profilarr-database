@@ -1,7 +1,0 @@
-name: QOQ
-pattern: ^(QOQ)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

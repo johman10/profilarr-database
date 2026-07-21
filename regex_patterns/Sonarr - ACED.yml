@@ -1,6 +1,0 @@
-name: Sonarr - ACED
-pattern: ^(ACED)$
-description: ''
-tags:
-- Sonarr
-tests: []

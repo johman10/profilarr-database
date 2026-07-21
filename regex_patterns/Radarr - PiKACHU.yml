@@ -1,6 +1,0 @@
-name: Radarr - PiKACHU
-pattern: ^(PiKACHU)$
-description: ''
-tags:
-- Radarr
-tests: []

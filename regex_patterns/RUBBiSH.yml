@@ -1,7 +1,0 @@
-name: RUBBiSH
-pattern: ^(RUBBiSH)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

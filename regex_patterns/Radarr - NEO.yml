@@ -1,6 +1,0 @@
-name: Radarr - NEO
-pattern: ^(NEO)$
-description: ''
-tags:
-- Radarr
-tests: []

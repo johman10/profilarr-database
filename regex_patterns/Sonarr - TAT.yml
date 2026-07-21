@@ -1,6 +1,0 @@
-name: Sonarr - TAT
-pattern: ^(TAT)$
-description: ''
-tags:
-- Sonarr
-tests: []

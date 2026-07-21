@@ -1,7 +1,0 @@
-name: WeebPinn
-pattern: ^(WeebPinn)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,7 +1,0 @@
-name: JacobSwaggedUp
-pattern: \b(JacobSwaggedUp)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

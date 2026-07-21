@@ -1,6 +1,0 @@
-name: Sonarr - FiND
-pattern: ^(FiND)$
-description: ''
-tags:
-- Sonarr
-tests: []

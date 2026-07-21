@@ -1,7 +1,0 @@
-name: HDCTV
-pattern: ^(HDCTV)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

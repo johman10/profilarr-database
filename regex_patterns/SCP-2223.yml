@@ -1,7 +1,0 @@
-name: SCP-2223
-pattern: \b(SCP-2223)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -1,6 +1,0 @@
-name: Sonarr - WKN
-pattern: \b(WKN|Waka(nim)?)\b
-description: ''
-tags:
-- Sonarr
-tests: []

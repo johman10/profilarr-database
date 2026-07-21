@@ -1,7 +1,0 @@
-name: Sylvar
-pattern: \b(Sylvar)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

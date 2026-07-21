@@ -1,7 +1,0 @@
-name: NOSiViD
-pattern: ^(NOSiViD)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

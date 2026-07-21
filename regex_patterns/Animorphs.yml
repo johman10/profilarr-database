@@ -1,7 +1,0 @@
-name: Animorphs
-pattern: \b(Animorphs)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

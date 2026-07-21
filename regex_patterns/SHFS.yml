@@ -1,7 +1,0 @@
-name: SHFS
-pattern: \b(SHFS)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

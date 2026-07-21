@@ -1,6 +1,0 @@
-name: Radarr - Peacock TV
-pattern: \b(pcok|peacock)\b
-description: ''
-tags:
-- Radarr
-tests: []
