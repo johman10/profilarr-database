@@ -6692,7 +6692,6 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'UNDERTAKERS', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'CDP', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'SAViOURHD', 'release_group', 'radarr', 0, 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'RiLE', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'CONTRiBUTiON', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'GOREHOUNDS', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'SPiCY', 'release_group', 'radarr', 0, 0);

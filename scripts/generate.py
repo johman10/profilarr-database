@@ -194,6 +194,7 @@ def collect_custom_formats(
             specification_tags: set[str] = set()
             conditions: list[CustomFormatConditionEntry] = []
             specifications_raw = payload.get("specifications")
+            seen_condition_names: set[str] = set()
             if isinstance(specifications_raw, list):
                 specifications = cast(list[object], specifications_raw)
                 for specification_obj in specifications:
@@ -238,6 +239,14 @@ def collect_custom_formats(
                                 )
                                 sys.exit(1)
                             condition_name = regex_name
+
+                        if condition_name in seen_condition_names:
+                            print(
+                                "Warning: Duplicate specification name found. "
+                                f"Skipping duplicate in {file_path}: {condition_name}"
+                            )
+                            continue
+                        seen_condition_names.add(condition_name)
 
                         negate_raw = specification_dict.get("negate")
                         required_raw = specification_dict.get("required")
