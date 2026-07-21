@@ -29,21 +29,21 @@ jobs:
           git config --global user.name "Github Actions"
           git clone https://github.com/TRaSH-Guides/Guides.git TRaSH-Guides
 
-      - name: Install dependencies`
+      - name: Install project dependencies
         run: uv sync --extra dev
 
-      - name: Run Python script
+      - name: Run generation script
         run: |
           uv run scripts/generate.py TRaSH-Guides/docs/json .
 
       - name: Run tests
         run: |
-          uv run pytest tests
+          uv run pytest tests/ -v
 
       - name: Check for uncommitted changes (PR)
         if: github.event_name == 'pull_request'
         run: |
-          git add regex_patterns/ custom_formats/ profiles/
+          git add ops/ pcd.json media_management/
           if ! git diff --staged --quiet; then
             echo "❌ Error: Generated files have changes that are not committed."
             echo "Please run the generation script locally and commit the changes:"
@@ -56,6 +56,8 @@ jobs:
       - name: Commit and push changes (Scheduled/Manual)
         if: github.event_name != 'pull_request'
         run: |
-          git add regex_patterns/ custom_formats/ profiles/
-          git commit -m "Automated update from GitHub Actions" || echo "No changes to commit"
-          git push
+          git add ops/ pcd.json media_management/
+          git diff --staged --quiet || (git commit -m "Automated update from GitHub Actions" && git push)
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          fi

@@ -4,6 +4,7 @@ import os
 import yaml
 
 from utils.mappings.misc_media_management import MISC_MEDIA_MANAGEMENT
+from utils.sql_generator import SQLBuffer
 
 
 BASE_NAMING_CONFIG = {
@@ -113,7 +114,18 @@ def _collect_quality_definitions(input_dir, output_dir):
     print(f"Generated: {output_file}")
 
 
-def collect_media_management(input_dir, output_dir):
+def collect_media_management(input_dir, output_dir, sql_buffer=None):
+    """
+    Collect media management settings.
+
+    For now, media management is kept as YAML output files
+    since Profilarr PCD format details for media settings need clarification.
+
+    Args:
+        input_dir: Input directory with media management specs
+        output_dir: Output directory for YAML files
+        sql_buffer: SQLBuffer instance (currently unused for media management)
+    """
     _collect_misc_config(output_dir)
     _collect_naming_formats(input_dir, output_dir)
     _collect_quality_definitions(input_dir, output_dir)

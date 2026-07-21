@@ -2,6 +2,7 @@
 
 __pycache__
 TRaSH-Guides
+trash-pcd
 
 .mypy_cache
 .pytest_cache

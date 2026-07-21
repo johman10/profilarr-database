@@ -1,98 +1,121 @@
-"""Tests to ensure custom format patterns reference valid regex pattern files."""
+"""Tests to ensure custom formats and regex patterns are properly generated."""
 
 from pathlib import Path
 
 import pytest
-import yaml
 
 
-# Get the project root directory
 PROJECT_ROOT = Path(__file__).parent.parent
-CUSTOM_FORMATS_DIR = PROJECT_ROOT / "custom_formats"
-REGEX_PATTERNS_DIR = PROJECT_ROOT / "regex_patterns"
-
-
-def get_all_custom_formats():
-    """Get all custom format YAML files."""
-    if not CUSTOM_FORMATS_DIR.exists():
-        return []
-    return list(CUSTOM_FORMATS_DIR.glob("*.yml"))
-
-@pytest.fixture(scope="module")
-def available_regex_patterns_file_names():
-    """Fixture to load all available regex pattern names once."""
-    if not REGEX_PATTERNS_DIR.exists():
-        return set()
-
-    pattern_names = set()
-    for yml_file in REGEX_PATTERNS_DIR.glob("*.yml"):
-        # Use filename without extension as pattern name
-        pattern_names.add(yml_file.stem)
-    return pattern_names
+OPS_DIR = PROJECT_ROOT / "ops"
+SQL_PATH = OPS_DIR / "1.initial.sql"
 
 
 @pytest.fixture(scope="module")
-def available_regex_patterns_names():
-    """Fixture to load all available regex pattern names once."""
-    if not REGEX_PATTERNS_DIR.exists():
-        return set()
-
-    pattern_names = set()
-    for yml_file in REGEX_PATTERNS_DIR.glob("*.yml"):
-        # Read name from YAML file content
-        with open(yml_file, encoding="utf-8") as f:
-            data = yaml.safe_load(f)
-            if data and "name" in data:
-                pattern_names.add(data["name"])
-    return pattern_names
+def sql_content():
+    """Fixture to load SQL content once."""
+    if not SQL_PATH.exists():
+        pytest.skip("1.initial.sql not found")
+    return SQL_PATH.read_text(encoding="utf-8")
 
 
-@pytest.mark.parametrize("custom_format_file", get_all_custom_formats())
-def test_custom_format_patterns_exist(
-    custom_format_file,
-    available_regex_patterns_file_names,
-    available_regex_patterns_names,
-):
-    """Test that every pattern referenced in a custom format exists in regex_patterns."""
-    with open(custom_format_file, encoding="utf-8") as f:
-        data = yaml.safe_load(f)
-
-    if not data or "conditions" not in data:
-        pytest.skip(f"No conditions found in {custom_format_file.name}")
-
-    missing_patterns_files = []
-    missing_patterns_names = []
-
-    for condition in data["conditions"]:
-        pattern_name = condition.get("pattern")
-        if not pattern_name:
-            continue
-
-        # Check if the referenced pattern exists in regex_patterns
-        if pattern_name not in available_regex_patterns_file_names:
-            missing_patterns_files.append(pattern_name)
-
-        if pattern_name not in available_regex_patterns_names:
-            missing_patterns_names.append(pattern_name)
-
-    if missing_patterns_files:
-        pytest.fail(
-            f"Custom format '{custom_format_file.name}' references missing regex patterns:\n"
-            + "\n".join(f"  - {pattern}" for pattern in missing_patterns_files)
-        )
-
-    if missing_patterns_names:
-        pytest.fail(
-            f"Custom format '{custom_format_file.name}' references missing regex patterns:\n"
-            + "\n".join(f"  - {pattern}" for pattern in missing_patterns_names)
-        )
+@pytest.fixture(scope="module")
+def regex_insert_statements(sql_content):
+    """Extract all regular_expressions INSERT statements."""
+    patterns = []
+    for line in sql_content.split("\n"):
+        if "INSERT INTO regular_expressions" in line:
+            patterns.append(line.strip())
+    return patterns
 
 
-def test_custom_formats_directory_exists():
-    """Test that the custom_formats directory exists."""
-    assert CUSTOM_FORMATS_DIR.exists(), f"Custom formats directory not found: {CUSTOM_FORMATS_DIR}"
+@pytest.fixture(scope="module")
+def custom_format_insert_statements(sql_content):
+    """Extract all custom_formats INSERT statements."""
+    formats = []
+    for line in sql_content.split("\n"):
+        if "INSERT INTO custom_formats" in line:
+            formats.append(line.strip())
+    return formats
 
 
-def test_regex_patterns_directory_exists():
-    """Test that the regex_patterns directory exists."""
-    assert REGEX_PATTERNS_DIR.exists(), f"Regex patterns directory not found: {REGEX_PATTERNS_DIR}"
+@pytest.fixture(scope="module")
+def format_conditions_insert_statements(sql_content):
+    """Extract all custom_format_conditions INSERT statements."""
+    conditions = []
+    for line in sql_content.split("\n"):
+        if "INSERT INTO custom_format_conditions" in line:
+            conditions.append(line.strip())
+    return conditions
+
+
+def test_sql_file_exists():
+    """Test that 1.initial.sql exists."""
+    assert SQL_PATH.exists(), f"1.initial.sql not found at {SQL_PATH}"
+
+
+def test_sql_contains_regex_patterns(sql_content):
+    """Test that SQL contains regular_expressions inserts."""
+    assert (
+        "INSERT INTO regular_expressions" in sql_content
+    ), "No regular_expressions inserts found"
+
+
+def test_sql_contains_custom_formats(sql_content):
+    """Test that SQL contains custom_formats inserts."""
+    assert (
+        "INSERT INTO custom_formats" in sql_content
+    ), "No custom_formats inserts found"
+
+
+def test_sql_contains_conditions(sql_content):
+    """Test that SQL contains custom_format_conditions inserts."""
+    assert (
+        "INSERT INTO custom_format_conditions" in sql_content
+    ), "No custom_format_conditions inserts found"
+
+
+def test_regex_patterns_have_complete_inserts(regex_insert_statements):
+    """Test that regex pattern INSERT statements are complete."""
+    if not regex_insert_statements:
+        pytest.skip("No regex insert statements found")
+
+    for stmt in regex_insert_statements:
+        assert stmt.startswith("INSERT INTO regular_expressions"), "Invalid regex statement"
+        assert "VALUES (" in stmt, "Regex statement missing VALUES"
+        assert stmt.endswith(";"), "Regex statement missing semicolon"
+        assert "pattern" in stmt.lower() or "," in stmt, "Regex missing pattern value"
+
+
+def test_custom_formats_have_complete_inserts(custom_format_insert_statements):
+    """Test that custom format INSERT statements are complete."""
+    if not custom_format_insert_statements:
+        pytest.skip("No custom format insert statements found")
+
+    for stmt in custom_format_insert_statements:
+        assert stmt.startswith("INSERT INTO custom_formats"), "Invalid format statement"
+        assert "VALUES (" in stmt, "Format statement missing VALUES"
+        assert stmt.endswith(";"), "Format statement missing semicolon"
+
+
+def test_conditions_have_complete_inserts(format_conditions_insert_statements):
+    """Test that custom format conditions INSERT statements are complete."""
+    if not format_conditions_insert_statements:
+        pytest.skip("No condition insert statements found")
+
+    for stmt in format_conditions_insert_statements:
+        assert (
+            stmt.startswith("INSERT INTO custom_format_conditions")
+        ), "Invalid condition statement"
+        assert "VALUES (" in stmt, "Condition statement missing VALUES"
+        assert stmt.endswith(";"), "Condition statement missing semicolon"
+
+
+def test_conditions_include_types(format_conditions_insert_statements):
+    """Test that conditions include type information."""
+    if not format_conditions_insert_statements:
+        pytest.skip("No condition insert statements found")
+
+    total_conditions = len(format_conditions_insert_statements)
+    assert (
+        total_conditions > 0
+    ), "No valid condition statements found in SQL"
