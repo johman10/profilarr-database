@@ -32,6 +32,172 @@ IMPLEMENTATION_TO_CONDITION_TYPE = {
     "ReleaseTypeSpecification": "release_type",
 }
 
+LANGUAGE_MAPPING = {
+    "radarr": {
+        -1: "any",
+        -2: "original",
+        0: "unknown",
+        1: "english",
+        2: "french",
+        3: "spanish",
+        4: "german",
+        5: "italian",
+        6: "danish",
+        7: "dutch",
+        8: "japanese",
+        9: "icelandic",
+        10: "chinese",
+        11: "russian",
+        12: "polish",
+        13: "vietnamese",
+        14: "swedish",
+        15: "norwegian",
+        16: "finnish",
+        17: "turkish",
+        18: "portuguese",
+        19: "flemish",
+        20: "greek",
+        21: "korean",
+        22: "hungarian",
+        23: "hebrew",
+        24: "lithuanian",
+        25: "czech",
+        26: "hindi",
+        27: "romanian",
+        28: "thai",
+        29: "bulgarian",
+        30: "portuguese_br",
+        31: "arabic",
+        32: "ukrainian",
+        33: "persian",
+        34: "bengali",
+        35: "slovak",
+        36: "latvian",
+        37: "spanish_latino",
+        38: "catalan",
+        39: "croatian",
+        40: "serbian",
+        41: "bosnian",
+        42: "estonian",
+        43: "tamil",
+        44: "indonesian",
+        45: "telugu",
+        46: "macedonian",
+        47: "slovenian",
+        48: "malayalam",
+        49: "kannada",
+        50: "albanian",
+        51: "afrikaans",
+    },
+    "sonarr": {
+        0: "unknown",
+        1: "english",
+        2: "french",
+        3: "spanish",
+        4: "german",
+        5: "italian",
+        6: "danish",
+        7: "dutch",
+        8: "japanese",
+        9: "icelandic",
+        10: "chinese",
+        11: "russian",
+        12: "polish",
+        13: "vietnamese",
+        14: "swedish",
+        15: "norwegian",
+        16: "finnish",
+        17: "turkish",
+        18: "portuguese",
+        19: "flemish",
+        20: "greek",
+        21: "korean",
+        22: "hungarian",
+        23: "hebrew",
+        24: "lithuanian",
+        25: "czech",
+        26: "arabic",
+        27: "hindi",
+        28: "bulgarian",
+        29: "malayalam",
+        30: "ukrainian",
+        31: "slovak",
+        32: "thai",
+        33: "portuguese_br",
+        34: "spanish_latino",
+        35: "romanian",
+        36: "latvian",
+        37: "persian",
+        38: "catalan",
+        39: "croatian",
+        40: "serbian",
+        41: "bosnian",
+        42: "estonian",
+        43: "tamil",
+        44: "indonesian",
+        45: "macedonian",
+        46: "slovenian",
+        -2: "original",
+    },
+}
+
+INDEXER_FLAG_MAPPING = {
+    "radarr": {
+        1: "freeleech",
+        2: "halfleech",
+        4: "double_upload",
+        32: "internal",
+        128: "scene",
+        256: "freeleech_75",
+        512: "freeleech_25",
+        2048: "nuked",
+        8: "ptp_golden",
+        16: "ptp_approved",
+    },
+    "sonarr": {
+        1: "freeleech",
+        2: "halfleech",
+        4: "double_upload",
+        8: "internal",
+        16: "scene",
+        32: "freeleech_75",
+        64: "freeleech_25",
+        128: "nuked",
+    },
+}
+
+RELEASE_TYPE_MAPPING = {
+    "sonarr": {
+        0: "none",
+        1: "single_episode",
+        2: "multi_episode",
+        3: "season_pack",
+    }
+}
+
+SOURCE_MAPPING = {
+    "radarr": {
+        1: "cam",
+        2: "telesync",
+        3: "telecine",
+        4: "workprint",
+        5: "dvd",
+        6: "tv",
+        7: "web_dl",
+        8: "webrip",
+        9: "bluray",
+    },
+    "sonarr": {
+        1: "television",
+        2: "television_raw",
+        3: "web_dl",
+        4: "webrip",
+        5: "dvd",
+        6: "bluray",
+        7: "bluray_raw",
+    },
+}
+
 
 class RegexEntry(TypedDict):
     name: str
@@ -53,6 +219,8 @@ class CustomFormatConditionEntry(TypedDict):
     arr_type: str
     negate: bool
     required: bool
+    value: str | None  # Used for non-regex specifications
+    except_value: bool  # Used for language specifications
 
 
 def sql_escape(value: str) -> str:
@@ -61,6 +229,58 @@ def sql_escape(value: str) -> str:
 
 def normalize_name(name: str) -> str:
     return " ".join(name.strip().split())
+
+
+def _map_numeric_value(implementation: str, service_key: str, numeric_value: int) -> str | None:
+    if implementation == "LanguageSpecification":
+        return LANGUAGE_MAPPING.get(service_key, {}).get(numeric_value)
+    if implementation == "IndexerFlagSpecification":
+        return INDEXER_FLAG_MAPPING.get(service_key, {}).get(numeric_value)
+    if implementation == "SourceSpecification":
+        return SOURCE_MAPPING.get(service_key, {}).get(numeric_value)
+    if implementation == "ReleaseTypeSpecification":
+        return RELEASE_TYPE_MAPPING.get(service_key, {}).get(numeric_value)
+    return None
+
+
+def extract_specification_value(
+    specification_dict: dict[str, object], implementation: str, service_key: str
+) -> tuple[str | None, bool]:
+    """Extract the value and except flag from a specification.
+
+    Returns a tuple of (value, except_flag).
+    For most specifications, except_flag is False.
+    For LanguageSpecification, except_flag comes from exceptLanguage field.
+    """
+    fields_raw = specification_dict.get("fields")
+    if not isinstance(fields_raw, dict):
+        return None, False
+
+    fields_dict = cast(dict[str, object], fields_raw)
+    value = fields_dict.get("value")
+
+    parsed_value: str | None = None
+    if isinstance(value, str) and value.strip():
+        parsed_value = value.strip()
+    elif isinstance(value, int):
+        parsed_value = _map_numeric_value(implementation, service_key, value)
+        if parsed_value is None:
+            parsed_value = str(value)
+    elif isinstance(value, float) and value.is_integer():
+        int_value = int(value)
+        parsed_value = _map_numeric_value(implementation, service_key, int_value)
+        if parsed_value is None:
+            parsed_value = str(int_value)
+
+    if parsed_value is None:
+        return None, False
+
+    except_value = False
+    except_language_raw = fields_dict.get("exceptLanguage")
+    if isinstance(except_language_raw, bool):
+        except_value = except_language_raw
+
+    return parsed_value, except_value
 
 
 def ensure_unique_name(base_name: str, used_names: set[str]) -> str:
@@ -253,6 +473,14 @@ def collect_custom_formats(
                         negate = bool(negate_raw) if isinstance(negate_raw, bool) else False
                         required = bool(required_raw) if isinstance(required_raw, bool) else False
 
+                        # Extract specification value for non-regex types
+                        spec_value = None
+                        except_value = False
+                        if implementation not in REGEX_SPECIFICATIONS:
+                            spec_value, except_value = extract_specification_value(
+                                specification_dict, implementation, service_key
+                            )
+
                         conditions.append(
                             {
                                 "name": condition_name,
@@ -260,6 +488,8 @@ def collect_custom_formats(
                                 "arr_type": service_key,
                                 "negate": negate,
                                 "required": required,
+                                "value": spec_value,
+                                "except_value": except_value,
                             }
                         )
 
@@ -360,6 +590,85 @@ def main():
                     f"VALUES ('{escaped_custom_format_name}', '{escaped_condition_name}', "
                     f"'{escaped_condition_type}', '{escaped_arr_type}', {negate}, {required});\n"
                 )
+
+        # Insert records into condition type-specific tables
+        for entry in custom_format_entries:
+            escaped_custom_format_name = sql_escape(entry["name"])
+            for condition in entry["conditions"]:
+                escaped_condition_name = sql_escape(condition["name"])
+                condition_type = condition["type"]
+
+                # Insert into appropriate condition type table based on type
+                if condition_type in ("release_title", "release_group"):
+                    # Pattern-based conditions - use condition name as regex name
+                    escaped_regex_name = sql_escape(condition["name"])
+                    f.write(
+                        "INSERT INTO condition_patterns "
+                        "(custom_format_name, condition_name, regular_expression_name) "
+                        f"VALUES ('{escaped_custom_format_name}', '{escaped_condition_name}', "
+                        f"'{escaped_regex_name}');\n"
+                    )
+                elif condition_type == "language":
+                    # Language-based conditions
+                    if condition["value"] is not None:
+                        escaped_language_name = sql_escape(condition["value"])
+                        except_language = 1 if condition["except_value"] else 0
+                        f.write(
+                            "INSERT INTO condition_languages "
+                            "(custom_format_name, condition_name, language_name, except_language) "
+                            f"VALUES ('{escaped_custom_format_name}', '{escaped_condition_name}', "
+                            f"'{escaped_language_name}', {except_language});\n"
+                        )
+                elif condition_type == "indexer_flag":
+                    # Indexer flag conditions
+                    if condition["value"] is not None:
+                        escaped_flag = sql_escape(condition["value"])
+                        f.write(
+                            "INSERT INTO condition_indexer_flags "
+                            "(custom_format_name, condition_name, flag) "
+                            f"VALUES ('{escaped_custom_format_name}', '{escaped_condition_name}', "
+                            f"'{escaped_flag}');\n"
+                        )
+                elif condition_type == "source":
+                    # Source conditions
+                    if condition["value"] is not None:
+                        escaped_source = sql_escape(condition["value"])
+                        f.write(
+                            "INSERT INTO condition_sources "
+                            "(custom_format_name, condition_name, source) "
+                            f"VALUES ('{escaped_custom_format_name}', '{escaped_condition_name}', "
+                            f"'{escaped_source}');\n"
+                        )
+                elif condition_type == "resolution":
+                    # Resolution conditions
+                    if condition["value"] is not None:
+                        escaped_resolution = sql_escape(condition["value"])
+                        f.write(
+                            "INSERT INTO condition_resolutions "
+                            "(custom_format_name, condition_name, resolution) "
+                            f"VALUES ('{escaped_custom_format_name}', '{escaped_condition_name}', "
+                            f"'{escaped_resolution}');\n"
+                        )
+                elif condition_type == "quality_modifier":
+                    # Quality modifier conditions
+                    if condition["value"] is not None:
+                        escaped_quality_modifier = sql_escape(condition["value"])
+                        f.write(
+                            "INSERT INTO condition_quality_modifiers "
+                            "(custom_format_name, condition_name, quality_modifier) "
+                            f"VALUES ('{escaped_custom_format_name}', '{escaped_condition_name}', "
+                            f"'{escaped_quality_modifier}');\n"
+                        )
+                elif condition_type == "release_type":
+                    # Release type conditions
+                    if condition["value"] is not None:
+                        escaped_release_type = sql_escape(condition["value"])
+                        f.write(
+                            "INSERT INTO condition_release_types "
+                            "(custom_format_name, condition_name, release_type) "
+                            f"VALUES ('{escaped_custom_format_name}', '{escaped_condition_name}', "
+                            f"'{escaped_release_type}');\n"
+                        )
 
         for entry in custom_format_entries:
             escaped_name = sql_escape(entry["name"])

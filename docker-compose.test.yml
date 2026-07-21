@@ -2,15 +2,19 @@ version: '3.8'
 
 services:
   profilarr:
-    image: dictionarry/profilarr:latest
+    image: ghcr.io/dictionarry-hub/profilarr:latest
     container_name: profilarr-test
     ports:
-      - "3000:3000"
+      - '6868:6868'
     environment:
+      PUID: 505
+      PGID: 20
       NODE_ENV: production
       LOG_LEVEL: debug
     volumes:
-      - ./ops/1.initial.sql:/app/init.sql
+      - ./ops:/config/data/databases/851e47e6-a160-4bdc-a214-9f4a0baa0609/ops
+      - ./deps:/config/data/databases/851e47e6-a160-4bdc-a214-9f4a0baa0609/deps
+      - ./pcd.json:/config/data/databases/851e47e6-a160-4bdc-a214-9f4a0baa0609/pcd.json
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
       interval: 10s
