@@ -3625,78 +3625,253 @@ INSERT INTO regular_expression_tags (regular_expression_name, tag_name) VALUES (
 INSERT INTO regular_expression_tags (regular_expression_name, tag_name) VALUES ('zza', 'Radarr');
 INSERT INTO regular_expression_tags (regular_expression_name, tag_name) VALUES ('zza', 'Sonarr');
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 1.0 Mono', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 1080p', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 10bit', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 1080p', '**1080p**<br>
+
+This Custom Format can boost 1080p releases. It is only useful if you use [Merge Qualities](/Radarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} in your Quality Profile.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 10bit', '**10bit**<br>
+
+This Custom Format covers releases that are 10bit.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 126811', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 2.0 Stereo', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 2160p', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 2160p', '**2160p**<br>
+
+This Custom Format can boost 2160p releases. It is only useful if you use [Merge Qualities](/Radarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} in your Quality Profile.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 3.0 Sound', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 3D', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 3D', '**3D**<br>
+
+If you prefer or not prefer 3D.
+
+You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 4.0 Sound', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 4K Remaster', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 4K Remaster', '**4K Remaster**
+
+A 4K remaster means the original film or video was scanned and digitally remastered at 4K resolution (3840x2160 pixels), improving image detail, color accuracy, and overall viewing quality. For older films originally shot on 35mm film, this process involves scanning the original film negative at 4K or higher resolution, followed by frame-by-frame digital cleanup, color correction, and damage repair. The result is a sharper, more detailed image with improved color that is better suited for modern 4K displays.
+
+A 4K remaster differs from a 4K upscale. A remaster goes back to the original film source for the highest possible quality, while an upscale simply increases the resolution of an existing digital version, often with less detail and clarity.
+
+For more information, visit the [Remaster Wikipedia page](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 5.1 Surround', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 6.1 Surround', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 7.1 Surround', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 720p', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - AAC', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - AMZN', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 04', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 05', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 06', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 07', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 08', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Dual Audio', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime LQ Groups', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Raws', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 04', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 05', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 06', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Asian LQ', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - 720p', '**720p**<br>
+
+This Custom Format can boost 720p releases. It is only useful if you use [Merge Qualities](/Radarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} in your Quality Profile.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - AAC', '**AAC (Lossy)**
+
+AAC (Advanced Audio Coding) is a lossy digital audio compression format, originally designed as a successor to MP3. It became standardized in 1997 and is widely used in cell phones, game consoles, digital radio, and streaming platforms. AAC delivers superior sound quality compared to MP3 at the same bit rate, and has been widely adopted as the default audio format by major platforms including YouTube, iPhone, iPod, iPad, and Apple iTunes. Like all lossy formats, some audio data is permanently removed during compression, though the difference is rarely noticeable to most listeners.
+
+For more information, visit the [AAC Wikipedia page](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - AMZN', '**Amazon Prime Video**
+
+Amazon Prime Video is a global streaming service owned by Amazon, offering a wide range of movies, TV series, and original productions. It is included as part of an Amazon Prime membership, which also provides other benefits like free delivery and music streaming. It is available in over 240 countries and territories worldwide.
+
+For more information, visit the [Amazon Prime Video Wikipedia page](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 01', '**Anime BD Tier 01**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 02', '**Anime BD Tier 02**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 03', '**Anime BD Tier 03**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 04', '**Anime BD Tier 04**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 05', '**Anime BD Tier 05**<br>
+
+Groups that are consistent and do Remuxes.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 06', '**Anime BD Tier 06**<br>
+
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 07', '**Anime BD Tier 07**<br>
+
+Known P2P and Scene Anime groups.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime BD Tier 08', '**Anime BD Tier 08**<br>
+
+Know groups that do mini encodes.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Dual Audio', '**Anime Dual Audio**<br>
+
+This Custom Format covers releases that have Dual Audio.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime LQ Groups', '**Anime LQ Groups**<br>
+
+A collection of known low-quality groups.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Raws', '**Anime Raws**<br>
+
+A collection of known groups that release raws.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 01', '**Anime Web Tier 01**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 02', '**Anime Web Tier 02**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 03', '**Anime Web Tier 03**<br>
+
+Official sub groups that tend to be more consistent and release fast.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 04', '**Anime Web Tier 04**<br>
+
+Official sub groups.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 05', '**Anime Web Tier 05**<br>
+
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Anime Web Tier 06', '**Anime Web Tier 06**<br>
+
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Asian LQ', '**Asian LQ**
+
+A collection of Asian release groups that either do not provide subtitles or are groups that cause issues during importing.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Asian Tier 01', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Asian Tier 02', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Asian Tier 03', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ATMOS (undefined)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ATV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ATVP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - AUBC', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - AV1', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Bad Dual Groups', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - BCORE', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ATV', '**Apple TV**
+
+Apple TV is a subscription streaming service offering hundreds of exclusive original shows and movies, including dramas, sci-fi, and comedies, with new releases every week. It is one of the few streaming services that remains completely ad-free and is available in over 100 countries. It also includes live sports, such as Formula 1, MLS football, and Friday Night Baseball.
+
+For more information, visit the [Apple TV Wikipedia page](https://en.wikipedia.org/wiki/Apple_TV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ATVP', '**Apple TV+**
+
+Apple TV+ is a subscription streaming service offering hundreds of exclusive original shows and movies, including dramas, sci-fi, and comedies, with new releases every week. It is one of the few streaming services that remains completely ad-free and is available in over 100 countries. It also includes live sports, such as Formula 1, MLS football, and Friday Night Baseball.
+
+For more information, visit the [Apple TV+ Wikipedia page](https://en.wikipedia.org/wiki/Apple_TV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - AUBC', '**AUBC (Australian Broadcasting Corporation)**
+
+ABC iview is a free video-on-demand and catch-up TV service run by the Australian Broadcasting Corporation (ABC), launched in July 2008. It is commercial-free and offers Australian and international dramas, documentaries, news, and children''s programming. It is only available to viewers in Australia and requires a free ABC account to watch.
+
+For more information, visit the [Australian Broadcasting Corporation Wikipedia page](https://en.wikipedia.org/wiki/Australian_Broadcasting_Corporation){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - AV1', '**AV1**<br>
+
+AV1 encodes are currently targeting small file sizes, rather than good visual quality.
+
+- This is a new codec and you need modern devices that support it.
+- We also had reports of playback/transcoding issues.
+- No main group is actually using it (yet).
+- It''s better to ignore this new codec to prevent compatibility issues', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Bad Dual Groups', '**Bad Dual/Multi groups**
+
+These release groups often do not set the original language of the media as the first audio track. Since ffprobe relies on the first audio track to determine the release''s primary language, incorrect ordering can cause parsing errors. This may lead to failed imports, misidentified files, or download loops. To ensure proper processing, the original language should always be the first audio track in the release.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - BCORE', '**Bravia Core (Sony Pictures Core)**
+
+Bravia Core is Sony''s own streaming service, built exclusively for Sony Bravia XR smart TVs. It offers lossless 4K streaming at up to 80Mbps significantly higher quality than services like Netflix or Disney+ and one of the largest libraries of IMAX Enhanced films. The service has since been renamed Sony Pictures Core and expanded beyond Sony TVs.
+
+For more information, visit the [Sony Pictures Core Wikipedia page](https://en.wikipedia.org/wiki/Sony_Pictures_Core){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - BHDStudio', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Black and White Editions', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - BR-DISK', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CBC', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CNLP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CPNG', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CRAV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CRiT', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Criterion Collection', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DD', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Black and White Editions', '**Black and White Editions**<br>
+
+Some movies get an additional release version in monochrome/black and white. This custom format matches some of the more common occurrences of these.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - BR-DISK', '**BR-DISK**<br>
+
+This is a custom format to help Radarr/Sonarr recognize and ignore BR-DISK (ISOs and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+
+!!! note
+
+    Depending on your renaming scheme, it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
+    This is a cosmetic annoyance until we come up with another way to solve this,
+    Since this Custom Format is used not to download BR-DISK, it fulfills its purpose as intended.
+    There are several reasons why this is happening:
+
+    - Blame the often incorrectly used naming of x265 encodes.
+    - Radarr/Sonarr uses dynamic custom formats.
+
+--8<-- "includes/cf-descriptions/apply-10000.md"', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CBC', '**CBC Gem (Canadian Broadcasting Corporation)**
+
+CBC Gem is the Canadian Broadcasting Corporation''s free digital streaming service, offering on-demand shows, movies, news, documentaries, and live TV streams from up to 14 regional CBC channels across Canada. A free account is required to watch, with an optional paid Premium plan that removes ads and adds access to CBC News Network. It is only available to viewers in Canada.
+
+For more information, visit the [Canadian Broadcasting Corporation Wikipedia page](https://en.wikipedia.org/wiki/Canadian_Broadcasting_Corporation){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CNLP', '**Canal+**
+
+Canal+ is a French subscription streaming service and pay TV provider, launched as a satellite service in 1992 and relaunched as a streaming platform in 2013. It is a subsidiary of Canal+ S.A. It offers movies, dramas, original series, and live sports — including top football leagues. The service is available across Europe, Africa, Oceania, Myanmar, and Vietnam, with over 26.8 million subscribers.
+
+For more information, visit the [Canal+ Wikipedia page](https://en.wikipedia.org/wiki/Canal%2B_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CPNG', '**Coupang Play**
+
+Coupang Play is a South Korean streaming service launched by Coupang in December 2020. It offers movies, dramas, variety shows, and live sports including the Premier League, NBA, and more. It is included with Coupang''s Rocket Wow membership.
+
+For more information, visit the [Coupang Play Wikipedia page](https://en.wikipedia.org/wiki/Coupang_Play){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CRAV', '**Crave**
+
+Crave (originally CraveTV) is a Canadian subscription streaming service owned by Bell Media, launched in December 2014. It is Canada''s largest homegrown streamer, offering HBO and Max Originals, Showtime, Starz, Hollywood movies, and a growing slate of English and French original series. It is only available in Canada.
+
+For more information, visit the [Crave Wikipedia page](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - CRiT', '**The Criterion Channel**
+
+The Criterion Channel is an independent subscription streaming service featuring a wide mix of classic and contemporary films from Hollywood and around the world, many not available anywhere else. It hosts the Criterion Collection and Janus Films'' library of over 1,500 films, along with shorts, documentaries, interviews, video essays, and commentary tracks. It is ideal for film enthusiasts looking for carefully curated, art-house, and international cinema.
+
+For more information, visit the [Criterion Channel Wikipedia page](https://en.wikipedia.org/wiki/The_Criterion_Channel){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Criterion Collection', '**Criterion Collection**
+
+The Criterion Collection is a home entertainment distribution company focused on licensing, restoring, and distributing important classic and contemporary films. A sister company of arthouse film distributor Janus Films, Criterion serves film scholars, cinephiles, and public and academic libraries. It has produced and distributed more than 1,500 special editions across VHS, LaserDisc, DVD, Blu-ray, and Ultra HD Blu-ray formats, covering titles from over 600 directors across more than 50 countries. Releases are known for their high-quality restorations, detailed bonus features, scholarly essays, and director-approved transfers.
+
+For more information, visit the [Criterion Collection Wikipedia page](https://en.wikipedia.org/wiki/The_Criterion_Collection){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DD', '**DD (Lossy)**
+
+Dolby Digital, also known as AC-3, is a lossy audio compression format developed by Dolby Laboratories. It was first used to provide digital sound in cinemas and has since become a standard for TV broadcasts, DVDs, Blu-ray discs, and game consoles. It supports up to 5.1 channels of surround sound and uses a lossy compression algorithm, discarding audio information that is less perceptible to the human ear in order to reduce file size. It was one of the most widely used audio formats in home theater and broadcast media.
+
+For more information, visit the [Dolby Digital Wikipedia page](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DD+', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DD+ ATMOS', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DSNP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS X', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS-ES', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS-HD HRA', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS-HD MA', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DSNP', '**Disney+**
+
+Disney+ is a subscription streaming service owned by The Walt Disney Company, offering movies and TV shows from its major brands Disney, Pixar, Marvel, Star Wars, and National Geographic. It is the third most-subscribed streaming service in the world, with over 131 million paid subscribers. It offers a mix of classic favorites, new releases, and original productions exclusive to the platform.
+
+For more information, visit the [Disney+ Wikipedia page](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS', '**DTS (Lossy)**
+
+DTS (Digital Theater Systems) is a lossy multichannel audio codec developed to provide discrete surround sound channels for cinema and home use. It supports 5.1 channels of surround sound and is a direct competitor to Dolby Digital, commonly found on DVDs and Blu-ray discs. Compared to Dolby Digital, DTS typically uses less compression and higher bit rates, up to 1.5 Mbps, which many consider to result in slightly better sound quality. It served as the foundation for later DTS formats, including DTS-ES, DTS-HD High Resolution Audio, DTS-HD Master Audio, and DTS:X.
+
+For more information, visit the [DTS Wikipedia page](https://en.wikipedia.org/wiki/DTS_(sound_system)){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS X', '**DTS:X (Lossless)**
+
+DTS:X is an object-based 3D surround sound format developed by DTS, designed to place sounds anywhere in a three-dimensional space around the listener. It is carried by DTS-HD Master Audio, a lossless audio codec commonly used on Blu-ray discs, supporting up to 7.1 channels plus additional audio objects at 96 kHz/24-bit quality. DTS:X supports flexible speaker placement, allowing audio to be remapped to any speaker configuration, with up to 32 speaker locations.
+
+For more information, visit the [DTS:X Wikipedia page](https://en.wikipedia.org/wiki/DTS:X){:target="_blank" rel="noopener noreferrer"} and the [DTS-HD Master Audio Wikipedia page](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS-ES', '**DTS-ES (Lossy)**
+
+DTS-ES (Extended Surround) is a lossy extension of the standard DTS 5.1 format, launched in 2000. It adds a discrete center back surround channel between the two rear channels, creating a 6.1-channel soundstage and improving surround envelopment by filling in the gap at the back of the room. It comes in two versions: DTS-ES Discrete 6.1, which carries the rear center channel as a fully separate discrete channel, and DTS-ES Matrix 6.1, which derives the rear center channel from the existing surround channels for backward compatibility. It is commonly found on DVD releases.
+
+For more information, visit the [DTS-ES Wikipedia page](https://en.wikipedia.org/wiki/DTS-ES){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS-HD HRA', '**DTS-HD HRA (Lossy)**
+
+DTS-HD High Resolution Audio (DTS-HD HRA) is a high-resolution but lossy audio format developed by DTS. It offers a higher bit rate and more audio detail than standard DTS, with support for up to 8 channels and data rates of up to 6 Mbit/s on Blu-ray. Unlike DTS-HD Master Audio, which is lossless, DTS-HD HRA uses lossy compression, meaning some audio information is discarded during encoding. It is backward compatible with standard DTS decoders and is sometimes used on Blu-ray discs where disc space is a concern, as a lower-footprint alternative to DTS-HD MA.
+
+For more information, visit the [DTS-HD Master Audio Wikipedia page](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DTS-HD MA', '**DTS-HD MA (Lossless)**
+
+DTS-HD Master Audio (DTS-HD MA) is a lossless audio codec developed by DTS, commonly used for surround sound on Blu-ray discs. It supports variable bit rates up to 24.5 Mbit/s and up to 7.1 channels of audio at 96 kHz/24-bit quality. It uses a hybrid approach, with a lossy DTS core for backward compatibility on older devices, plus a lossless extension that reconstructs the full audio signal on supported hardware. By 2010, it had become the dominant lossless audio format on Blu-ray, and it also serves as the carrier format for DTS:X.
+
+For more information, visit the [DTS-HD Master Audio Wikipedia page](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Dual Audio Asian', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Dubs Only', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Dubs Only', '**Dubs Only**<br>
+
+This Custom Format covers releases that only have Dubs.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DV (Disk)', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DV (w/o HDR fallback)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DV Boost', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Extras', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FanSUB', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FastSUB', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FLAC', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - DV Boost', '**DV Boost**<br>
+
+If you prefer Dolby Vision and have compatible equipment, add the DV Boost custom format. This custom format prioritizes releases containing Dolby Vision over standard HDR releases.
+
+<sub>*This custom format accepts DV Profile 5 and also upgrades from DV/HDR10/HDR10+ to DV HDR10 or DV HDR10+.*</sub>', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Extras', '**Extras**<br>
+
+This Custom Format is used to prevent from grabbing releases containing only extras (bonus footage, outtakes, etc).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FanSUB', '**FanSUB**<br>
+
+Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so-called FastSUBs.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FastSUB', '**FastSUB**<br>
+
+FanSUB, but made as quickly as possible, at the expense of quality.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FLAC', '**FLAC (Lossless)**
+
+FLAC (Free Lossless Audio Codec) is an open audio format similar to MP3, but lossless, meaning audio is compressed without any loss in quality. FLAC is designed to reduce the amount of storage space needed for digital audio while retaining all the original information. It is free and open, meaning its specification is publicly available and its reference implementation is open source. FLAC can achieve a compression of around 30-50% compared to uncompressed audio, without sacrificing any audio quality. It is widely used for music archiving and high-quality audio playback.
+
+For more information, visit the [FLAC Wikipedia page](https://en.wikipedia.org/wiki/FLAC){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FLUX', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FOD', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FOD', '**FOD (Fuji TV On Demand)**
+
+FOD (Fuji TV On Demand) is a video-on-demand streaming service owned by Fuji Television Network, Inc. It was launched in 2005 and offers Japanese dramas, anime, movies, and variety shows. It is primarily aimed at viewers in Japan and focuses on content from Fuji TV''s broadcast library, including past episodes of popular series and exclusive original programming.
+
+For more information, visit the [Fuji Television Wikipedia page](https://en.wikipedia.org/wiki/Fuji_Television){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FR Anime FanSub', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FR Anime Tier 01', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FR Anime Tier 02', NULL, 0);
@@ -3712,237 +3887,999 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radar
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FR WEB Tier 01', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FR WEB Tier 02', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FraMeSToR', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FreeLeech', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - friDay', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FUNi', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Generated Dynamic HDR', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German 1080p Booster', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German 2160p Booster', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Bluray Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Bluray Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Bluray Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Scene', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Web Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Web Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Web Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Bluray Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Bluray Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Bluray Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German DL', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FreeLeech', '**FreeLeech**<br>
+
+Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is useful if you do not have the best ratio yet.
+
+!!! warning
+
+    Keep in mind not all trackers support this option.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - friDay', '**friDay Video**
+
+friDay Video is a Taiwanese streaming service owned by Far EasTone, one of Taiwan''s major telecom providers, and is Taiwan''s number one domestic streaming platform. It offers movies, dramas, variety shows, live news, and anime, with a strong focus on Korean, Japanese, and local Taiwanese content. New releases and simulcast titles are regularly added, making it a popular choice for fans of Asian entertainment in Taiwan.
+
+For more information, visit the [Far EasTone Wikipedia page](https://en.wikipedia.org/wiki/Far_EasTone){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - FUNi', '**Funimation**
+
+Funimation was an American anime streaming service launched in 2016, known for popular titles such as Dragon Ball, One Piece, Attack on Titan, and My Hero Academia. It was one of the leading distributors of anime in North America and was owned by Sony. On April 2, 2024, Funimation shut down and merged into Crunchyroll, where most of its content library is now available.
+
+For more information, visit the [Funimation Wikipedia page](https://en.wikipedia.org/wiki/Funimation){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Generated Dynamic HDR', '**Generated Dynamic HDR**
+
+A collection of groups known for generating their own dynamic HDR metadata, including Dolby Vision and/or HDR10+.
+This generated dynamic HDR metadata does not come from official retail sources, such as discs or streaming services, so it is generally undesirable because of the substantial effort required and the near-impossible task of reliably ensuring quality without manually reviewing each movie.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German', '**Language: German**
+
+This custom format helps Radarr/Sonarr recognize German audio releases that contain only a German language track and no others. It will add `German` to your filename.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German 1080p Booster', '**German 1080p Booster**<br>
+
+As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German 2160p Booster', '**German 2160p Booster**<br>
+
+As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Bluray Tier 01', '**German Anime Bluray Tier 01**<br>
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** Advanced filtering that *fixes* known BD problems where present, e.g. banding, rescale-issues, chroma shift, wrong/missing decimation, duplicate-frame patterns - plus the usual debanding, de-/regraining, anti-aliasing, dehaloing. Filters must improve the image to avoid nuking detail (no over-strong filtering).
+- **Audio:** Lossless preserved, but de-bloated where sensible - e.g. DTS-HD MA/PCM -> FLAC (often ~50% smaller). If the source is pointless-bloated (e.g. random 24-bit tracks), normalization to a practical lossless target (commonly 16-bit FLAC) is acceptable within this tier''s logic. Lossy tracks (AC3, etc.) are not re-encoded.
+- **QC & Features:**
+    - **Subtitles:** ASS/SSA preferred. Best case: properly typeset Web-subs (e.g. CR) when available and correctly synced. Otherwise: high-quality OCR of BD-PGS with readable styling (border/shadow) and sensible timing alignment. Raw PGS only if unavoidable. Fonts attached where needed.
+    - **Chapters:** Present (from disc or accurately transferred).
+    - **Tags:** Clean metadata, correct language codes, correct track naming, fonts attached for ASS.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Bluray Tier 02', '**German Anime Bluray Tier 02**<br>
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** Casual filtering (debanding, de-/regraining, anti-aliasing, dehaloing). Improvements are visible, but the release typically does not (consistently) address heavier BD issues like chroma shift, bad decimation/duplicate-frame patterns, or rescale problems.
+- **Audio:** Lossless may be kept as-is or converted losslessly to FLAC. Lossy audio is not re-encoded.
+- **QC & Features:**
+    - **Subtitles:** OCR''d BD subs or Web-subs included, basic readability styling expected. Raw PGS is acceptable. Fonts may or may not be attached.
+    - **Chapters:** Usually present, can be basic.
+    - **Tags:** Mostly correct, occasional inconsistencies.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Bluray Tier 03', '**German Anime Bluray Tier 03**<br>
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** No filtering/basic encode approach. Can be fine on clean discs, but commonly carries over BD flaws (banding, chroma shift, bad/absent decimation with duplicates, rescale issues). Encoding artifacts are typically only noticeable on closer inspection, but underlying source issues remain.
+- **Audio:** Typically original tracks (often bloated). Lossless-to-FLAC savings are usually not applied. Lossy audio remains untouched.
+- **QC & Features:**
+    - **Subtitles:** Raw BD-PGS common, limited typesetting, timing not optimized. Little/no OCR, little/no styling work.
+    - **Chapters:** May be missing or pass-through only.
+    - **Tags:** Messy or inconsistent naming/metadata more likely.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Scene', '**German Anime Scene**<br>
+
+Known German Scene groups (which are not defined as LQ).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Web Tier 01', '**German Anime Web Tier 01**<br>
+
+- **Source:** WEB-DL (Lossless download from top providers like AMZN, CR, NF, ADN).
+- **Video:** Untouched Video Stream preferred. Always aim for the best available stream from the provider; note that the highest bitrate does not always equal the best visual quality. If encoded, it must have a good reason and be visually transparent or better (e.g. rescaling/filtering). There are few good reasons to reencode. Avoid fake 2160p/4K releases (especially from providers like Bilibili or iQIYI).
+- **Audio:** Best available bitrate from the provider. Dual Audio (GER+JPN) or OmU (Original with Subs) if no Dub exists.
+- **QC & Features:**
+    - **Subtitles:** Format must be ASS/SSA. If source is VTT/TTML/SRT, it must be converted and properly styled (readable font, shadow/border). No raw text-based subs. If source is ASS, the subs should contain basic fixes like LayoutRes and set “ScaledBorderAndShadow: Yes”. If the release contains a dub, forced and full subtitles should be included.
+    - **Chapters:** Mandatory. Named chapters preferred, but accurately generated markers are acceptable.
+    - **Tags:** Clean metadata, correct language codes. Should follow MKV best practices.
+    - **Fonts:** All used fonts must be attached. Attachment names should match the full font name (e.g., Times New Roman Bold.ttf instead of timesbd.ttf) to ensure maximum player compatibility.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Web Tier 02', '**German Anime Web Tier 02**<br>
+
+- **Source:** WEB-DL or high-quality WEBRip (from reputable sources).
+- **Video:** Untouched streams or high-quality encodes (preferably H.265/HEVC or H.264). Must be free of obvious artifacts (blocking, heavy noise) and maintain visual integrity.
+- **Audio:** Standard streams (AAC/E-AC3). Dual Audio or OmU accepted.
+- **QC & Features:**
+    - **Subtitles:** ASS or SRT included. Must be readable. If using SRT, correct encoding (UTF-8) is mandatory to avoid broken characters.
+    - **Chapters:** Basic markers are highly encouraged, but not strictly mandatory if the source lacks them.
+    - **Tags:** Proper filenames following scene or p2p “standards”. Correct language tags for audio and subtitle tracks are expected for player automation.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Anime Web Tier 03', '**German Anime Web Tier 03**<br>
+
+- **Source:** WEB-DLs or WEBRip from less reliable providers or inconsistent releases from groups lacking commitment.
+- **Video:** Functional, but often lacks consistency across different episodes/seasons. Encoding artifacts are only visible upon close inspection.
+- **QC & Features:**
+    - **Subtitles:** SRT/ASS included.
+    - **Chapters:** Missing entirely.
+    - **Tags:** Messy or incomplete tags and filenames.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Bluray Tier 01', '**German Bluray Tier 01**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+- HDR/DoVi (Depending on what''s offered and often both).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Bluray Tier 02', '**German Bluray Tier 02**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that have the best German audio track to an English release.
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Bluray Tier 03', '**German Bluray Tier 03**<br>
+
+- WiP
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German DL', '**Language: German + Original aka German DL**
+
+This custom format helps Radarr/Sonarr recognize German Dual Language audio releases.
+
+- Add this Custom Format with the default score of `-10000` to prevent getting releases that include `German + Original audio`.
+- Add this Custom Format with a score of +`10001` if you prefer releases that include `German + Original audio`,  It will add `German DL` to your filename.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German DL (undefined)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German LQ', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German LQ', '**German LQ**<br>
+
+A collection of known German Low-Quality groups that are often banned from the top trackers due to their lack of quality.
+
+!!! note
+
+    - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
+    - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
+    - DeTAG/ReTAG = Detagging or stealing groups.
+    - Other reasons = Group is banned on top tier trackers or is generally known for poor quality/errors.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German LQ (release title)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Microsized', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Remux Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Remux Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Scene', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Subbed', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Web Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Web Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Web Tier 03', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Microsized', '**German Microsized**<br>
+
+A collection of known German groups producing low quality micro-sized releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Remux Tier 01', '**German Remux Tier 01**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+- HDR/DoVi (Depending on what''s offered and often both).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Remux Tier 02', '**German Remux Tier 02**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that have the best German audio track to an English release.
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Scene', '**German Scene**<br>
+
+Known German Scene groups (which are not defined as LQ).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Subbed', '**German Anime Subbed**<br>
+
+Used to recognize German (and possibly English) subtitles.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Web Tier 01', '**German Web Tier 01**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+- HDR/DoVi (Depending on what''s offered and often both).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Web Tier 02', '**German Web Tier 02**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that have the best German audio track to an English release.
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - German Web Tier 03', '**German Web Tier 03**<br>
+
+- WiP
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - hallowed', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Hami', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HBO', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HD Bluray Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HD Bluray Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HD Bluray Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HDR', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Hami', '**Hami Video**
+
+Hami Video is a Taiwanese streaming service owned by Chunghwa Telecom, Taiwan''s largest telecom provider. It offers live TV channels, movies, dramas, anime, and major sporting events, including the Olympics. It is primarily aimed at viewers in Taiwan and is available as part of Chunghwa Telecom''s broader entertainment services.
+
+For more information, visit the [Chunghwa Telecom Wikipedia page](https://en.wikipedia.org/wiki/Chunghwa_Telecom){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HBO', '**HBO Max (now Max)**
+
+HBO Max, now rebranded as Max, is Warner Bros. Discovery''s streaming service that combines the best of HBO with content from various Warner Bros. Discovery properties. It launched in 2020 and was rebranded as Max in May 2023. It offers a wide range of popular HBO series, blockbuster movies, DC content, Discovery programmes, and original productions. It is one of the most popular streaming services available worldwide.
+
+For more information, visit the [HBO Wikipedia page](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HD Bluray Tier 01', '**HD Bluray Tier 01**<br>
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Optimize their releases whilst keeping them transparent, using high-quality sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HD Bluray Tier 02', '**HD Bluray Tier 02**<br>
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Use high-quality sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HD Bluray Tier 03', '**HD Bluray Tier 03**<br>
+
+Groups that:
+
+- Are new, and have released several dozen objectively good quality releases
+- Have retired and their releases don''t meet current quality standards
+- Pay good attention to detail and use reliable sources
+- Groups that have been added in conjunction with specific quality profiles
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HDR', '**HDR**<br>
+
+All users with HDR-capable equipment should add the HDR custom format.
+
+<sub>*This is a catch-all custom format for all HDR-related formats, including those with HDR10 or HDR10+ fallback capabilities, such as DV HDR10 or DV HDR10+.*</sub>', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HDR10+ Boost', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HFR', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HLG', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HMAX', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HTSR', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Hulu', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Hybrid', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - IMAX', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - IMAX Enhanced', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - INTERNAL', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - IP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - iQIY', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - iT', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ITVX', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - KCW', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - KKTV', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HFR', '**HFR (High Frame Rate)**
+
+High Frame Rate (HFR) refers to video content that runs at a higher frame rate than the typical 24 frames per second (fps) used in traditional cinema. HFR produces a much smoother, more detailed image compared to standard 24fps, and is especially useful for gaming, sports, and live streaming, where it can significantly reduce motion blur and latency. Common HFR frame rates include 48fps, 60fps, and 120fps. While some viewers find HFR more immersive, others feel it gives footage an overly realistic or "soap opera" look compared to the traditional cinematic appearance of 24fps.
+
+For more information, visit the [High Frame Rate Wikipedia page](https://en.wikipedia.org/wiki/High_frame_rate){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HLG', '**HLG**
+
+This Custom Format matches HLG releases. The default score can be used to prevent downloading HLG releases on devices that can''t play them properly, e.g., the picture appears very dark and murky, making it unwatchable.
+
+HLG or HLG10 is an HDR format developed by NHK (JP) and the BBC, suitable for both video and still images. This format is backwards compatible with SDR UHD TVs but not with older SDR displays that do not support Rec. 2020 color standards.
+
+You will mainly see this with cable, satellite, and over-the-air TV broadcasts from networks like the BBC and National Geographic.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HMAX', '**HBO Max (now Max)**
+
+HBO Max, now rebranded as Max, is Warner Bros. Discovery''s streaming service that combines the best of HBO with content from various Warner Bros. Discovery properties. It launched in 2020 and was rebranded as Max in May 2023. It offers popular HBO series, blockbuster movies, DC content, Discovery programmes, and original productions. It is one of the most popular streaming services available worldwide.
+
+For more information, visit the [HBO Max Wikipedia page](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - HTSR', '**Disney+ Hotstar (HTSR)**
+
+Disney+ Hotstar is a subscription streaming service owned by Disney Star (formerly Star India), originally launched in 2015 as Hotstar. Following Disney''s acquisition of 21st Century Fox in 2019, it was rebranded as Disney+ Hotstar in April 2020, adding content from Disney, Pixar, Marvel, Lucasfilm, and National Geographic. It operates in India, Indonesia, Malaysia, and Thailand, combining local content with the Disney+ library, and is the second largest streaming platform in the world by subscribers, behind only Netflix.
+
+For more information, visit the [Disney+ Hotstar Wikipedia page](https://en.wikipedia.org/wiki/Disney%2B_Hotstar){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Hulu', '**Hulu**
+
+Hulu is an American streaming service majority-owned by Walt Disney Company, offering a large library of TV shows, movies, and original productions. It is one of the few streaming services that also offers live TV, giving subscribers access to live sports, news, and popular channels alongside its on-demand content. It is primarily available in the United States and can be bundled together with Disney+ and ESPN+.
+
+For more information, visit the [Hulu Wikipedia page](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Hybrid', '**Hybrid**
+
+A Hybrid release is a release that combines elements from more than one source to produce the best possible result. For example, the video track may come from one source, such as a Blu-ray disc, while the audio track, subtitles, or additional content come from a different source, such as a streaming service or a different regional release. This approach is used when no single source contains everything needed for the highest quality release, allowing the best available video and audio to be combined into one file.
+
+In general, top tier release groups always try to combine elements from more than one source to produce the best possible result. However, not all release groups mention that their release is a hybrid release.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - IMAX', '**IMAX**
+
+IMAX, which stands for Image Maximum, is a proprietary motion picture projection format developed by the Canadian company IMAX Corporation in the late 1960s. IMAX theaters are known for their massive screens, significantly larger than those in standard cinemas, providing a more immersive viewing experience. IMAX uses an expanded aspect ratio of 1.43:1, much taller and squarer than the typical widescreen ratio of 2.39:1, capturing significantly more image detail compared to standard cinema formats. Films shot natively with IMAX cameras, such as those by Christopher Nolan, use the full 1.43:1 frame, showing more picture at the top and bottom of the screen compared to standard releases.
+
+For more information, visit the [IMAX Wikipedia page](https://en.wikipedia.org/wiki/IMAX){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - IMAX Enhanced', '**IMAX Enhanced**
+
+**Get more picture and fewer black bars (letterboxing).**
+
+IMAX Enhanced is a certification program designed to ensure the highest quality playback at home, covering resolution, color, brightness, contrast, and sound. Launched by IMAX and DTS, it combines digitally remastered 4K HDR content with DTS audio technologies, requiring certified consumer electronics to meet a strict set of audio and video performance standards. The audio portion uses a variant of the DTS:X immersive audio format to recreate a deeper, wider soundstage than typical home audio.
+
+Note: IMAX Enhanced is a home video certification standard for streaming and disc releases, and is separate from the IMAX cinema format used in theaters.
+
+For more information, visit the [IMAX Enhanced Wikipedia page](https://en.wikipedia.org/wiki/IMAX_Enhanced){:target="_blank" rel="noopener noreferrer"}.
+
+Due to the higher bitrate and implied picture quality improvement, it is recommended that the IMAX Enhanced custom format be enabled on WEB profiles, especially for those seeking "The IMAX Experience" including fewer black bars or letterboxing.
+
+![!Imax Enhanced Example](/Radarr/images/imax-e/imax-e.1.png)
+
+![!Imax Enhanced Example](/Radarr/images/imax-e/imax-e.2.png)
+
+![!Imax Enhanced Example](/Radarr/images/imax-e/imax-e.3.png)
+
+![!Imax Enhanced Example](/Radarr/images/imax-e/imax-e.4.png)
+
+![!Imax Enhanced Example](/Radarr/images/imax-e/imax-e.5.png)', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - INTERNAL', '**Internal**
+
+In the context of scene and P2P releases, an Internal release is one that is distributed within a release group''s private network before, or instead of, being made publicly available. Internal releases often use higher quality settings or unconventional encoding choices that may not conform to standard scene rulesets, making them a preferred choice for those seeking the best possible quality.
+
+Those who prefer scene releases may want to boost internals, as they generally use higher settings that may not conform to the standard ruleset. In some rare cases, P2P releases are also marked as Internal.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - IP', '**BBC iPlayer (iP)**
+
+BBC iPlayer is the UK''s primary public streaming platform, operated by the BBC and launched in 2007. It allows viewers to watch live TV and stream on-demand programmes from BBC channels, including dramas, documentaries, comedy, news, sports, and children''s content. The service is free and ad-free, though a UK TV license is required. It is only available to viewers in the United Kingdom.
+
+For more information, visit the [BBC iPlayer Wikipedia page](https://en.wikipedia.org/wiki/BBC_iPlayer){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - iQIY', '**iQIYI**
+
+iQIYI is a Chinese streaming service offering a wide range of Asian content, including Chinese dramas, anime, variety shows, and original movies. Initially available only in China, it has since expanded to international viewers. It is owned by Baidu and is one of the largest online video platforms in the world.
+
+For more information, visit the [iQIYI Wikipedia page](https://en.wikipedia.org/wiki/IQIYI){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - iT', '**iTunes**
+
+iTunes is Apple''s digital store for buying and renting movies and TV shows. Apple has since redirected iTunes movie and TV purchases to the Apple TV app, which now serves as the main hub for renting and buying content, replacing iTunes as the point of sale for video on demand. Any content previously purchased through iTunes remains accessible through the Apple TV app using the same Apple ID.
+
+For more information, visit the [iTunes Wikipedia page](https://en.wikipedia.org/wiki/iTunes){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ITVX', '**ITVX (ITV)**
+
+ITVX is a British ad-supported streaming service operated by ITV plc, launched in December 2022. It offers original ITV content, live streams of ITV channels, and exclusive and licensed programming. It is free to watch with ads, with an optional paid Premium tier that removes ads and includes additional content. It is only available to viewers in the United Kingdom.
+
+For more information, visit the [ITVX Wikipedia page](https://en.wikipedia.org/wiki/ITVX){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - KCW', '**KOCOWA aka KCW**
+
+KOCOWA is a premium Korean streaming service that offers Korean dramas, variety shows, and K-Pop content from major broadcasters KBS, MBC, and SBS. New shows are available within 6 hours of their original airtime in Korea, with subtitles in English, Portuguese, and Spanish.
+
+For more information, visit the [KOCOWA Wikipedia page](https://en.wikipedia.org/wiki/KOCOWA){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - KKTV', '**KKTV**
+
+KKTV is a Taiwanese streaming service offering dramas, films, and anime from Taiwan, Japan, South Korea, Thailand, and Hong Kong, as well as original series. It was founded in 2016 and is based in Taipei, Taiwan. It is especially known for offering the latest Japanese dramas, with some released within hours or days of their premiere in Japan. In November 2025, KKTV merged with LINE TV.
+
+For more information, visit the [KKTV Wikipedia page](https://en.wikipedia.org/wiki/KKTV){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Language: Not English', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Language: Not French', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Language: Not Original', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Language: Original + French', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Line/Mic Dubbed', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - LINETV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - LQ', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - LINETV', '**LINE TV**
+
+LINE TV is a free, ad-supported streaming service owned by Japan-based LINE Corporation, operating mainly in Taiwan. It offers dramas, variety shows, movies, anime, and original content. It is especially popular for Taiwanese, Korean, and Chinese content. In November 2025, LINE TV announced a full merger with KKTV, combining both platforms'' content libraries to offer a wider range of Asian dramas and new features such as offline viewing and dual subtitles.
+
+For more information, visit the [LINE TV Wikipedia page](https://en.wikipedia.org/wiki/Line_TV){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - LQ', '**LQ**
+
+- A collection of known low-quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from the scene and quick-to-release P2P groups that, while adequate, are typically not regarded as high quality.
+- Release groups that disrupt the Starr apps automation because their poor naming could potentially create download loops, even if their overall quality is excellent.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - LQ (Release Title)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MA', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MA', '**Movies Anywhere**
+
+Movies Anywhere is a cloud-based digital locker and streaming platform that lets users stream and download movies they have purchased, including digital copies redeemed from Blu-ray and DVD releases. It is operated by The Walt Disney Company and provides content from major studios including Walt Disney, Sony Pictures, Universal Pictures, and Warner Bros. By linking accounts from different digital stores, users can access their entire movie library in one place, regardless of where they originally bought the film.
+
+For more information, visit the [Movies Anywhere Wikipedia page](https://en.wikipedia.org/wiki/Movies_Anywhere){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MainFrame', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Masters of Cinema', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MAX', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MP3', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MPEG2', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MULTi', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MY5', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MyTVSuper', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - NF', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - No-RlsGroup', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Not German or English', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Masters of Cinema', '**Masters of Cinema**
+
+Masters of Cinema is a line of DVD and Blu-ray releases published by Eureka Entertainment. Due to its uniformly branded, spine-numbered packaging and the standard inclusion of booklets and analysis by film historians, it is often regarded as the UK equivalent of The Criterion Collection. The series began in 2004 and focuses on classic and world cinema, featuring carefully restored films. All releases come with extensive booklets and a range of bonus features.
+
+For more information, visit the [Masters of Cinema Wikipedia page](https://en.wikipedia.org/wiki/Masters_of_Cinema){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MAX', '**Max**
+
+Max, previously known as HBO Max until May 2023, is Warner Bros. Discovery''s streaming service that combines the best of HBO with content from various Warner Bros. Discovery properties. It offers a wide range of popular HBO series, blockbuster movies, DC content, Discovery programmes, and original productions. It is one of the most popular streaming services available worldwide.
+
+For more information, visit the [Max Wikipedia page](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MP3', '**MP3 (Lossy)**
+
+MP3 (MPEG-1 Audio Layer 3) is a widely used lossy digital audio encoding format, designed to greatly reduce the amount of data required to represent audio, while still sounding like a faithful reproduction of the original to most listeners. It became an ISO/IEC standard in 1991. An MP3 file can compress a music file by up to 95% of its original CD-quality size while maintaining good enough audio quality. It remains one of the most universally compatible audio formats, supported on virtually every device and platform, though it has largely been superseded by more efficient formats like AAC.
+
+For more information, visit the [MP3 Wikipedia page](https://en.wikipedia.org/wiki/MP3){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MPEG2', '**MPEG-2**
+
+MPEG-2 is a standard for the generic coding of moving pictures and associated audio information, using a combination of lossy video and audio compression to allow storage and transmission of video using available storage media and bandwidth. Developed in the 1990s by the Moving Picture Experts Group, it was the standard codec for DVDs and remains in use for over-the-air digital, satellite, and cable broadcasts. While it was a major step forward in its time, it has largely been replaced by more modern and efficient codecs such as AVC (H.264) and HEVC (H.265), which deliver better quality at lower bitrates.
+
+For more information, visit the [MPEG-2 Wikipedia page](https://en.wikipedia.org/wiki/MPEG-2){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MULTi', '**Multi**
+
+A Multi release is a release that contains more than one audio language track. For example, a release labeled "Multi" may include English, French, Spanish, or other language tracks within the same file, allowing viewers to switch between languages during playback. The number and selection of included languages can vary depending on the source and the release group.
+
+Multi releases are common for content distributed across multiple regions, where different audiences require different language options. The presence of multiple audio tracks does not affect the video quality of the release.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MY5', '**My5 (now 5)**
+
+My5 is the video-on-demand streaming service from Channel 5 in the United Kingdom, previously known as Five Download, Demand Five, and Demand 5. In March 2025, Channel 5 and My5 merged and relaunched under the unified brand "5," adding 15 new live channels and content from Paramount-owned networks including BET, CBS, Comedy Central, and MTV. The service is free, ad-supported, and only available in the UK.
+
+For more information, visit the [My5 Wikipedia page](https://en.wikipedia.org/wiki/5_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - MyTVSuper', '**myTV SUPER**
+
+myTV SUPER is a subscription-based streaming service launched in April 2016 by MyTV Super Limited, a subsidiary of Television Broadcasts Limited (TVB) in Hong Kong. It offers TVB dramas, variety shows, movies, anime, live sports, and horse racing content, with some content supporting up to 4K resolution. The service is primarily available in Hong Kong and Macau.
+
+For more information, visit the [myTV SUPER Wikipedia page](https://en.wikipedia.org/wiki/MyTV_Super){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - NF', '**Netflix**
+
+Netflix is an American subscription streaming service offering movies, TV shows, documentaries, and anime across multiple genres. Originally launched in 1997 as a DVD rental service, it became a streaming platform in 2007 and is now the most-subscribed streaming service in the world, with over 325 million paid members in more than 190 countries. It is well known for its large library of original productions alongside licensed content.
+
+For more information, visit the [Netflix Wikipedia page](https://en.wikipedia.org/wiki/Netflix){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - No-RlsGroup', '**No-RlsGroup**<br>
+
+Some indexers stripped out the release group, which could result in LQ groups receiving higher scores.
+For example, many EVO releases are stripped of the group name, so they appear as "upgrades" and receive a decent score if other factors match.
+
+!!! warning
+
+    If you **DO NOT** use decent filenames (like not adding release groups), **DO NOT** add this Custom Format unless you want to upgrade them.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Not German or English', '**Language: Not German or English**
+
+Used to avoid releases which do not contain German or English audio.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Not German, Japanese or English', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Not German, Japanese, Korean, Chinese or English', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - NOW', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Obfuscated', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Open Matte', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Opus', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - OViD', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - P2P Internal', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Pathe', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - PCM', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - PCOK', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - PLAY', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - PMTP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Remaster', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Remux Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Remux Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Remux Tier 03', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - NOW', '**NOW (formerly NOW TV)**
+
+NOW (formerly known as NOW TV) is a subscription streaming service launched in the UK in 2012, operated by Sky Group. It offers live streaming and video-on-demand content through flexible monthly "passes" covering entertainment, films, and sports with no long-term contract required. It is the only UK streaming service with access to HBO content such as Game of Thrones and The Sopranos, as well as exclusive live sports including the Premier League and Formula 1.
+
+For more information, visit the [NOW Wikipedia page](https://en.wikipedia.org/wiki/Now_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Obfuscated', '**Obfuscated**<br>
+
+Obfuscated releases are something you find on Usenet to do re-posts of common/popular releases.
+
+Several indexers that rely on auto-generating their NZB from groups by seeing things in the clear will suffer the fate of having those NZB DMCA''ed after time, as others can just see what it is and request a file takedown.
+You want indexers that get/do obfuscated releases and allow NZBs to be submitted directly to the NZB-indexer. Then, even thousands of days old releases still work fine unless someone leaks those NZBs to one of those public sites, where they can be requested to be taken down.
+
+- In general, if you''re using Usenet, **DO NOT** use this Custom Format.
+- Use this Custom Format **ONLY** if you **DO NOT** prefer Obfuscated releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Open Matte', '**Open Matte**
+
+Open matte is a filmmaking technique in which motion pictures are photographed using the full frame of 35mm film, typically in a 1.33:1 or 1.37:1 aspect ratio, but then masked during theatrical projection to achieve a widescreen format such as 1.85:1. The unmasked full frame is later revealed in home video releases, providing additional image at the top and bottom of the frame.
+
+One issue with open matte presentations is that they can reveal things the production did not intend to be seen. Because the theatrical crop was expected to hide part of the frame, equipment or set edges may have been placed just outside the intended visible area. In an open matte version, that extra space can sometimes expose boom mics, lights, or unfinished set elements.
+
+For more information, visit the [Open Matte Wikipedia page](https://en.wikipedia.org/wiki/Open_matte){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Opus', '**Opus (Lossy)**
+
+Opus is a free and open source lossy audio codec developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force (IETF), designed for efficient low-latency encoding of both speech and general audio. It supports bitrates from 6 kbit/s to 510 kbit/s and is widely used for Voice over IP, video conferencing, in-game chat, internet streaming, and live music performances. Several blind listening tests have ranked Opus higher in quality than any other standard audio format at any given bitrate, including MP3, AAC, and HE-AAC.
+
+For more information, visit the [Opus Wikipedia page](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - OViD', '**OVID.tv**
+
+OVID.tv is a subscription streaming service dedicated to independent documentaries, art-house films, and international cinema, with content partners including the British Film Institute, Icarus Films, and Kartemquin Films. Most films on OVID are not available on any other streaming platform, with 20–35 new titles added every month. It is a great option for film enthusiasts looking for curated, non-mainstream cinema.
+
+No Wikipedia page is currently available for OVID.tv, but you can find more information on their [official website](https://www.ovid.tv).', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - P2P Internal', '**P2P Internal**<br>
+
+This Custom Format matches on the Internal Indexer flag that some trackers use to promote their own internal releases. You can use this Custom Format to favor their internal releases, or, when the same release exists on multiple trackers, it will prefer the release from the home tracker.
+For this to work, the tracker must support the Internal Indexer flag!', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Pathe', '**Pathé Thuis**
+
+Pathé Thuis is a Dutch video-on-demand service launched in the Netherlands in 2011, one of the first of its kind before major international streaming platforms arrived. Rather than a monthly subscription, it works as a pay-per-view service where users rent or buy individual films on demand. It offers a wide range of movies, from the latest releases to classic titles, and new films often become available shortly after their cinema run.
+
+For more information, visit the [Pathé Wikipedia page](https://en.wikipedia.org/wiki/Path%C3%A9){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - PCM', '**PCM (Lossless)**
+
+PCM (Pulse Code Modulation) is an uncompressed, lossless audio format that accurately captures the full dynamics and details of the original sound without any loss. It works by sampling the analog audio signal at regular intervals and converting each sample into a digital number, preserving the audio waveform precisely. PCM is widely used in CDs, DVDs, and digital broadcasting, and is a common choice when audio quality is the top priority. Because it is uncompressed, PCM files are larger than formats like FLAC or MP3, but deliver the purest possible audio reproduction.
+
+For more information, visit the [PCM Wikipedia page](https://en.wikipedia.org/wiki/Pulse-code_modulation){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - PCOK', '**Peacock TV**
+
+Peacock is an American subscription streaming service owned by Comcast through NBCUniversal, launched in July 2020. It offers TV shows and films from NBCUniversal brands, original productions, and live sports. It is the main streaming home for NBC Sports and Telemundo Deportes, with live sports coverage including the Premier League, NBA, and WWE. It is primarily available in the United States.
+
+For more information, visit the [Peacock Wikipedia page](https://en.wikipedia.org/wiki/Peacock_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - PLAY', '**Google TV**
+
+Google TV, previously known as Play Movies & TV, is Google''s digital platform for buying, renting, and browsing movies and TV shows. It brings together content from over 700,000 titles across multiple streaming apps into one place, with personalized recommendations based on your viewing history. It also allows users to purchase or rent the latest releases directly through the platform.
+
+For more information, visit the [Google TV Wikipedia page](https://en.wikipedia.org/wiki/Google_TV_(service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - PMTP', '**Paramount+**
+
+Paramount+ is an American subscription streaming service owned by Paramount Skydance, featuring content from major brands including CBS, Nickelodeon, MTV, Comedy Central, BET, Showtime, and Paramount Pictures, along with original series, films, and live sports. It started out as CBS All Access in 2014 before being rebranded as Paramount+ in 2021.
+
+For more information, visit the [Paramount+ Wikipedia page](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Remaster', '**Remaster**
+
+A remaster is a change in the sound or image quality of previously created media, whether audio, cinematic, or video. The resulting product is said to be remastered, and the terms "digital remastering" and "digitally remastered" are also commonly used. Remastering adapts older content for modern high-definition standards by enhancing visuals and sound, while respecting the original. This typically includes resolution upscaling, color grading, and audio enhancement to ensure compatibility with today''s displays and surround sound systems.
+
+A remaster differs from a restoration. A restoration goes back to the original film elements for the most faithful result, while a remaster improves an existing digital version without necessarily returning to the source material.
+
+For more information, visit the [Remaster Wikipedia page](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Remux Tier 01', '**Remux Tier 01**<br>
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Pay exceptional attention to detail and carefully analyze all available sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Remux Tier 02', '**Remux Tier 02**<br>
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Pay very close attention to detail and use multiple high-quality sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Remux Tier 03', '**Remux Tier 03**<br>
+
+Groups that:
+
+- Are new and haven''t released many titles yet
+- Have retired and their releases don''t meet current quality standards
+- Pay good attention to detail and use reliable sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Repack/Proper', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Repack2', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Repack3', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Retags', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ROKU', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Scene', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - SDR', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Repack2', '**Repack 2**
+
+A Repack 2 is a second re-release of a scene or P2P release, issued by the original release group to fix errors or quality issues that were not resolved in the first repack. Common reasons for a Repack 2 include persistent audio sync issues, corrupted video, incorrect subtitles, or other technical problems that remained after the initial repack. A Repack 2 supersedes both the original release and the first repack, and should be preferred over earlier versions of the same release.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Repack3', '**Repack 3**
+
+A Repack 3 is a third re-release of a scene or P2P release, issued to fix errors or quality issues found in the original release and two previous repacks. Each repack is published by the original release group to correct problems such as audio sync issues, missing content, corrupt files, or incorrect encoding settings. A Repack 3 indicates that two prior attempts to fix the release were made before this corrected version was issued.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Retags', '**Retags**<br>
+
+Retags are often seen on public trackers, where the tracker or uploader adds their name to the torrent. They may also appear on some Usenet indexers.
+
+- If you rely on public trackers, **DO NOT** use this Custom Format.
+- Use this Custom Format **ONLY** if you **DO NOT** prefer Retagged releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - ROKU', '**The Roku Channel**
+
+The Roku Channel is a free, ad-supported streaming service owned by Roku, Inc., launched in September 2017. It is the most popular free ad-supported streaming service in the US, reaching 145 million people as of 2024, and includes over 500 free channels and more than 80,000 free movies and shows. It is available in the US, Canada, Mexico, and the UK, with optional paid subscriptions for premium content.
+
+For more information, visit the [Roku Channel Wikipedia page](https://en.wikipedia.org/wiki/The_Roku_Channel){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Scene', '**Scene**<br>
+
+This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score `-10000`, a positive score, or just skip adding it altogether.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - SDR', '**SDR**<br>
+
+This will prevent grabbing UHD/4k releases without HDR Formats.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - SDR (no WEBDL)', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - SiC', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Sing-Along Versions', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Special Edition', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - STAN', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - STRP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Theatrical Cut', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Sing-Along Versions', '**Sing-Along Versions**<br>
+
+Versions of musical films that have sing-along lyrics hardcoded into the video stream.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Special Edition', '**Special Edition**
+
+A special edition implies there is extra material of some kind included. The term is frequently used on DVD and Blu-ray film releases, and may also appear as variants such as Deluxe Edition, Collector''s Edition, or Anniversary Edition. Special Edition releases typically augment the original film with additional content such as deleted scenes, director commentaries, and remastered audio and video. They often commemorate anniversaries or milestones and may include collectible packaging. The content and quality of a Special Edition can vary greatly depending on the studio and release.
+
+This custom format matches various special editions that are not the theatrical cut, including.
+
+- **Director''s Cut.** The version of the film edited by the director, usually released for home media.
+- **Extended Cut.** Any version of the film that is longer than the theatrical cut, though in very rare cases it may be shorter.
+
+For more information, visit the [Special Edition Wikipedia page](https://en.wikipedia.org/wiki/Special_edition){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - STAN', '**Stan**
+
+Stan is an Australian subscription streaming service launched on January 26, 2015, and owned by Nine Entertainment. It offers movies, TV shows, and original productions, and is the fourth largest streaming service in Australia. Its library includes content from both local Australian productions and international titles, particularly from the US and UK. An optional Stan Sport add-on provides access to live sports, including tennis grand slams and the Olympics.
+
+For more information, visit the [Stan Wikipedia page](https://en.wikipedia.org/wiki/Stan_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - STRP', '**Star+**
+
+Star+ was Disney''s standalone streaming service for Latin America, offering general entertainment content including live sports from ESPN, international originals, animated comedies, and movie premieres. In 2024, Disney shut down Star+ and merged all of its content into Disney+, consolidating the two services into a single platform for Latin American viewers.
+
+For more information, visit the [Star+ Wikipedia page](https://en.wikipedia.org/wiki/Star%2B){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Theatrical Cut', '**Theatrical Cut**
+
+The Theatrical Cut is the version of a film that was officially released and shown in movie theaters. It represents the version approved by the studio for public release and is generally considered the definitive version of a film, as it reflects the final creative and editorial decisions made before the film''s cinema debut.
+
+It is distinct from other versions such as the Director''s Cut, Extended Cut, or Special Edition, which may add, remove, or alter scenes compared to what audiences originally saw in theaters.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TheFarm', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TrueHD', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TrueHD ATMOS', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TVer', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TVING', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - U-NEXT', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - UHD Bluray Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - UHD Bluray Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - UHD Bluray Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Uncensored', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Upscaled', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v0', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v1', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v2', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v3', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v4', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VC-1', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VDL', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TrueHD', '**TrueHD (Lossless)**
+
+Dolby TrueHD is a 100% lossless audio format, meaning what you hear is bit-for-bit identical to the original master recording. It supports up to 7.1 channels of high-definition audio at up to 192 kHz/24-bit quality, and is found primarily on Blu-ray discs. Unlike TrueHD Atmos, this version carries no 3D object-based audio data.
+
+For more information, visit the [Dolby TrueHD Wikipedia page](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TrueHD ATMOS', '**TrueHD Atmos (Lossless)**
+
+Dolby TrueHD Atmos is the lossless version of Dolby Atmos, found primarily on Blu-ray and 4K UHD discs. Dolby Atmos soundtracks consist of up to 128 individual audio objects mixed in a 3D soundfield, rendered during playback to the available speakers, including overhead ceiling speakers. On Blu-ray, the Atmos data is embedded as an extension within the TrueHD track to maintain backward compatibility. If a receiver does not support Atmos, it simply plays the audio as standard Dolby TrueHD instead. Unlike most audio formats, Dolby TrueHD is 100% lossless, meaning what you hear is bit-for-bit identical to the master recording.
+
+For more information, visit the [Dolby TrueHD Wikipedia page](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"} and the [Dolby Atmos Wikipedia page](https://en.wikipedia.org/wiki/Dolby_Atmos){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TVer', '**TVer**
+
+TVer is a free, ad-supported Japanese streaming service launched in October 2015. It is a joint venture by Japan''s five major commercial TV networks Nippon TV, TV Asahi, TBS Television, TV Tokyo, and Fuji TV. It offers dramas, variety shows, anime, and documentaries, typically available for one week after their original broadcast. It is primarily available in Japan.
+
+For more information, visit the [TVer Wikipedia page](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - TVING', '**TVING**
+
+TVING is a South Korean streaming service offering Korean dramas, movies, variety shows, and original content. It launched on October 1, 2020, as a joint venture between CJ ENM and JTBC, combining both companies'' streaming services into one platform. It is primarily available in South Korea and is one of the country''s leading streaming platforms.
+
+For more information, visit the [TVING Wikipedia page](https://en.wikipedia.org/wiki/TVING){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - U-NEXT', '**U-NEXT**
+
+U-NEXT is a Japanese subscription streaming service launched in 2007, and is one of Japan''s leading streaming platforms. It holds a 17.9% market share in Japan''s subscription streaming sector, ranking second only to Netflix. It offers a wide range of movies, dramas, anime, live sports, and original content, along with an extensive e-book and manga library. It is primarily available in Japan.
+
+For more information, visit the [U-NEXT Wikipedia page](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - UHD Bluray Tier 01', '**UHD Bluray Tier 01**<br>
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Optimize their releases whilst keeping them transparent, using high-quality sources
+- Make releases that contain lossless audio tracks where available
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - UHD Bluray Tier 02', '**UHD Bluray Tier 02**<br>
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Use high-quality sources
+- Make releases that contain lossless audio tracks where available
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - UHD Bluray Tier 03', '**UHD Bluray Tier 03**<br>
+
+Groups that:
+
+- Are new, and have released several dozen objectively good quality releases
+- Have retired and their releases don''t meet current quality standards
+- Pay good attention to detail and use reliable sources
+- Groups that have been added in conjunction with specific quality profiles
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Uncensored', '**Uncensored**<br>
+
+This Custom Format covers releases that are uncensored.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Upscaled', '**Upscaled**<br>
+
+This custom format is used to prevent grabbing upscaled releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v0', '**v0**<br>
+
+Custom Format to cover releases named with v0 which we don''t want.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v1', '**v1**<br>
+
+Custom Format to cover v1 releases.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v2', '**v2**<br>
+
+Custom Format to cover v2 releases.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v3', '**v3**<br>
+
+Custom Format to cover v3 releases.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - v4', '**v4**<br>
+
+Custom Format to cover v4 releases.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VC-1', '**VC-1**
+
+VC-1 is a lossy video codec developed by Microsoft, commonly found on older Blu-ray discs and early HD video releases. While it was a popular choice in the early days of high-definition content, it has since been largely replaced by more modern codecs such as AVC (H.264) for 1080p and HEVC (H.265) for 2160p content.
+
+Many release groups re-encode older VC-1 content to AVC when a disc is also available in AVC, as AVC generally offers better compression and improved visual quality at lower bitrates, along with wider compatibility across modern playback devices.
+
+For more information, visit the [VC-1 Wikipedia page](https://en.wikipedia.org/wiki/VC-1){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VDL', '**Videoland**
+
+Videoland is a Dutch streaming service owned by RTL Nederland, originally founded in 1984 as a chain of video rental stores before moving to online streaming. It is the leading local streaming platform in the Netherlands, focusing on Dutch-language content, original productions, and programming from RTL Nederland''s TV channels. It is primarily available to viewers in the Netherlands.
+
+For more information, visit the [Videoland Wikipedia page](https://en.wikipedia.org/wiki/Videoland_(Netherlands)){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VF2', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VFB', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VFF', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VFI', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VFQ', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Viki', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Vinegar Syndrome', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VIU', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Viki', '**Viki (Rakuten Viki)**
+
+Rakuten Viki is a streaming service owned by Rakuten that specialises in Asian TV shows and films, particularly Korean, Chinese, Taiwanese, and Japanese productions. It is available worldwide and is unique for its community-created subtitles, with content available in more than 200 languages.
+
+For more information, visit the [Rakuten Viki Wikipedia page](https://en.wikipedia.org/wiki/Rakuten_Viki){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Vinegar Syndrome', '**Vinegar Syndrome**
+
+Vinegar Syndrome is an American home video distribution company specializing in protecting and preserving genre films. It was founded in 2012 in Bridgeport, Connecticut, by Joe Rubin and Ryan Emerson. The company focuses on films produced primarily between the 1960s and 1980s, including horror, exploitation, and cult titles, many of which would otherwise be lost. Their in-house lab performs high-quality digital film restorations with the goal of bringing each film back to its originally intended theatrical quality. The company''s name refers to the acidic smell of deteriorating film, a constant reminder of the preservation work they do.
+
+For more information, visit the [Vinegar Syndrome Wikipedia page](https://en.wikipedia.org/wiki/Vinegar_Syndrome){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VIU', '**Viu**
+
+Viu (pronounced "view") is a Hong Kong-based subscription streaming service owned by PCCW Media Group, launched in October 2015. It delivers Asian content across different genres, including Korean dramas, movies, and variety shows, with local language subtitles, as well as original productions under the Viu Originals label. It is available in 16 markets across Asia, the Middle East, and Africa, and operates on both a free ad-supported tier and a paid subscription tier.
+
+For more information, visit the [Viu Wikipedia page](https://en.wikipedia.org/wiki/Viu_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VOF', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VOQ', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VOSTFR', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VP9', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VP9', '**VP9**
+
+VP9 is an open-source, royalty-free video codec developed by Google, released in June 2013. It reduces streaming bitrate by 30-50% compared to H.264 at equivalent visual quality and is widely used on platforms such as YouTube, which encodes all 4K video in VP9 by default. While VP9 is efficient for web streaming, it is primarily a streaming codec and is not used for physical media remuxes or scene releases, where AVC (H.264) and HEVC (H.265) remain the standard choices.
+
+There have been reported playback and transcoding issues with VP9 content. No respectable release group is currently using it. It is best to avoid this codec for now to prevent compatibility issues.
+
+For more information, visit the [VP9 Wikipedia page](https://en.wikipedia.org/wiki/VP9){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VQ', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VRV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WAVVE', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WEB Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WEB Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WEB Tier 03', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - VRV', '**VRV**
+
+VRV (pronounced "verve") was an American streaming service launched in November 2016, bundling together anime, fantasy, educational, and gaming-related content aimed at fans of those genres. It was only available in the United States. In April 2023, VRV shut down and its content was merged into Crunchyroll.
+
+For more information, visit the [VRV Wikipedia page](https://en.wikipedia.org/wiki/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WAVVE', '**Wavve**
+
+Wavve is a South Korean subscription streaming service operated by SK Telecom, offering TV dramas, variety shows, films, documentaries, animations, and sports. It was launched in September 2019 as a joint venture between SK Telecom and South Korea''s three major broadcasters KBS, MBC, and SBS. Wavve has received approval to merge with fellow Korean streaming service TVING.
+
+For more information, visit the [Wavve Wikipedia page](https://en.wikipedia.org/wiki/Wavve){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WEB Tier 01', '**WEB Tier 01**<br>
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Create hybrids using multiple high-quality sources
+- Sign up for the gentleman list on a certain private tracker (TV releases)
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WEB Tier 02', '**WEB Tier 02**<br>
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WEB Tier 03', '**WEB Tier 03**<br>
+
+Groups that:
+
+- Are new, and have released several dozen objectively good quality releases
+- Have retired and their releases don''t meet current quality standards
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WEBDL Boost', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WETV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WiTH AD', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WiTH ASL', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WiTH BASL', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WiTH BSL', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Wrong Language', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - x264', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - x265', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WETV', '**WeTV**
+
+WeTV is the international version of Tencent Video, a Chinese streaming service owned by Tencent. It was launched in 2018 and offers Chinese, Korean, Thai, and Japanese dramas, movies, anime, and original productions. It serves content from various Asian countries, including Indonesia, Korea, Thailand, Malaysia, the Philippines, and Japan, and also produces local original content in the regions where it operates.
+
+For more information, visit the [Tencent Video Wikipedia page](https://en.wikipedia.org/wiki/Tencent_Video){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WiTH AD', '**With Audio Description**<br>
+
+Audio Description (AD) is an extra narration track that describes key visual details such as scenery, costumes, and actions for blind or visually impaired viewers. It makes TV and film content more accessible by explaining what cannot be heard in the main audio.
+
+Some releases include Audio Description, marked as `WITH AD` or `AD`. Note: this is not the same as advertisements.
+
+For more information, visit the [Audio Description Wikipedia page](https://en.wikipedia.org/wiki/Audio_description){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WiTH ASL', '**ASL (American Sign Language)**<br>
+
+ASL is a sign language used in the United States and English-speaking Canada. It uses a one-handed alphabet and was heavily influenced by French Sign Language (LSF). ASL relies on spatial organization and facial expressions to convey meaning and grammar.
+
+For more information, visit the [American Sign Language Wikipedia page](https://en.wikipedia.org/wiki/American_Sign_Language){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WiTH BASL', '**BASL (Black American Sign Language)**<br>
+
+BASL is a dialect of ASL used primarily by Black Deaf Americans, originating from segregated schools in the South. Compared to mainstream ASL, it uses a larger signing space, more two-handed signs, and greater emotional expression.
+
+For more information, visit the [Black American Sign Language Wikipedia page](https://en.wikipedia.org/wiki/Black_American_Sign_Language){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - WiTH BSL', '**BSL (British Sign Language)**<br>
+
+BSL is a sign language used across the United Kingdom. It uses a two-handed alphabet and is part of the BANZSL language family, alongside Australian and New Zealand sign languages. BSL relies on body movement and hand shapes to convey meaning, and often follows a topic-comment sentence structure.
+
+For more information, visit the [British Sign Language Wikipedia page](https://en.wikipedia.org/wiki/British_Sign_Language){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - Wrong Language', '**Wrong Language**<br>
+
+This Custom Format checks if the release is in the original language. If it is not, it gets tagged as Wrong Language.
+One issue with the Wrong Language Custom Format is that TMDB sometimes has incorrect data.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - x264', '**x264**
+
+x264 is a free and open-source software library developed by VideoLAN for encoding video into the H.264/MPEG-4 AVC format, released under the GNU General Public License. It is the most widely deployed H.264/AVC encoder in the world, with over 80% of all videos on the internet estimated to be encoded using x264. x264 is primarily used for 720p and 1080p encodes, and offers excellent direct-play support and broad compatibility across virtually all devices and media players.
+
+For more information, visit the [x264 Wikipedia page](https://en.wikipedia.org/wiki/X264){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - x265', '**x265**
+
+x265 is an encoder for creating digital video streams in the High Efficiency Video Coding (HEVC/H.265) compression format, developed by MulticoreWare. It delivers up to 50% better compression than H.264 while maintaining high quality, making it ideal for 4K, 8K, and HDR workflows including HDR10, HDR10+, and Dolby Vision.
+
+Note the following applies to all x265/HEVC releases that are not remuxes.
+
+x265 is primarily used for 2160p encodes and for 1080p encodes that include HDR formats such as Dolby Vision, HDR10, and others. It works best when the source is a high-quality remux or untouched disc source. If the source is not remux or source quality, there will be a noticeable loss in quality. If storage space is a concern, x265 can save around 10-20% compared to x264, but the best x265 quality still requires large, high-quality source files. Unfortunately, many x265 release groups microsize their releases or use x264 as a source, resulting in poor quality output. The few groups that use the correct source produce much better results, but those releases still tend to be large in size.
+
+For more information, visit the [x265 Wikipedia page](https://en.wikipedia.org/wiki/X265){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - x265 (HD)', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - x265 (no HDR/DV)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - x266', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - YOUKU', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - x266', '**x266**
+
+x266 is the next generation open-source VVC/H.266 compliant encoder, built on top of the industry-standard x265 HEVC encoder. The VVC/H.266 standard was developed with the goal of achieving twice the coding efficiency of HEVC, and supports High Dynamic Range (HDR), Wide Color Gamut (WCG), and 360° video. x266 is still actively being developed by MulticoreWare, and very little is currently known about its final implementation.
+
+No respectable release group is currently using x266. It is best to avoid this codec for now to prevent compatibility issues.
+
+For more information, visit the [Versatile Video Coding Wikipedia page](https://en.wikipedia.org/wiki/Versatile_Video_Coding){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Radarr - YOUKU', '**Youku**
+
+Youku is one of China''s leading video streaming platforms, founded in 2006 and headquartered in Beijing. It has been part of the Alibaba Group since its acquisition in 2015. It offers original TV dramas, variety shows, and licensed international content, including Korean dramas, Japanese anime, and selected Western series. The service is primarily aimed at audiences in China.
+
+For more information, visit the [Youku Wikipedia page](https://en.wikipedia.org/wiki/Youku){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 1.0 Mono', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 1080p', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 10bit', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 1080p', '**1080p**<br>
+
+This Custom Format can boost 1080p releases. It is only useful if you use [Merge Qualities](/Radarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} in your Quality Profile.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 10bit', '**10bit**<br>
+
+This Custom Format covers releases that are 10bit.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 2.0 Stereo', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 2160p', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 2160p', '**2160p**<br>
+
+This Custom Format can boost 2160p releases. It is only useful if you use [Merge Qualities](/Radarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} in your Quality Profile.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 3.0 Sound', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 4.0 Sound', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 4OD', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 4OD', '**Channel 4 (4oD / All 4)**
+
+Channel 4 is a video-on-demand service from Channel Four Television Corporation, free of charge for most content and funded by advertising. It launched on November 16, 2006, as 4oD (4 on Demand), was renamed All 4 in 2015, and rebranded again as Channel 4 in April 2023, becoming the first UK broadcaster to adopt one brand identity across its digital and linear channels. It offers programmes from Channel 4, E4, More4, Film4, and E4 Extra, alongside exclusive content, with a 30-day catch-up window and a large archive of programming. An ad-free subscription tier is available under the name Channel 4+. It is only available in the UK and Ireland.
+
+For more information, visit the [Channel 4 VoD Wikipedia page](https://en.wikipedia.org/wiki/Channel_4_(VoD_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 5.1 Surround', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 6.1 Surround', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 7.1 Surround', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 720p', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AAC', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ABEMA', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - 720p', '**720p**<br>
+
+This Custom Format can boost 720p releases. It is only useful if you use [Merge Qualities](/Radarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} in your Quality Profile.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AAC', '**AAC (Lossy)**
+
+AAC (Advanced Audio Coding) is a lossy digital audio compression format, originally designed as a successor to MP3. It became standardized in 1997 and is widely used in cell phones, game consoles, digital radio, and streaming platforms. AAC delivers superior sound quality compared to MP3 at the same bit rate, and has been widely adopted as the default audio format by major platforms including YouTube, iPhone, iPod, iPad, and Apple iTunes. Like all lossy formats, some audio data is permanently removed during compression, though the difference is rarely noticeable to most listeners.
+
+For more information, visit the [AAC Wikipedia page](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ABEMA', '**ABEMA**
+
+ABEMA is a Japanese streaming service owned by CyberAgent and TV Asahi, launched in April 2016. It operates primarily as a free, ad-supported platform offering around 25 live channels, covering news, anime, original dramas, reality dating shows, and sports, with an optional paid premium tier for on-demand content. It is primarily available in Japan and is well known for its live sports broadcasting, including the 2022 FIFA World Cup.
+
+For more information, visit the [ABEMA Wikipedia page](https://en.wikipedia.org/wiki/Abema){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ADN', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ALL4', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AMZN', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 04', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 05', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 06', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 07', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 08', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Dual Audio', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime LQ Groups', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Raws', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 04', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 05', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 06', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Asian LQ', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ALL4', '**All 4**
+
+All 4 was the name of Channel Four Television Corporation''s video-on-demand streaming service from March 30, 2015, when it replaced the original 4oD (4 on Demand) branding. It offered free, ad-funded access to programmes from Channel 4, E4, More4, Film4, and E4 Extra, along with a large archive and exclusive content. On April 17, 2023, All 4 was rebranded as simply "Channel 4," making it the first UK broadcaster to adopt one brand identity across its digital and linear channels. It is only available in the UK and Ireland.
+
+For more information, visit the [Channel 4 VoD Wikipedia page](https://en.wikipedia.org/wiki/Channel_4_(VoD_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AMZN', '**Amazon Prime Video**
+
+Amazon Prime Video is a global streaming service owned by Amazon, offering a wide range of movies, TV series, and original productions. It is included as part of an Amazon Prime membership, which also provides other benefits like free delivery and music streaming. It is available in over 240 countries and territories worldwide.
+
+For more information, visit the [Amazon Prime Video Wikipedia page](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 01', '**Anime BD Tier 01**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 02', '**Anime BD Tier 02**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 03', '**Anime BD Tier 03**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 04', '**Anime BD Tier 04**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 05', '**Anime BD Tier 05**<br>
+
+Groups that are consistent and do Remuxes.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 06', '**Anime BD Tier 06**<br>
+
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 07', '**Anime BD Tier 07**<br>
+
+Known P2P and Scene Anime groups.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime BD Tier 08', '**Anime BD Tier 08**<br>
+
+Know groups that do mini encodes.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Dual Audio', '**Anime Dual Audio**<br>
+
+This Custom Format covers releases that have Dual Audio.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime LQ Groups', '**Anime LQ Groups**<br>
+
+A collection of known low-quality groups.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Raws', '**Anime Raws**<br>
+
+A collection of known groups that release raws.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 01', '**Anime Web Tier 01**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 02', '**Anime Web Tier 02**<br>
+
+Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 03', '**Anime Web Tier 03**<br>
+
+Official sub groups that tend to be more consistent and release fast.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 04', '**Anime Web Tier 04**<br>
+
+Official sub groups.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 05', '**Anime Web Tier 05**<br>
+
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Anime Web Tier 06', '**Anime Web Tier 06**<br>
+
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Asian LQ', '**Asian LQ**
+
+A collection of Asian release groups that either do not provide subtitles or are groups that cause issues during importing.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Asian Tier 01', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Asian Tier 02', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Asian Tier 03', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ATMOS (undefined)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ATV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ATVP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AUBC', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ATV', '**Apple TV**
+
+Apple TV is a subscription streaming service offering hundreds of exclusive original shows and movies, including dramas, sci-fi, and comedies, with new releases every week. It is one of the few streaming services that remains completely ad-free and is available in over 100 countries. It also includes live sports, such as Formula 1, MLS football, and Friday Night Baseball.
+
+For more information, visit the [Apple TV Wikipedia page](https://en.wikipedia.org/wiki/Apple_TV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ATVP', '**Apple TV+**
+
+Apple TV+ is a subscription streaming service offering hundreds of exclusive original shows and movies, including dramas, sci-fi, and comedies, with new releases every week. It is one of the few streaming services that remains completely ad-free and is available in over 100 countries. It also includes live sports, such as Formula 1, MLS football, and Friday Night Baseball.
+
+For more information, visit the [Apple TV+ Wikipedia page](https://en.wikipedia.org/wiki/Apple_TV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AUBC', '**AUBC (Australian Broadcasting Corporation)**
+
+ABC iview is a free video-on-demand and catch-up TV service run by the Australian Broadcasting Corporation (ABC), launched in July 2008. It is commercial-free and offers Australian and international dramas, documentaries, news, and children''s programming. It is only available to viewers in Australia and requires a free ABC account to watch.
+
+For more information, visit the [Australian Broadcasting Corporation Wikipedia page](https://en.wikipedia.org/wiki/Australian_Broadcasting_Corporation){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AUViO', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AV1', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - AV1', '**AV1**<br>
+
+AV1 encodes are currently targeting small file sizes, rather than good visual quality.
+
+- This is a new codec and you need modern devices that support it.
+- We also had reports of playback/transcoding issues.
+- No main group is actually using it (yet).
+- It''s better to ignore this new codec to prevent compatibility issues', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - B-Global', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Bad Dual Groups', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Bilibili', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - BR-DISK', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Bad Dual Groups', '**Bad Dual/Multi groups**
+
+These release groups often do not set the original language of the media as the first audio track. Since ffprobe relies on the first audio track to determine the release''s primary language, incorrect ordering can cause parsing errors. This may lead to failed imports, misidentified files, or download loops. To ensure proper processing, the original language should always be the first audio track in the release.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Bilibili', '**Bilibili**
+
+Bilibili is a major Chinese video streaming platform founded in 2009 and headquartered in Shanghai, focused on anime, comics, and gaming content. It offers anime, dramas, documentaries, variety shows, live streaming, and user-created content, primarily serving audiences in China, Taiwan, and Hong Kong.
+
+For more information, visit the [Bilibili Wikipedia page](https://en.wikipedia.org/wiki/Bilibili){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - BR-DISK', '**BR-DISK**<br>
+
+This is a custom format to help Radarr/Sonarr recognize and ignore BR-DISK (ISOs and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+
+!!! note
+
+    Depending on your renaming scheme, it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
+    This is a cosmetic annoyance until we come up with another way to solve this,
+    Since this Custom Format is used not to download BR-DISK, it fulfills its purpose as intended.
+    There are several reasons why this is happening:
+
+    - Blame the often incorrectly used naming of x265 encodes.
+    - Radarr/Sonarr uses dynamic custom formats.
+
+--8<-- "includes/cf-descriptions/apply-10000.md"', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - BR-DISK (BTN)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - BW', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CBC', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CC', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CNLP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CPNG', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CR', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CRAV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DCU', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DD', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - BW', '**Black & White Versions**
+
+Some shows are released in both Color and Black & White versions. Users who prefer the color version should keep the default negative score of -10000. Since Sonarr doesn’t support editions, if you prefer the Black & White version, assign a positive score (1-5 should be enough) to this Custom Format. Sonarr will then prefer the Black & White releases, and the Custom Format will also be used in your naming scheme.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CBC', '**CBC Gem (Canadian Broadcasting Corporation)**
+
+CBC Gem is the Canadian Broadcasting Corporation''s free digital streaming service, offering on-demand shows, movies, news, documentaries, and live TV streams from up to 14 regional CBC channels across Canada. A free account is required to watch, with an optional paid Premium plan that removes ads and adds access to CBC News Network. It is only available to viewers in Canada.
+
+For more information, visit the [Canadian Broadcasting Corporation Wikipedia page](https://en.wikipedia.org/wiki/Canadian_Broadcasting_Corporation){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CC', '**Comedy Central**
+
+Comedy Central is an American cable channel owned by the MTV Entertainment Group, a division of Paramount Skydance. Launched in 1991, it broadcasts comedy programming including original series, licensed shows, stand-up specials, and feature films. Comedy Central content is available to stream on Paramount+, where subscribers can access their favorite shows from the channel.
+
+For more information, visit the [Comedy Central Wikipedia page](https://en.wikipedia.org/wiki/Comedy_Central){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CNLP', '**Canal+**
+
+Canal+ is a French subscription streaming service and pay TV provider, launched as a satellite service in 1992 and relaunched as a streaming platform in 2013. It is a subsidiary of Canal+ S.A. It offers movies, dramas, original series, and live sports — including top football leagues. The service is available across Europe, Africa, Oceania, Myanmar, and Vietnam, with over 26.8 million subscribers.
+
+For more information, visit the [Canal+ Wikipedia page](https://en.wikipedia.org/wiki/Canal%2B_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CPNG', '**Coupang Play**
+
+Coupang Play is a South Korean streaming service launched by Coupang in December 2020. It offers movies, dramas, variety shows, and live sports including the Premier League, NBA, and more. It is included with Coupang''s Rocket Wow membership.
+
+For more information, visit the [Coupang Play Wikipedia page](https://en.wikipedia.org/wiki/Coupang_Play){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CR', '**Crunchyroll (CR)**
+
+Crunchyroll is an American subscription streaming service owned by Sony, dedicated to anime and manga. It offers a large library of anime series and films, with simulcast episodes available at or near the same time as their Japanese broadcast, in both subtitled and dubbed formats. It is free to watch with ads, with an optional paid subscription for ad-free viewing. It is available in over 200 countries and is one of the most popular anime streaming services in the world.
+
+For more information, visit the [Crunchyroll Wikipedia page](https://en.wikipedia.org/wiki/Crunchyroll){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - CRAV', '**Crave**
+
+Crave (originally CraveTV) is a Canadian subscription streaming service owned by Bell Media, launched in December 2014. It is Canada''s largest homegrown streamer, offering HBO and Max Originals, Showtime, Starz, Hollywood movies, and a growing slate of English and French original series. It is only available in Canada.
+
+For more information, visit the [Crave Wikipedia page](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DCU', '**DC Universe (DCU)**
+
+DC Universe was an American subscription streaming service operated by DC Entertainment and Warner Bros. Digital Networks, launched on September 15, 2018. It featured animated and live-action series based on DC Comics properties, a rotating back catalogue of DC Comics publications, and exclusive original shows such as Titans, Doom Patrol, Harley Quinn, and Young Justice. In January 2021, the video streaming service was shut down and relaunched as DC Universe Infinite, a digital comics-only service, with all original programming moving to HBO Max.
+
+For more information, visit the [DC Universe Wikipedia page](https://en.wikipedia.org/wiki/DC_Universe_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DD', '**DD (Lossy)**
+
+Dolby Digital, also known as AC-3, is a lossy audio compression format developed by Dolby Laboratories. It was first used to provide digital sound in cinemas and has since become a standard for TV broadcasts, DVDs, Blu-ray discs, and game consoles. It supports up to 5.1 channels of surround sound and uses a lossy compression algorithm, discarding audio information that is less perceptible to the human ear in order to reduce file size. It was one of the most widely used audio formats in home theater and broadcast media.
+
+For more information, visit the [Dolby Digital Wikipedia page](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DD+', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DD+ ATMOS', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DMM-TV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DSCP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DSNP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS X', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS-ES', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS-HD HRA', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS-HD MA', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DMM-TV', '**DMM TV**
+
+DMM TV is a Japanese streaming service by DMM.com, offering anime, movies, dramas, and variety shows. It is especially popular for its large anime library. Content is primarily aimed at viewers in Japan.
+
+For more information, visit the [DMM TV Wikipedia page](https://en.wikipedia.org/wiki/DMM.com){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DSCP', '**Discovery+ (DSCP)**
+
+Discovery+ is an American subscription streaming service owned by Warner Bros. Discovery, focused on factual and non-fiction programming drawn from Discovery''s major channel brands, including HGTV, Food Network, TLC, and Investigation Discovery, as well as original series and content from CNN. It launched in the US on January 4, 2021. It is the streaming home for food, home, travel, true crime, and paranormal content, with over 70,000 episodes available. It remains a standalone service alongside Max in the US.
+
+For more information, visit the [Discovery+ Wikipedia page](https://en.wikipedia.org/wiki/Discovery%2B){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DSNP', '**Disney+**
+
+Disney+ is a subscription streaming service owned by The Walt Disney Company, offering movies and TV shows from its major brands Disney, Pixar, Marvel, Star Wars, and National Geographic. It is the third most-subscribed streaming service in the world, with over 131 million paid subscribers. It offers a mix of classic favorites, new releases, and original productions exclusive to the platform.
+
+For more information, visit the [Disney+ Wikipedia page](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS', '**DTS (Lossy)**
+
+DTS (Digital Theater Systems) is a lossy multichannel audio codec developed to provide discrete surround sound channels for cinema and home use. It supports 5.1 channels of surround sound and is a direct competitor to Dolby Digital, commonly found on DVDs and Blu-ray discs. Compared to Dolby Digital, DTS typically uses less compression and higher bit rates, up to 1.5 Mbps, which many consider to result in slightly better sound quality. It served as the foundation for later DTS formats, including DTS-ES, DTS-HD High Resolution Audio, DTS-HD Master Audio, and DTS:X.
+
+For more information, visit the [DTS Wikipedia page](https://en.wikipedia.org/wiki/DTS_(sound_system)){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS X', '**DTS:X (Lossless)**
+
+DTS:X is an object-based 3D surround sound format developed by DTS, designed to place sounds anywhere in a three-dimensional space around the listener. It is carried by DTS-HD Master Audio, a lossless audio codec commonly used on Blu-ray discs, supporting up to 7.1 channels plus additional audio objects at 96 kHz/24-bit quality. DTS:X supports flexible speaker placement, allowing audio to be remapped to any speaker configuration, with up to 32 speaker locations.
+
+For more information, visit the [DTS:X Wikipedia page](https://en.wikipedia.org/wiki/DTS:X){:target="_blank" rel="noopener noreferrer"} and the [DTS-HD Master Audio Wikipedia page](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS-ES', '**DTS-ES (Lossy)**
+
+DTS-ES (Extended Surround) is a lossy extension of the standard DTS 5.1 format, launched in 2000. It adds a discrete center back surround channel between the two rear channels, creating a 6.1-channel soundstage and improving surround envelopment by filling in the gap at the back of the room. It comes in two versions: DTS-ES Discrete 6.1, which carries the rear center channel as a fully separate discrete channel, and DTS-ES Matrix 6.1, which derives the rear center channel from the existing surround channels for backward compatibility. It is commonly found on DVD releases.
+
+For more information, visit the [DTS-ES Wikipedia page](https://en.wikipedia.org/wiki/DTS-ES){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS-HD HRA', '**DTS-HD HRA (Lossy)**
+
+DTS-HD High Resolution Audio (DTS-HD HRA) is a high-resolution but lossy audio format developed by DTS. It offers a higher bit rate and more audio detail than standard DTS, with support for up to 8 channels and data rates of up to 6 Mbit/s on Blu-ray. Unlike DTS-HD Master Audio, which is lossless, DTS-HD HRA uses lossy compression, meaning some audio information is discarded during encoding. It is backward compatible with standard DTS decoders and is sometimes used on Blu-ray discs where disc space is a concern, as a lower-footprint alternative to DTS-HD MA.
+
+For more information, visit the [DTS-HD Master Audio Wikipedia page](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DTS-HD MA', '**DTS-HD MA (Lossless)**
+
+DTS-HD Master Audio (DTS-HD MA) is a lossless audio codec developed by DTS, commonly used for surround sound on Blu-ray discs. It supports variable bit rates up to 24.5 Mbit/s and up to 7.1 channels of audio at 96 kHz/24-bit quality. It uses a hybrid approach, with a lossy DTS core for backward compatibility on older devices, plus a lossless extension that reconstructs the full audio signal on supported hardware. By 2010, it had become the dominant lossless audio format on Blu-ray, and it also serves as the carrier format for DTS:X.
+
+For more information, visit the [DTS-HD Master Audio Wikipedia page](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Dual Audio Asian', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Dubs Only', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Dubs Only', '**Dubs Only**<br>
+
+This Custom Format covers releases that only have Dubs.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DV (Disk)', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DV (w/o HDR fallback)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DV Boost', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Extras', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FanSUB', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FastSUB', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FLAC', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - DV Boost', '**DV Boost**<br>
+
+If you prefer Dolby Vision and have compatible equipment, add the DV Boost custom format. This custom format prioritizes releases containing Dolby Vision over standard HDR releases.
+
+<sub>*This custom format accepts DV Profile 5 and also upgrades from DV/HDR10/HDR10+ to DV HDR10 or DV HDR10+.*</sub>', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Extras', '**Extras**<br>
+
+This Custom Format is used to prevent from grabbing releases containing only extras (bonus footage, outtakes, etc).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FanSUB', '**FanSUB**<br>
+
+Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so-called FastSUBs.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FastSUB', '**FastSUB**<br>
+
+FanSUB, but made as quickly as possible, at the expense of quality.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FLAC', '**FLAC (Lossless)**
+
+FLAC (Free Lossless Audio Codec) is an open audio format similar to MP3, but lossless, meaning audio is compressed without any loss in quality. FLAC is designed to reduce the amount of storage space needed for digital audio while retaining all the original information. It is free and open, meaning its specification is publicly available and its reference implementation is open source. FLAC can achieve a compression of around 30-50% compared to uncompressed audio, without sacrificing any audio quality. It is widely used for music archiving and high-quality audio playback.
+
+For more information, visit the [FLAC Wikipedia page](https://en.wikipedia.org/wiki/FLAC){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FLUX', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FOD', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FOD', '**FOD (Fuji TV On Demand)**
+
+FOD (Fuji TV On Demand) is a video-on-demand streaming service owned by Fuji Television Network, Inc. It was launched in 2005 and offers Japanese dramas, anime, movies, and variety shows. It is primarily aimed at viewers in Japan and focuses on content from Fuji TV''s broadcast library, including past episodes of popular series and exclusive original programming.
+
+For more information, visit the [Fuji Television Wikipedia page](https://en.wikipedia.org/wiki/Fuji_Television){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FR Anime FanSub', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FR Anime Tier 01', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FR Anime Tier 02', NULL, 0);
@@ -3954,151 +4891,4020 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonar
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FR WEB Tier 01', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FR WEB Tier 02', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FR WEB Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FreeLeech', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - friDay', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FUNi', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German 1080p Booster', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German 2160p Booster', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Bluray Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Bluray Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Bluray Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Scene', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Web Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Web Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Web Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Bluray Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Bluray Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Bluray Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German DL', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FreeLeech', '**FreeLeech**<br>
+
+Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is useful if you do not have the best ratio yet.
+
+!!! warning
+
+    Keep in mind not all trackers support this option.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - friDay', '**friDay Video**
+
+friDay Video is a Taiwanese streaming service owned by Far EasTone, one of Taiwan''s major telecom providers, and is Taiwan''s number one domestic streaming platform. It offers movies, dramas, variety shows, live news, and anime, with a strong focus on Korean, Japanese, and local Taiwanese content. New releases and simulcast titles are regularly added, making it a popular choice for fans of Asian entertainment in Taiwan.
+
+For more information, visit the [Far EasTone Wikipedia page](https://en.wikipedia.org/wiki/Far_EasTone){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - FUNi', '**Funimation**
+
+Funimation was an American anime streaming service launched in 2016, known for popular titles such as Dragon Ball, One Piece, Attack on Titan, and My Hero Academia. It was one of the leading distributors of anime in North America and was owned by Sony. On April 2, 2024, Funimation shut down and merged into Crunchyroll, where most of its content library is now available.
+
+For more information, visit the [Funimation Wikipedia page](https://en.wikipedia.org/wiki/Funimation){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German', '**Language: German**
+
+This custom format helps Radarr/Sonarr recognize German audio releases that contain only a German language track and no others. It will add `German` to your filename.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German 1080p Booster', '**German 1080p Booster**<br>
+
+As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German 2160p Booster', '**German 2160p Booster**<br>
+
+As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Bluray Tier 01', '**German Anime Bluray Tier 01**<br>
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** Advanced filtering that *fixes* known BD problems where present, e.g. banding, rescale-issues, chroma shift, wrong/missing decimation, duplicate-frame patterns - plus the usual debanding, de-/regraining, anti-aliasing, dehaloing. Filters must improve the image to avoid nuking detail (no over-strong filtering).
+- **Audio:** Lossless preserved, but de-bloated where sensible - e.g. DTS-HD MA/PCM -> FLAC (often ~50% smaller). If the source is pointless-bloated (e.g. random 24-bit tracks), normalization to a practical lossless target (commonly 16-bit FLAC) is acceptable within this tier''s logic. Lossy tracks (AC3, etc.) are not re-encoded.
+- **QC & Features:**
+    - **Subtitles:** ASS/SSA preferred. Best case: properly typeset Web-subs (e.g. CR) when available and correctly synced. Otherwise: high-quality OCR of BD-PGS with readable styling (border/shadow) and sensible timing alignment. Raw PGS only if unavoidable. Fonts attached where needed.
+    - **Chapters:** Present (from disc or accurately transferred).
+    - **Tags:** Clean metadata, correct language codes, correct track naming, fonts attached for ASS.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Bluray Tier 02', '**German Anime Bluray Tier 02**<br>
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** Casual filtering (debanding, de-/regraining, anti-aliasing, dehaloing). Improvements are visible, but the release typically does not (consistently) address heavier BD issues like chroma shift, bad decimation/duplicate-frame patterns, or rescale problems.
+- **Audio:** Lossless may be kept as-is or converted losslessly to FLAC. Lossy audio is not re-encoded.
+- **QC & Features:**
+    - **Subtitles:** OCR''d BD subs or Web-subs included, basic readability styling expected. Raw PGS is acceptable. Fonts may or may not be attached.
+    - **Chapters:** Usually present, can be basic.
+    - **Tags:** Mostly correct, occasional inconsistencies.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Bluray Tier 03', '**German Anime Bluray Tier 03**<br>
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** No filtering/basic encode approach. Can be fine on clean discs, but commonly carries over BD flaws (banding, chroma shift, bad/absent decimation with duplicates, rescale issues). Encoding artifacts are typically only noticeable on closer inspection, but underlying source issues remain.
+- **Audio:** Typically original tracks (often bloated). Lossless-to-FLAC savings are usually not applied. Lossy audio remains untouched.
+- **QC & Features:**
+    - **Subtitles:** Raw BD-PGS common, limited typesetting, timing not optimized. Little/no OCR, little/no styling work.
+    - **Chapters:** May be missing or pass-through only.
+    - **Tags:** Messy or inconsistent naming/metadata more likely.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Scene', '**German Anime Scene**<br>
+
+Known German Scene groups (which are not defined as LQ).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Web Tier 01', '**German Anime Web Tier 01**<br>
+
+- **Source:** WEB-DL (Lossless download from top providers like AMZN, CR, NF, ADN).
+- **Video:** Untouched Video Stream preferred. Always aim for the best available stream from the provider; note that the highest bitrate does not always equal the best visual quality. If encoded, it must have a good reason and be visually transparent or better (e.g. rescaling/filtering). There are few good reasons to reencode. Avoid fake 2160p/4K releases (especially from providers like Bilibili or iQIYI).
+- **Audio:** Best available bitrate from the provider. Dual Audio (GER+JPN) or OmU (Original with Subs) if no Dub exists.
+- **QC & Features:**
+    - **Subtitles:** Format must be ASS/SSA. If source is VTT/TTML/SRT, it must be converted and properly styled (readable font, shadow/border). No raw text-based subs. If source is ASS, the subs should contain basic fixes like LayoutRes and set “ScaledBorderAndShadow: Yes”. If the release contains a dub, forced and full subtitles should be included.
+    - **Chapters:** Mandatory. Named chapters preferred, but accurately generated markers are acceptable.
+    - **Tags:** Clean metadata, correct language codes. Should follow MKV best practices.
+    - **Fonts:** All used fonts must be attached. Attachment names should match the full font name (e.g., Times New Roman Bold.ttf instead of timesbd.ttf) to ensure maximum player compatibility.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Web Tier 02', '**German Anime Web Tier 02**<br>
+
+- **Source:** WEB-DL or high-quality WEBRip (from reputable sources).
+- **Video:** Untouched streams or high-quality encodes (preferably H.265/HEVC or H.264). Must be free of obvious artifacts (blocking, heavy noise) and maintain visual integrity.
+- **Audio:** Standard streams (AAC/E-AC3). Dual Audio or OmU accepted.
+- **QC & Features:**
+    - **Subtitles:** ASS or SRT included. Must be readable. If using SRT, correct encoding (UTF-8) is mandatory to avoid broken characters.
+    - **Chapters:** Basic markers are highly encouraged, but not strictly mandatory if the source lacks them.
+    - **Tags:** Proper filenames following scene or p2p “standards”. Correct language tags for audio and subtitle tracks are expected for player automation.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Anime Web Tier 03', '**German Anime Web Tier 03**<br>
+
+- **Source:** WEB-DLs or WEBRip from less reliable providers or inconsistent releases from groups lacking commitment.
+- **Video:** Functional, but often lacks consistency across different episodes/seasons. Encoding artifacts are only visible upon close inspection.
+- **QC & Features:**
+    - **Subtitles:** SRT/ASS included.
+    - **Chapters:** Missing entirely.
+    - **Tags:** Messy or incomplete tags and filenames.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Bluray Tier 01', '**German Bluray Tier 01**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+- HDR/DoVi (Depending on what''s offered and often both).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Bluray Tier 02', '**German Bluray Tier 02**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that have the best German audio track to an English release.
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Bluray Tier 03', '**German Bluray Tier 03**<br>
+
+- WiP
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German DL', '**Language: German + Original aka German DL**
+
+This custom format helps Radarr/Sonarr recognize German Dual Language audio releases.
+
+- Add this Custom Format with the default score of `-10000` to prevent getting releases that include `German + Original audio`.
+- Add this Custom Format with a score of +`10001` if you prefer releases that include `German + Original audio`,  It will add `German DL` to your filename.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German DL (undefined)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German LQ', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German LQ', '**German LQ**<br>
+
+A collection of known German Low-Quality groups that are often banned from the top trackers due to their lack of quality.
+
+!!! note
+
+    - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
+    - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
+    - DeTAG/ReTAG = Detagging or stealing groups.
+    - Other reasons = Group is banned on top tier trackers or is generally known for poor quality/errors.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German LQ (release title)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Microsized', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Remux Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Remux Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Scene', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Subbed', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Web Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Web Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Web Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Hami', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HBO', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HD Bluray Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HD Bluray Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HD Streaming Boost', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HDR', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Microsized', '**German Microsized**<br>
+
+A collection of known German groups producing low quality micro-sized releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Remux Tier 01', '**German Remux Tier 01**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+- HDR/DoVi (Depending on what''s offered and often both).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Remux Tier 02', '**German Remux Tier 02**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that have the best German audio track to an English release.
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Scene', '**German Scene**<br>
+
+Known German Scene groups (which are not defined as LQ).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Subbed', '**German Anime Subbed**<br>
+
+Used to recognize German (and possibly English) subtitles.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Web Tier 01', '**German Web Tier 01**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+- HDR/DoVi (Depending on what''s offered and often both).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Web Tier 02', '**German Web Tier 02**<br>
+
+- WiP
+- Groups that get their releases directly from the source.
+- Groups that create encodes from a remux without micro-sizing them.
+- Groups that have the best German audio track to an English release.
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - German Web Tier 03', '**German Web Tier 03**<br>
+
+- WiP
+- Groups that haven''t released much or are not well recognized. (yet)
+- Groups that retired and don''t have the best quality by today''s standards.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Hami', '**Hami Video**
+
+Hami Video is a Taiwanese streaming service owned by Chunghwa Telecom, Taiwan''s largest telecom provider. It offers live TV channels, movies, dramas, anime, and major sporting events, including the Olympics. It is primarily aimed at viewers in Taiwan and is available as part of Chunghwa Telecom''s broader entertainment services.
+
+For more information, visit the [Chunghwa Telecom Wikipedia page](https://en.wikipedia.org/wiki/Chunghwa_Telecom){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HBO', '**HBO Max (now Max)**
+
+HBO Max, now rebranded as Max, is Warner Bros. Discovery''s streaming service that combines the best of HBO with content from various Warner Bros. Discovery properties. It launched in 2020 and was rebranded as Max in May 2023. It offers a wide range of popular HBO series, blockbuster movies, DC content, Discovery programmes, and original productions. It is one of the most popular streaming services available worldwide.
+
+For more information, visit the [HBO Wikipedia page](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HD Bluray Tier 01', '**HD Bluray Tier 01**<br>
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Optimize their releases whilst keeping them transparent, using high-quality sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HD Bluray Tier 02', '**HD Bluray Tier 02**<br>
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Use high-quality sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HD Streaming Boost', '**HD Streaming Boost**<br>
+
+Some streaming services have HD releases that are generally better than their UHD counterparts. The HD Streaming Boost custom format increases those streaming services'' scores appropriately for HD releases. Use this in conjunction with the regular streaming service custom formats.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HDR', '**HDR**<br>
+
+All users with HDR-capable equipment should add the HDR custom format.
+
+<sub>*This is a catch-all custom format for all HDR-related formats, including those with HDR10 or HDR10+ fallback capabilities, such as DV HDR10 or DV HDR10+.*</sub>', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HDR10+ Boost', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HFR', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HIDIVE', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HLG', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HMAX', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HTSR', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HULU', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Hybrid', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - INTERNAL', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - IP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - iQIY', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - iT', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ITVX', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - KCW', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - KKTV', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HFR', '**HFR (High Frame Rate)**
+
+High Frame Rate (HFR) refers to video content that runs at a higher frame rate than the typical 24 frames per second (fps) used in traditional cinema. HFR produces a much smoother, more detailed image compared to standard 24fps, and is especially useful for gaming, sports, and live streaming, where it can significantly reduce motion blur and latency. Common HFR frame rates include 48fps, 60fps, and 120fps. While some viewers find HFR more immersive, others feel it gives footage an overly realistic or "soap opera" look compared to the traditional cinematic appearance of 24fps.
+
+For more information, visit the [High Frame Rate Wikipedia page](https://en.wikipedia.org/wiki/High_frame_rate){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HIDIVE', '**HIDIVE**
+
+HIDIVE is an American anime subscription streaming service owned by AMC Global Media, launched in June 2017 as a successor to Anime Network Online. It offers English subtitles and dubs, with exclusive access to first-run simulcasts of new anime at or near the same time as their Japanese broadcast. It is a strong alternative to Crunchyroll, known for its diverse library of both popular and hard-to-find anime titles, including select uncensored content.
+
+For more information, visit the [HIDIVE Wikipedia page](https://en.wikipedia.org/wiki/Hidive){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HLG', '**HLG**
+
+This Custom Format matches HLG releases. The default score can be used to prevent downloading HLG releases on devices that can''t play them properly, e.g., the picture appears very dark and murky, making it unwatchable.
+
+HLG or HLG10 is an HDR format developed by NHK (JP) and the BBC, suitable for both video and still images. This format is backwards compatible with SDR UHD TVs but not with older SDR displays that do not support Rec. 2020 color standards.
+
+You will mainly see this with cable, satellite, and over-the-air TV broadcasts from networks like the BBC and National Geographic.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HMAX', '**HBO Max (now Max)**
+
+HBO Max, now rebranded as Max, is Warner Bros. Discovery''s streaming service that combines the best of HBO with content from various Warner Bros. Discovery properties. It launched in 2020 and was rebranded as Max in May 2023. It offers popular HBO series, blockbuster movies, DC content, Discovery programmes, and original productions. It is one of the most popular streaming services available worldwide.
+
+For more information, visit the [HBO Max Wikipedia page](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HTSR', '**Disney+ Hotstar (HTSR)**
+
+Disney+ Hotstar is a subscription streaming service owned by Disney Star (formerly Star India), originally launched in 2015 as Hotstar. Following Disney''s acquisition of 21st Century Fox in 2019, it was rebranded as Disney+ Hotstar in April 2020, adding content from Disney, Pixar, Marvel, Lucasfilm, and National Geographic. It operates in India, Indonesia, Malaysia, and Thailand, combining local content with the Disney+ library, and is the second largest streaming platform in the world by subscribers, behind only Netflix.
+
+For more information, visit the [Disney+ Hotstar Wikipedia page](https://en.wikipedia.org/wiki/Disney%2B_Hotstar){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - HULU', '**Hulu**
+
+Hulu is an American streaming service majority-owned by Walt Disney Company, offering a large library of TV shows, movies, and original productions. It is one of the few streaming services that also offers live TV, giving subscribers access to live sports, news, and popular channels alongside its on-demand content. It is primarily available in the United States and can be bundled together with Disney+ and ESPN+.
+
+For more information, visit the [Hulu Wikipedia page](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Hybrid', '**Hybrid**
+
+A Hybrid release is a release that combines elements from more than one source to produce the best possible result. For example, the video track may come from one source, such as a Blu-ray disc, while the audio track, subtitles, or additional content come from a different source, such as a streaming service or a different regional release. This approach is used when no single source contains everything needed for the highest quality release, allowing the best available video and audio to be combined into one file.
+
+In general, top tier release groups always try to combine elements from more than one source to produce the best possible result. However, not all release groups mention that their release is a hybrid release.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - INTERNAL', '**Internal**
+
+In the context of scene and P2P releases, an Internal release is one that is distributed within a release group''s private network before, or instead of, being made publicly available. Internal releases often use higher quality settings or unconventional encoding choices that may not conform to standard scene rulesets, making them a preferred choice for those seeking the best possible quality.
+
+Those who prefer scene releases may want to boost internals, as they generally use higher settings that may not conform to the standard ruleset. In some rare cases, P2P releases are also marked as Internal.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - IP', '**BBC iPlayer (iP)**
+
+BBC iPlayer is the UK''s primary public streaming platform, operated by the BBC and launched in 2007. It allows viewers to watch live TV and stream on-demand programmes from BBC channels, including dramas, documentaries, comedy, news, sports, and children''s content. The service is free and ad-free, though a UK TV license is required. It is only available to viewers in the United Kingdom.
+
+For more information, visit the [BBC iPlayer Wikipedia page](https://en.wikipedia.org/wiki/BBC_iPlayer){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - iQIY', '**iQIYI**
+
+iQIYI is a Chinese streaming service offering a wide range of Asian content, including Chinese dramas, anime, variety shows, and original movies. Initially available only in China, it has since expanded to international viewers. It is owned by Baidu and is one of the largest online video platforms in the world.
+
+For more information, visit the [iQIYI Wikipedia page](https://en.wikipedia.org/wiki/IQIYI){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - iT', '**iTunes**
+
+iTunes is Apple''s digital store for buying and renting movies and TV shows. Apple has since redirected iTunes movie and TV purchases to the Apple TV app, which now serves as the main hub for renting and buying content, replacing iTunes as the point of sale for video on demand. Any content previously purchased through iTunes remains accessible through the Apple TV app using the same Apple ID.
+
+For more information, visit the [iTunes Wikipedia page](https://en.wikipedia.org/wiki/iTunes){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ITVX', '**ITVX (ITV)**
+
+ITVX is a British ad-supported streaming service operated by ITV plc, launched in December 2022. It offers original ITV content, live streams of ITV channels, and exclusive and licensed programming. It is free to watch with ads, with an optional paid Premium tier that removes ads and includes additional content. It is only available to viewers in the United Kingdom.
+
+For more information, visit the [ITVX Wikipedia page](https://en.wikipedia.org/wiki/ITVX){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - KCW', '**KOCOWA aka KCW**
+
+KOCOWA is a premium Korean streaming service that offers Korean dramas, variety shows, and K-Pop content from major broadcasters KBS, MBC, and SBS. New shows are available within 6 hours of their original airtime in Korea, with subtitles in English, Portuguese, and Spanish.
+
+For more information, visit the [KOCOWA Wikipedia page](https://en.wikipedia.org/wiki/KOCOWA){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - KKTV', '**KKTV**
+
+KKTV is a Taiwanese streaming service offering dramas, films, and anime from Taiwan, Japan, South Korea, Thailand, and Hong Kong, as well as original series. It was founded in 2016 and is based in Taipei, Taiwan. It is especially known for offering the latest Japanese dramas, with some released within hours or days of their premiere in Japan. In November 2025, KKTV merged with LINE TV.
+
+For more information, visit the [KKTV Wikipedia page](https://en.wikipedia.org/wiki/KKTV){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Language: Not English', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Language: Not French', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Language: Not Original', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Language: Original + French', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - LINETV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - LQ', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - LINETV', '**LINE TV**
+
+LINE TV is a free, ad-supported streaming service owned by Japan-based LINE Corporation, operating mainly in Taiwan. It offers dramas, variety shows, movies, anime, and original content. It is especially popular for Taiwanese, Korean, and Chinese content. In November 2025, LINE TV announced a full merger with KKTV, combining both platforms'' content libraries to offer a wider range of Asian dramas and new features such as offline viewing and dual subtitles.
+
+For more information, visit the [LINE TV Wikipedia page](https://en.wikipedia.org/wiki/Line_TV){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - LQ', '**LQ**
+
+- A collection of known low-quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from the scene and quick-to-release P2P groups that, while adequate, are typically not regarded as high quality.
+- Release groups that disrupt the Starr apps automation because their poor naming could potentially create download loops, even if their overall quality is excellent.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - LQ (Release Title)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MAX', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MP3', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MPEG2', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MULTi', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Multi-Episode', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MY5', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MAX', '**Max**
+
+Max, previously known as HBO Max until May 2023, is Warner Bros. Discovery''s streaming service that combines the best of HBO with content from various Warner Bros. Discovery properties. It offers a wide range of popular HBO series, blockbuster movies, DC content, Discovery programmes, and original productions. It is one of the most popular streaming services available worldwide.
+
+For more information, visit the [Max Wikipedia page](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MP3', '**MP3 (Lossy)**
+
+MP3 (MPEG-1 Audio Layer 3) is a widely used lossy digital audio encoding format, designed to greatly reduce the amount of data required to represent audio, while still sounding like a faithful reproduction of the original to most listeners. It became an ISO/IEC standard in 1991. An MP3 file can compress a music file by up to 95% of its original CD-quality size while maintaining good enough audio quality. It remains one of the most universally compatible audio formats, supported on virtually every device and platform, though it has largely been superseded by more efficient formats like AAC.
+
+For more information, visit the [MP3 Wikipedia page](https://en.wikipedia.org/wiki/MP3){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MPEG2', '**MPEG-2**
+
+MPEG-2 is a standard for the generic coding of moving pictures and associated audio information, using a combination of lossy video and audio compression to allow storage and transmission of video using available storage media and bandwidth. Developed in the 1990s by the Moving Picture Experts Group, it was the standard codec for DVDs and remains in use for over-the-air digital, satellite, and cable broadcasts. While it was a major step forward in its time, it has largely been replaced by more modern and efficient codecs such as AVC (H.264) and HEVC (H.265), which deliver better quality at lower bitrates.
+
+For more information, visit the [MPEG-2 Wikipedia page](https://en.wikipedia.org/wiki/MPEG-2){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MULTi', '**Multi**
+
+A Multi release is a release that contains more than one audio language track. For example, a release labeled "Multi" may include English, French, Spanish, or other language tracks within the same file, allowing viewers to switch between languages during playback. The number and selection of included languages can vary depending on the source and the release group.
+
+Multi releases are common for content distributed across multiple regions, where different audiences require different language options. The presence of multiple audio tracks does not affect the video quality of the release.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Multi-Episode', '**Multi-Episode**<br>
+
+!!! danger "This CF utilizes functionality only available in Sonarr v4.0.2.1262 or later."
+
+This Custom Format will recognize multi-episode releases (e.g. episodes named with ''S01E01E02''), instead of single-episode or season packs, using Sonarr''s built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MY5', '**My5 (now 5)**
+
+My5 is the video-on-demand streaming service from Channel 5 in the United Kingdom, previously known as Five Download, Demand Five, and Demand 5. In March 2025, Channel 5 and My5 merged and relaunched under the unified brand "5," adding 15 new live channels and content from Paramount-owned networks including BET, CBS, Comedy Central, and MTV. The service is free, ad-supported, and only available in the UK.
+
+For more information, visit the [My5 Wikipedia page](https://en.wikipedia.org/wiki/5_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MyCANAL', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MyTVSuper', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - NF', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - NLZ', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - No-RlsGroup', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Not German or English', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - MyTVSuper', '**myTV SUPER**
+
+myTV SUPER is a subscription-based streaming service launched in April 2016 by MyTV Super Limited, a subsidiary of Television Broadcasts Limited (TVB) in Hong Kong. It offers TVB dramas, variety shows, movies, anime, live sports, and horse racing content, with some content supporting up to 4K resolution. The service is primarily available in Hong Kong and Macau.
+
+For more information, visit the [myTV SUPER Wikipedia page](https://en.wikipedia.org/wiki/MyTV_Super){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - NF', '**Netflix**
+
+Netflix is an American subscription streaming service offering movies, TV shows, documentaries, and anime across multiple genres. Originally launched in 1997 as a DVD rental service, it became a streaming platform in 2007 and is now the most-subscribed streaming service in the world, with over 325 million paid members in more than 190 countries. It is well known for its large library of original productions alongside licensed content.
+
+For more information, visit the [Netflix Wikipedia page](https://en.wikipedia.org/wiki/Netflix){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - NLZ', '**NLZiet (NLZ)**
+
+NLZiet is a Dutch subscription streaming service founded in 2014, combining content from major Dutch broadcasters including NPO, RTL, and Talpa into one platform. It offers both live TV and on-demand viewing, mostly ad-free, and is available across the EU. It is primarily aimed at Dutch-speaking viewers and is one of the most complete Dutch-language TV streaming services available.
+
+No English Wikipedia page is currently available, but you can find more information on the [NLZiet official website](https://www.nlziet.nl){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - No-RlsGroup', '**No-RlsGroup**<br>
+
+Some indexers stripped out the release group, which could result in LQ groups receiving higher scores.
+For example, many EVO releases are stripped of the group name, so they appear as "upgrades" and receive a decent score if other factors match.
+
+!!! warning
+
+    If you **DO NOT** use decent filenames (like not adding release groups), **DO NOT** add this Custom Format unless you want to upgrade them.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Not German or English', '**Language: Not German or English**
+
+Used to avoid releases which do not contain German or English audio.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Not German, Japanese or English', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Not German, Japanese, Korean, Chinese or English', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - NOW', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Obfuscated', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Opus', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - OViD', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - P2P Internal', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - PCM', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - PCOK', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - PLAY', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - PMTP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - QIBI', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - RED', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Remaster', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Remux Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Remux Tier 02', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - NOW', '**NOW (formerly NOW TV)**
+
+NOW (formerly known as NOW TV) is a subscription streaming service launched in the UK in 2012, operated by Sky Group. It offers live streaming and video-on-demand content through flexible monthly "passes" covering entertainment, films, and sports with no long-term contract required. It is the only UK streaming service with access to HBO content such as Game of Thrones and The Sopranos, as well as exclusive live sports including the Premier League and Formula 1.
+
+For more information, visit the [NOW Wikipedia page](https://en.wikipedia.org/wiki/Now_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Obfuscated', '**Obfuscated**<br>
+
+Obfuscated releases are something you find on Usenet to do re-posts of common/popular releases.
+
+Several indexers that rely on auto-generating their NZB from groups by seeing things in the clear will suffer the fate of having those NZB DMCA''ed after time, as others can just see what it is and request a file takedown.
+You want indexers that get/do obfuscated releases and allow NZBs to be submitted directly to the NZB-indexer. Then, even thousands of days old releases still work fine unless someone leaks those NZBs to one of those public sites, where they can be requested to be taken down.
+
+- In general, if you''re using Usenet, **DO NOT** use this Custom Format.
+- Use this Custom Format **ONLY** if you **DO NOT** prefer Obfuscated releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Opus', '**Opus (Lossy)**
+
+Opus is a free and open source lossy audio codec developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force (IETF), designed for efficient low-latency encoding of both speech and general audio. It supports bitrates from 6 kbit/s to 510 kbit/s and is widely used for Voice over IP, video conferencing, in-game chat, internet streaming, and live music performances. Several blind listening tests have ranked Opus higher in quality than any other standard audio format at any given bitrate, including MP3, AAC, and HE-AAC.
+
+For more information, visit the [Opus Wikipedia page](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - OViD', '**OVID.tv**
+
+OVID.tv is a subscription streaming service dedicated to independent documentaries, art-house films, and international cinema, with content partners including the British Film Institute, Icarus Films, and Kartemquin Films. Most films on OVID are not available on any other streaming platform, with 20–35 new titles added every month. It is a great option for film enthusiasts looking for curated, non-mainstream cinema.
+
+No Wikipedia page is currently available for OVID.tv, but you can find more information on their [official website](https://www.ovid.tv).', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - P2P Internal', '**P2P Internal**<br>
+
+This Custom Format matches on the Internal Indexer flag that some trackers use to promote their own internal releases. You can use this Custom Format to favor their internal releases, or, when the same release exists on multiple trackers, it will prefer the release from the home tracker.
+For this to work, the tracker must support the Internal Indexer flag!', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - PCM', '**PCM (Lossless)**
+
+PCM (Pulse Code Modulation) is an uncompressed, lossless audio format that accurately captures the full dynamics and details of the original sound without any loss. It works by sampling the analog audio signal at regular intervals and converting each sample into a digital number, preserving the audio waveform precisely. PCM is widely used in CDs, DVDs, and digital broadcasting, and is a common choice when audio quality is the top priority. Because it is uncompressed, PCM files are larger than formats like FLAC or MP3, but deliver the purest possible audio reproduction.
+
+For more information, visit the [PCM Wikipedia page](https://en.wikipedia.org/wiki/Pulse-code_modulation){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - PCOK', '**Peacock TV**
+
+Peacock is an American subscription streaming service owned by Comcast through NBCUniversal, launched in July 2020. It offers TV shows and films from NBCUniversal brands, original productions, and live sports. It is the main streaming home for NBC Sports and Telemundo Deportes, with live sports coverage including the Premier League, NBA, and WWE. It is primarily available in the United States.
+
+For more information, visit the [Peacock Wikipedia page](https://en.wikipedia.org/wiki/Peacock_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - PLAY', '**Google TV**
+
+Google TV, previously known as Play Movies & TV, is Google''s digital platform for buying, renting, and browsing movies and TV shows. It brings together content from over 700,000 titles across multiple streaming apps into one place, with personalized recommendations based on your viewing history. It also allows users to purchase or rent the latest releases directly through the platform.
+
+For more information, visit the [Google TV Wikipedia page](https://en.wikipedia.org/wiki/Google_TV_(service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - PMTP', '**Paramount+**
+
+Paramount+ is an American subscription streaming service owned by Paramount Skydance, featuring content from major brands including CBS, Nickelodeon, MTV, Comedy Central, BET, Showtime, and Paramount Pictures, along with original series, films, and live sports. It started out as CBS All Access in 2014 before being rebranded as Paramount+ in 2021.
+
+For more information, visit the [Paramount+ Wikipedia page](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - QIBI', '**Quibi (QIBI)**
+
+Quibi, short for "quick bites," was a mobile-only streaming service launched on April 6, 2020. It offered high-quality short-form content, with episodes of 10 minutes or less, covering scripted series, documentaries, news, and reality shows. Despite raising nearly $1.8 billion and featuring A-list talent, the platform shut down just six months after its launch, on October 21, 2020.
+
+For more information, visit the [Quibi Wikipedia page](https://en.wikipedia.org/wiki/Quibi){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - RED', '**YouTube Red (now YouTube Premium)**
+
+YouTube Red was launched on October 28, 2015, offering ad-free access to all YouTube videos, offline playback, background playback on mobile, and access to exclusive YouTube Originals programming produced in collaboration with popular creators. In May 2018, YouTube Red was rebranded as YouTube Premium, which also bundled access to YouTube Music, Google''s music streaming service. YouTube Premium now has over 125 million subscribers worldwide.
+
+For more information, visit the [YouTube Premium Wikipedia page](https://en.wikipedia.org/wiki/YouTube_Premium){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Remaster', '**Remaster**
+
+A remaster is a change in the sound or image quality of previously created media, whether audio, cinematic, or video. The resulting product is said to be remastered, and the terms "digital remastering" and "digitally remastered" are also commonly used. Remastering adapts older content for modern high-definition standards by enhancing visuals and sound, while respecting the original. This typically includes resolution upscaling, color grading, and audio enhancement to ensure compatibility with today''s displays and surround sound systems.
+
+A remaster differs from a restoration. A restoration goes back to the original film elements for the most faithful result, while a remaster improves an existing digital version without necessarily returning to the source material.
+
+For more information, visit the [Remaster Wikipedia page](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Remux Tier 01', '**Remux Tier 01**<br>
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Pay exceptional attention to detail and carefully analyze all available sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Remux Tier 02', '**Remux Tier 02**<br>
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Pay very close attention to detail and use multiple high-quality sources
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Repack/Proper', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Repack2', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Repack3', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Retags', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ROKU', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Repack2', '**Repack 2**
+
+A Repack 2 is a second re-release of a scene or P2P release, issued by the original release group to fix errors or quality issues that were not resolved in the first repack. Common reasons for a Repack 2 include persistent audio sync issues, corrupted video, incorrect subtitles, or other technical problems that remained after the initial repack. A Repack 2 supersedes both the original release and the first repack, and should be preferred over earlier versions of the same release.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Repack3', '**Repack 3**
+
+A Repack 3 is a third re-release of a scene or P2P release, issued to fix errors or quality issues found in the original release and two previous repacks. Each repack is published by the original release group to correct problems such as audio sync issues, missing content, corrupt files, or incorrect encoding settings. A Repack 3 indicates that two prior attempts to fix the release were made before this corrected version was issued.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Retags', '**Retags**<br>
+
+Retags are often seen on public trackers, where the tracker or uploader adds their name to the torrent. They may also appear on some Usenet indexers.
+
+- If you rely on public trackers, **DO NOT** use this Custom Format.
+- Use this Custom Format **ONLY** if you **DO NOT** prefer Retagged releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - ROKU', '**The Roku Channel**
+
+The Roku Channel is a free, ad-supported streaming service owned by Roku, Inc., launched in September 2017. It is the most popular free ad-supported streaming service in the US, reaching 145 million people as of 2024, and includes over 500 free channels and more than 80,000 free movies and shows. It is available in the US, Canada, Mexico, and the UK, with optional paid subscriptions for premium content.
+
+For more information, visit the [Roku Channel Wikipedia page](https://en.wikipedia.org/wiki/The_Roku_Channel){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - SALTO', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Scene', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - SDR', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Scene', '**Scene**<br>
+
+This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score `-10000`, a positive score, or just skip adding it altogether.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - SDR', '**SDR**<br>
+
+This will prevent grabbing UHD/4k releases without HDR Formats.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - SDR (no WEBDL)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Season Pack', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - SHO', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Single Episode', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - STAN', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - STRP', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - SYFY', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - TrueHD', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - TrueHD ATMOS', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - TVer', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - TVING', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - U-NEXT', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - UHD Streaming Boost', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Uncensored', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Upscaled', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v0', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v1', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v2', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v3', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v4', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VC-1', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VDL', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Season Pack', '**Season Pack**<br>
+
+!!! danger "This CF utilizes functionality only available starting in Sonarr v4.0.2.1262."
+
+This Custom Format can be used to prefer or exclude season packs
+
+- Give it a score of `10` if you prefer a season pack.
+- Give it a score of `-10000` if you prefer to not download season packs.
+- Utilizes the "Release Type" custom format condition added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
+
+!!! info
+
+    - This Custom Format could previously result in download loops. The new "Release Type" custom format condition now prevents this undesired behavior. :bangbang:
+    - This will upgrade your already downloaded single episodes :bangbang:', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - SHO', '**Showtime (SHO)**
+
+Showtime is an American premium pay TV network owned by Paramount Skydance, launched on July 1, 1976. It is known for producing original TV series, independent films, and documentaries. In June 2023, Showtime was fully merged into Paramount+, with all its content now available under the combined "Paramount+ with Showtime" subscription plan. It is well known for hit series such as Billions, Homeland, Shameless, and Dexter.
+
+For more information, visit the [Showtime Wikipedia page](https://en.wikipedia.org/wiki/Showtime_(TV_network)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Single Episode', '**Single Episode**<br>
+
+!!! danger "This CF utilizes functionality only available starting in Sonarr v4.0.2.1262."
+
+This Custom Format will recognize single-episode releases, instead of multi-episode or season packs, using Sonarr''s built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - STAN', '**Stan**
+
+Stan is an Australian subscription streaming service launched on January 26, 2015, and owned by Nine Entertainment. It offers movies, TV shows, and original productions, and is the fourth largest streaming service in Australia. Its library includes content from both local Australian productions and international titles, particularly from the US and UK. An optional Stan Sport add-on provides access to live sports, including tennis grand slams and the Olympics.
+
+For more information, visit the [Stan Wikipedia page](https://en.wikipedia.org/wiki/Stan_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - STRP', '**Star+**
+
+Star+ was Disney''s standalone streaming service for Latin America, offering general entertainment content including live sports from ESPN, international originals, animated comedies, and movie premieres. In 2024, Disney shut down Star+ and merged all of its content into Disney+, consolidating the two services into a single platform for Latin American viewers.
+
+For more information, visit the [Star+ Wikipedia page](https://en.wikipedia.org/wiki/Star%2B){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - SYFY', '**Syfy**
+
+Syfy is an American pay TV channel owned by Versant, originally launched in 1992 as the Sci-Fi Channel before being rebranded as Syfy in 2009. It specializes in science fiction, fantasy, and horror programming. Syfy''s streaming home is Peacock, NBCUniversal''s streaming service, where current and classic Syfy original series are available, including Resident Alien, The Ark, and Farscape. A TV provider login is required to watch live content through the Syfy app.
+
+For more information, visit the [Syfy Wikipedia page](https://en.wikipedia.org/wiki/Syfy){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - TrueHD', '**TrueHD (Lossless)**
+
+Dolby TrueHD is a 100% lossless audio format, meaning what you hear is bit-for-bit identical to the original master recording. It supports up to 7.1 channels of high-definition audio at up to 192 kHz/24-bit quality, and is found primarily on Blu-ray discs. Unlike TrueHD Atmos, this version carries no 3D object-based audio data.
+
+For more information, visit the [Dolby TrueHD Wikipedia page](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - TrueHD ATMOS', '**TrueHD Atmos (Lossless)**
+
+Dolby TrueHD Atmos is the lossless version of Dolby Atmos, found primarily on Blu-ray and 4K UHD discs. Dolby Atmos soundtracks consist of up to 128 individual audio objects mixed in a 3D soundfield, rendered during playback to the available speakers, including overhead ceiling speakers. On Blu-ray, the Atmos data is embedded as an extension within the TrueHD track to maintain backward compatibility. If a receiver does not support Atmos, it simply plays the audio as standard Dolby TrueHD instead. Unlike most audio formats, Dolby TrueHD is 100% lossless, meaning what you hear is bit-for-bit identical to the master recording.
+
+For more information, visit the [Dolby TrueHD Wikipedia page](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"} and the [Dolby Atmos Wikipedia page](https://en.wikipedia.org/wiki/Dolby_Atmos){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - TVer', '**TVer**
+
+TVer is a free, ad-supported Japanese streaming service launched in October 2015. It is a joint venture by Japan''s five major commercial TV networks Nippon TV, TV Asahi, TBS Television, TV Tokyo, and Fuji TV. It offers dramas, variety shows, anime, and documentaries, typically available for one week after their original broadcast. It is primarily available in Japan.
+
+For more information, visit the [TVer Wikipedia page](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - TVING', '**TVING**
+
+TVING is a South Korean streaming service offering Korean dramas, movies, variety shows, and original content. It launched on October 1, 2020, as a joint venture between CJ ENM and JTBC, combining both companies'' streaming services into one platform. It is primarily available in South Korea and is one of the country''s leading streaming platforms.
+
+For more information, visit the [TVING Wikipedia page](https://en.wikipedia.org/wiki/TVING){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - U-NEXT', '**U-NEXT**
+
+U-NEXT is a Japanese subscription streaming service launched in 2007, and is one of Japan''s leading streaming platforms. It holds a 17.9% market share in Japan''s subscription streaming sector, ranking second only to Netflix. It offers a wide range of movies, dramas, anime, live sports, and original content, along with an extensive e-book and manga library. It is primarily available in Japan.
+
+For more information, visit the [U-NEXT Wikipedia page](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - UHD Streaming Boost', '**UHD Streaming Boost**<br>
+
+Some streaming services have UHD releases that are generally better than their HD counterparts. The UHD Streaming Boost custom format increases those streaming services'' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Uncensored', '**Uncensored**<br>
+
+This Custom Format covers releases that are uncensored.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Upscaled', '**Upscaled**<br>
+
+This custom format is used to prevent grabbing upscaled releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v0', '**v0**<br>
+
+Custom Format to cover releases named with v0 which we don''t want.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v1', '**v1**<br>
+
+Custom Format to cover v1 releases.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v2', '**v2**<br>
+
+Custom Format to cover v2 releases.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v3', '**v3**<br>
+
+Custom Format to cover v3 releases.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - v4', '**v4**<br>
+
+Custom Format to cover v4 releases.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VC-1', '**VC-1**
+
+VC-1 is a lossy video codec developed by Microsoft, commonly found on older Blu-ray discs and early HD video releases. While it was a popular choice in the early days of high-definition content, it has since been largely replaced by more modern codecs such as AVC (H.264) for 1080p and HEVC (H.265) for 2160p content.
+
+Many release groups re-encode older VC-1 content to AVC when a disc is also available in AVC, as AVC generally offers better compression and improved visual quality at lower bitrates, along with wider compatibility across modern playback devices.
+
+For more information, visit the [VC-1 Wikipedia page](https://en.wikipedia.org/wiki/VC-1){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VDL', '**Videoland**
+
+Videoland is a Dutch streaming service owned by RTL Nederland, originally founded in 1984 as a chain of video rental stores before moving to online streaming. It is the leading local streaming platform in the Netherlands, focusing on Dutch-language content, original productions, and programming from RTL Nederland''s TV channels. It is primarily available to viewers in the Netherlands.
+
+For more information, visit the [Videoland Wikipedia page](https://en.wikipedia.org/wiki/Videoland_(Netherlands)){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VF2', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VFB', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VFF', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VFI', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VFQ', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Viki', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VIU', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Viki', '**Viki (Rakuten Viki)**
+
+Rakuten Viki is a streaming service owned by Rakuten that specialises in Asian TV shows and films, particularly Korean, Chinese, Taiwanese, and Japanese productions. It is available worldwide and is unique for its community-created subtitles, with content available in more than 200 languages.
+
+For more information, visit the [Rakuten Viki Wikipedia page](https://en.wikipedia.org/wiki/Rakuten_Viki){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VIU', '**Viu**
+
+Viu (pronounced "view") is a Hong Kong-based subscription streaming service owned by PCCW Media Group, launched in October 2015. It delivers Asian content across different genres, including Korean dramas, movies, and variety shows, with local language subtitles, as well as original productions under the Viu Originals label. It is available in 16 markets across Asia, the Middle East, and Africa, and operates on both a free ad-supported tier and a paid subscription tier.
+
+For more information, visit the [Viu Wikipedia page](https://en.wikipedia.org/wiki/Viu_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VOF', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VOQ', NULL, 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VOSTFR', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VP9', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VP9', '**VP9**
+
+VP9 is an open-source, royalty-free video codec developed by Google, released in June 2013. It reduces streaming bitrate by 30-50% compared to H.264 at equivalent visual quality and is widely used on platforms such as YouTube, which encodes all 4K video in VP9 by default. While VP9 is efficient for web streaming, it is primarily a streaming codec and is not used for physical media remuxes or scene releases, where AVC (H.264) and HEVC (H.265) remain the standard choices.
+
+There have been reported playback and transcoding issues with VP9 content. No respectable release group is currently using it. It is best to avoid this codec for now to prevent compatibility issues.
+
+For more information, visit the [VP9 Wikipedia page](https://en.wikipedia.org/wiki/VP9){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VQ', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VRV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WAVVE', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WEB Scene', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WEB Tier 01', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WEB Tier 02', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WEB Tier 03', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WETV', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WiTH AD', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WiTH ASL', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WiTH BASL', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WiTH BSL', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - VRV', '**VRV**
+
+VRV (pronounced "verve") was an American streaming service launched in November 2016, bundling together anime, fantasy, educational, and gaming-related content aimed at fans of those genres. It was only available in the United States. In April 2023, VRV shut down and its content was merged into Crunchyroll.
+
+For more information, visit the [VRV Wikipedia page](https://en.wikipedia.org/wiki/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WAVVE', '**Wavve**
+
+Wavve is a South Korean subscription streaming service operated by SK Telecom, offering TV dramas, variety shows, films, documentaries, animations, and sports. It was launched in September 2019 as a joint venture between SK Telecom and South Korea''s three major broadcasters KBS, MBC, and SBS. Wavve has received approval to merge with fellow Korean streaming service TVING.
+
+For more information, visit the [Wavve Wikipedia page](https://en.wikipedia.org/wiki/Wavve){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WEB Scene', '**WEB Scene**<br>
+
+One of the few scene groups that released quality releases.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WEB Tier 01', '**WEB Tier 01**<br>
+
+Groups that:
+
+- Have built a strong reputation for consistently delivering excellent quality releases
+- Create hybrids using multiple high-quality sources
+- Sign up for the gentleman list on a certain private tracker (TV releases)
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WEB Tier 02', '**WEB Tier 02**<br>
+
+Groups that:
+
+- Have proven themselves by consistently delivering good quality releases
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WEB Tier 03', '**WEB Tier 03**<br>
+
+Groups that:
+
+- Are new, and have released several dozen objectively good quality releases
+- Have retired and their releases don''t meet current quality standards
+- Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WETV', '**WeTV**
+
+WeTV is the international version of Tencent Video, a Chinese streaming service owned by Tencent. It was launched in 2018 and offers Chinese, Korean, Thai, and Japanese dramas, movies, anime, and original productions. It serves content from various Asian countries, including Indonesia, Korea, Thailand, Malaysia, the Philippines, and Japan, and also produces local original content in the regions where it operates.
+
+For more information, visit the [Tencent Video Wikipedia page](https://en.wikipedia.org/wiki/Tencent_Video){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WiTH AD', '**With Audio Description**<br>
+
+Audio Description (AD) is an extra narration track that describes key visual details such as scenery, costumes, and actions for blind or visually impaired viewers. It makes TV and film content more accessible by explaining what cannot be heard in the main audio.
+
+Some releases include Audio Description, marked as `WITH AD` or `AD`. Note: this is not the same as advertisements.
+
+For more information, visit the [Audio Description Wikipedia page](https://en.wikipedia.org/wiki/Audio_description){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WiTH ASL', '**ASL (American Sign Language)**<br>
+
+ASL is a sign language used in the United States and English-speaking Canada. It uses a one-handed alphabet and was heavily influenced by French Sign Language (LSF). ASL relies on spatial organization and facial expressions to convey meaning and grammar.
+
+For more information, visit the [American Sign Language Wikipedia page](https://en.wikipedia.org/wiki/American_Sign_Language){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WiTH BASL', '**BASL (Black American Sign Language)**<br>
+
+BASL is a dialect of ASL used primarily by Black Deaf Americans, originating from segregated schools in the South. Compared to mainstream ASL, it uses a larger signing space, more two-handed signs, and greater emotional expression.
+
+For more information, visit the [Black American Sign Language Wikipedia page](https://en.wikipedia.org/wiki/Black_American_Sign_Language){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WiTH BSL', '**BSL (British Sign Language)**<br>
+
+BSL is a sign language used across the United Kingdom. It uses a two-handed alphabet and is part of the BANZSL language family, alongside Australian and New Zealand sign languages. BSL relies on body movement and hand shapes to convey meaning, and often follows a topic-comment sentence structure.
+
+For more information, visit the [British Sign Language Wikipedia page](https://en.wikipedia.org/wiki/British_Sign_Language){:target="_blank" rel="noopener noreferrer"}.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - WKN', NULL, 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Wrong Language', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - x264', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - x265', NULL, 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - Wrong Language', '**Wrong Language**<br>
+
+This Custom Format checks if the release is in the original language. If it is not, it gets tagged as Wrong Language.
+One issue with the Wrong Language Custom Format is that TMDB sometimes has incorrect data.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - x264', '**x264**
+
+x264 is a free and open-source software library developed by VideoLAN for encoding video into the H.264/MPEG-4 AVC format, released under the GNU General Public License. It is the most widely deployed H.264/AVC encoder in the world, with over 80% of all videos on the internet estimated to be encoded using x264. x264 is primarily used for 720p and 1080p encodes, and offers excellent direct-play support and broad compatibility across virtually all devices and media players.
+
+For more information, visit the [x264 Wikipedia page](https://en.wikipedia.org/wiki/X264){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - x265', '**x265**
+
+x265 is an encoder for creating digital video streams in the High Efficiency Video Coding (HEVC/H.265) compression format, developed by MulticoreWare. It delivers up to 50% better compression than H.264 while maintaining high quality, making it ideal for 4K, 8K, and HDR workflows including HDR10, HDR10+, and Dolby Vision.
+
+Note the following applies to all x265/HEVC releases that are not remuxes.
+
+x265 is primarily used for 2160p encodes and for 1080p encodes that include HDR formats such as Dolby Vision, HDR10, and others. It works best when the source is a high-quality remux or untouched disc source. If the source is not remux or source quality, there will be a noticeable loss in quality. If storage space is a concern, x265 can save around 10-20% compared to x264, but the best x265 quality still requires large, high-quality source files. Unfortunately, many x265 release groups microsize their releases or use x264 as a source, resulting in poor quality output. The few groups that use the correct source produce much better results, but those releases still tend to be large in size.
+
+For more information, visit the [x265 Wikipedia page](https://en.wikipedia.org/wiki/X265){:target="_blank" rel="noopener noreferrer"}.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - x265 (HD)', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - x265 (no HDR/DV)', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - x266', NULL, 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - YOUKU', NULL, 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - x266', '**x266**
+
+x266 is the next generation open-source VVC/H.266 compliant encoder, built on top of the industry-standard x265 HEVC encoder. The VVC/H.266 standard was developed with the goal of achieving twice the coding efficiency of HEVC, and supports High Dynamic Range (HDR), Wide Color Gamut (WCG), and 360° video. x266 is still actively being developed by MulticoreWare, and very little is currently known about its final implementation.
+
+No respectable release group is currently using x266. It is best to avoid this codec for now to prevent compatibility issues.
+
+For more information, visit the [Versatile Video Coding Wikipedia page](https://en.wikipedia.org/wiki/Versatile_Video_Coding){:target="_blank" rel="noopener noreferrer"}.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Sonarr - YOUKU', '**Youku**
+
+Youku is one of China''s leading video streaming platforms, founded in 2006 and headquartered in Beijing. It has been part of the Alibaba Group since its acquisition in 2015. It offers original TV dramas, variety shows, and licensed international content, including Korean dramas, Japanese anime, and selected Western series. The service is primarily aimed at audiences in China.
+
+For more information, visit the [Youku Wikipedia page](https://en.wikipedia.org/wiki/Youku){:target="_blank" rel="noopener noreferrer"}.', 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 1.0 Mono', 'Mono', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 1.0 Mono', 'Not 3.0ch', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 1.0 Mono', 'Not 4.0ch', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 1.0 Mono', 'Not High Channel Count', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 1080p', '1080p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 10bit', '10bit', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 10bit', 'hi10p', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 126811', '126811', 'release_group', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 2.0 Stereo', 'Stereo (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 2.0 Stereo', 'Not 3.0ch', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 2.0 Stereo', 'Not 4.0ch', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 2.0 Stereo', 'Not High Channel Count', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 2.0 Stereo', 'Mono', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 2160p', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 3.0 Sound', 'Not 3.0ch', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 3.0 Sound', 'Mono', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 3.0 Sound', 'Stereo', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 3.0 Sound', 'Not 4.0ch', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 3.0 Sound', 'Not High Channel Count', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 3D', '3D', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 3D', 'BluRay3D', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 3D', 'BD3D', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 4.0 Sound', 'Not 4.0ch', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 4.0 Sound', 'Mono', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 4.0 Sound', 'Stereo', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 4.0 Sound', 'Not 3.0ch', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 4.0 Sound', 'Not High Channel Count', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 4K Remaster', 'Remaster', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 4K Remaster', '4K', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 4K Remaster', 'Not 4K Resolution', 'resolution', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 5.1 Surround', '5.1 Surround', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 5.1 Surround', 'Not 6.1 Surround', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 5.1 Surround', 'Not 7.1 Surround', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 6.1 Surround', 'Not 6.1 Surround', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 6.1 Surround', 'Not 7.1 Surround', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 7.1 Surround', 'Not 7.1 Surround', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 7.1 Surround', 'Not Low Channel Count (2)', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - 720p', '720p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AAC', 'AAC', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AAC', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AAC', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AAC', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AAC', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AAC', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AAC', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AMZN', 'Amazon', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AMZN', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AMZN', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'DemiHuman', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'FLE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'Flugel', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'LYS1TH3A', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'Moxie', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'sam', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'smol', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 01', 'SoM', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Aergia', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Arg0', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Arid', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'BlackRose', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'FateSucks', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'hydes', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'hchcsen', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'JOHNTiTOR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'JySzE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'koala', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Kulot', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'LostYears', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Lulu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Meakes', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Orphan', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'Vodes', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'WAP', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'YURI', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 02', 'ZeroBuild', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'ARC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'BBT-RMX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'cappybara', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'ChucksMux', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'CRUCiBLE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'CUNNY', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Cunnysseur', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Doc', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'fig', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Headpatter', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Inka-Subs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'LaCroiX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Legion', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Mehul', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'MTBB', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Mysteria', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'NAN0', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'nekotan', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Netaro', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Noiy', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'npz', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'NTRX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Okay-Subs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'P9', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'PMR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'RUDY', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'RaiN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'RMX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Sekkon', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Serendipity', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'sgt', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'SubsMix', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'Sylvar', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'uba', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 03', 'ZR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'ABdex', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Afro', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'aRMX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'BiRJU', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'BKC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'CBT', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Chimera', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'derp', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'DIY', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'EXP', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Foxtrot', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'grimf', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'IK', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Iznjie Biznjie', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Kaleido-subs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Kametsu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Kawatare', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'KH', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'LazyRemux', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Metal', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'MK', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'neko-kBaraka', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'OZR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Pizza', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'pog42', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Quetzal', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Reza', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'SCY', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Shimatta', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Smoke', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Spirale', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'UDF', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'UQW', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Virtuality', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'Vanilla', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 04', 'VULCAN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Animorphs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'AOmundson', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'ASC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Baws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Beatrice', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'B00BA', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Cait-Sidhe', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'CsS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'CTR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'D4C', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'deanzel', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Drag', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'eldon', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Freehold', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'GHS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Hark0N', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Holomux', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Judgement', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'MC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'mottoj', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'NH', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'NTRM', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'o7', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'QM', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Thighs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'TTGA', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'UltraRemux', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'WBDP', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'WSE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 05', 'Yuki', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'ANE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'Bunny-Apocalypse', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'CyC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'Datte13', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'EJF', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'GetItTwisted', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'GSK_kun', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'iKaos', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'karios', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'Pookie', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'RASETSU', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'Starbez', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'Tsundere', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'Yoghurt', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 06', 'YURASUKA', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', '9volt', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'AC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Almighty', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Asakura', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Asenshi', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'BlurayDesuYo', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Bolshevik', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Brrrrrrr', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Chihiro', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Commie', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Crow', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Dae', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Dekinai', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Dragon-Releases', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'DragsterPS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Exiled-Destiny', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'FFF', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Final8', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Geonope', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'GJM', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'iAHD', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'inid4c', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Koten_Gars', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'kuchikirukia', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'LCE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'NTW', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'orz', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'RAI', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'REVO', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'SCP-2223', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Senjou', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'SEV', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'THORA', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 07', 'Vivid', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'AkihitoSubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'Arukoru', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'EDGE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'EMBER', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'GHOST', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'Judas', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'naiyas', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'Nep_Blanc', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'Prof', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime BD Tier 08', 'Shirσ', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Dual Audio', 'Dual Audio', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Dual Audio', 'Not Single Language Only', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Dual Audio', 'Japanese Language', 'language', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Dual Audio', 'Chinese Language', 'language', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Dual Audio', 'Korean Language', 'language', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', '$tore-Chill', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', '0neshot', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', '224', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'A-Destiny', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'AceAres', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'AhmadDev', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Anime Chap', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Anime Land', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Anime Time', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'AnimeDynastyEN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'AnimeKuro', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'AnimeRG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Animesubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'AnimeTR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Anitsu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'AniVoid', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'ArataEnc', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'AREY', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Ari (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'ASW', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'BJX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'BlackLuster', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'bonkai77', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'CameEsp', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Cat66', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'CBB', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Cerberus', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Cleo', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'CuaP', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'DaddySubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'DARKFLiX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'DB', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'DBArabic', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Deadmau- RAWS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'DKB', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'DP', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'DsunS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Emmid', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'ExREN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'FAV', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Fish', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'FunArts', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'GERMini', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Hakata Ramen', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Hall_of_C', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Hatsuyuki', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'HAV1T', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'HENiL', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Hitoku', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'HollowRoxas', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'HR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'ICEBLUE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'iPUNISHER', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'JacobSwaggedUp', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Johnny-englishsubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Kallango', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Kanjouteki', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'KEKMASTERS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Kirion', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'KQRM', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'KRP', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'LoliHouse', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'M@nI', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'mal lu zen', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Man.K', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Maximus', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'MD', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'mdcx', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Metaljerk', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'MGD', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'MiniFreeza', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'MiniMTBB', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'MinisCuba', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'MiniTheatre', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Mites', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Modders Bay', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Mr. Deadpool', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'NemDiggers', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'neoHEVC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Nokou', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'NoobSubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'NS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Nyanpasu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'OldCastle', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Pantsu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Pao', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'phazer11', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Pixel', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Plex Friendly', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'PnPSubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Polarwindz', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Project-gxs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'PuyaSubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'QaS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'QCE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Rando235', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Ranger', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Rapta', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Raw Files', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Raze', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Reaktor', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'RightShiftBy2', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Rip Time', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'SAD', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Salieri', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Samir755', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'SanKyuu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'SEiN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'sekkusu&ok', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'SHFS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'shincaps', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'SLAX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Sokudo', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'SRW', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'SSA', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'StrayGods', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Suki Desu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'TeamTurquoize', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Tenrai Sensei', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'TnF', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'TOPKEK', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Trix', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'U3-Web', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'UNBIASED', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'uP', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'USD', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Valenciano', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'VipapkStudios', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Wardevil', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'WtF Anime', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'xiao-av1', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Yabai_Desu_NeRandomRemux', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'YakuboEncodes', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'youshikibi', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'YuiSubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'Yun', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime LQ Groups', 'zza', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'AsukaRaws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Beatrice-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Daddy-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Fumi-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'IrizaRaws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Kawaiika-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'km', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Koi-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Lilith-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'LowPower-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Moozzi2', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'NanakoRaws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'NC-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'neko-raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'New-raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Ohys-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Pandoratv-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Raws-Maji', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'ReinForce', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Scryous-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Seicher-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Raws', 'Shiniori-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'Arg0', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'Arid', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'Baws (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'FLE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'LostYears', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'LYS1TH3A', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'McBalls', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'sam', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'SCY', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'Setsugen', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'smol', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'SoM', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'Vodes', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'Z4ST1N', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 01', 'ZeroBuild', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', '0x539', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Asakura', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'BlackRose', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Cyan', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Cytox', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Dae (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Foxtrot', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Gao', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'GSK_kun', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Half-Baked', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'HatSubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'MALD', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'MTBB', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Not-Vodes', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Okay-Subs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Pizza', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Reza', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Slyfox', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'SoLCE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 02', 'Tenshi', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 03', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 03', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 03', 'AnoZu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 03', 'Dooky', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 03', 'Kitsune', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 03', 'SubsPlus+', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 03', 'ZR (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 04', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 04', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 04', 'Erai-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 04', 'ToonsHub', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 04', 'VARYG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'BlueLobster', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'GST', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'HorribleRips', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'HorribleSubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'KAN3D2M', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'KiyoshiStar', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'Lia', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'NanDesuKa', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'PlayWeb', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'SobsPlease', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'Some-Stuffs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'SubsPlease', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'URANIME', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 05', 'ZigZag', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', '9volt', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'Asenshi', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'Chihiro', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'Commie', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'DameDesuYo', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'Doki', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'GJM', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'Kaleido', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'Kantai', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'KawaSubs', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Anime Web Tier 06', 'Tsundere', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian LQ', 'AppleTor', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian LQ', 'Luvmichelle', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian LQ', 'MagicStar', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian LQ', 'NEXT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian LQ', 'Taengoo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian LQ', 'unco', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian LQ', 'unco@AvistaZ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'ANDY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'Archie', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'ECLiPSE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'HBO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'HeavenlyOppa', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'iTsOK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'JKCT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'LoveBug', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'MARK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'MMR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'MrHulk', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'Phanteam', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'SH3LBY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'SYNFM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'Wendy', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 01', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 02', 'PandaMoon', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 02', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 02', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 03', 'ADWeb', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 03', 'CHDWEB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 03', 'HDCTV', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 03', 'HHWEB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 03', 'OurTV', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 03', 'SHiNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 03', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Asian Tier 03', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'ATMOS', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'Not RlsGrp (Atmos Only)', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATMOS (undefined)', 'Not TrueHD', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATV', 'Apple TV', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATV', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATV', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATVP', 'Apple TV+', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATVP', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ATVP', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AUBC', 'AUBC', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AUBC', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AUBC', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - AV1', 'AV1', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'alfaHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'BAT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'BlackBit', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'BNd', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'C.A.A', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'C76', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'Cory', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'CYPHER', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'EniaHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'EXTREME', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'FF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'FOXX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'G4RiS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'GUEIRA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'LCD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'MGE (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'MLH', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'N3G4N', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'ONLYMOViE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'PD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'PTHome', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'RiPER', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'RK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'SiGLA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'Tars', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'TM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'tokar86a', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'TURG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'TvR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'vnlls', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'WTV', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'XiQUEXiQUE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'Yatogam1', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'YusukeFLA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'ZigZag (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Bad Dual Groups', 'ZNM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - BCORE', 'Bravia Core', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - BCORE', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - BCORE', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - BHDStudio', 'BHDStudio', 'release_group', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Black and White Editions', 'Blackout/B&W/Black&Chrome (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Black and White Editions', 'Monochrome', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Black and White Editions', 'Noir', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Black and White Editions', 'Shush Cut', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Black and White Editions', 'No/Minus Color', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Black and White Editions', 'Grayscale', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Black and White Editions', 'Darkness and Light', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - BR-DISK', 'BR-DISK (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CBC', 'CBC', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CBC', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CBC', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CNLP', 'CNLP', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CNLP', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CNLP', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CPNG', 'CPNG', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CPNG', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CPNG', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CRAV', 'Crave', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CRAV', 'Crave Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CRAV', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CRAV', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CRiT', 'CRiT', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CRiT', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CRiT', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - CRiT', 'Not Criterion RlsGrp', 'release_group', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Criterion Collection', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Criterion Collection', 'DVD', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Criterion Collection', 'Criterion', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Criterion Collection', 'CC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Criterion Collection', 'Not Criterion RlsGrp', 'release_group', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD', 'Not Basic Dolby Digital', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+', 'Dolby Digital Plus', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+', 'Not TrueHD/ATMOS (2)', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+ ATMOS', 'Not Dolby Digital Plus', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+ ATMOS', 'ATMOS (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+ ATMOS', 'Not TrueHD', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+ ATMOS', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+ ATMOS', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+ ATMOS', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+ ATMOS', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DD+ ATMOS', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DSNP', 'Disney+', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DSNP', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DSNP', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'Not DTS', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'DTS-HD MA', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'Not DTS-HD HRA/ES', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'Not DTS X', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS X', 'Not DTS X', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS X', 'Not Basic DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS X', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS X', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS X', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS X', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS X', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS X', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'DTS-ES', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'Not Basic DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'Not DTS X', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-ES', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'DTS-HD HRA', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not Basic DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not DTS X', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not DTS-ES', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD HRA', 'Not 6.1 Surround (2)', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'DTS-HD MA', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'Not DTS X', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DTS-HD MA', 'Not DTS-HD HRA/ES', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dual Audio Asian', 'Dual Audio (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dual Audio Asian', 'Not Single Language Only', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dual Audio Asian', 'Japanese Language', 'language', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dual Audio Asian', 'Chinese Language', 'language', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dual Audio Asian', 'Korean Language', 'language', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dubs Only', 'Dubbed', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dubs Only', 'Golumpa', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dubs Only', 'KaiDubs (Not Dual Audio)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dubs Only', 'KamiFS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dubs Only', 'KS (Not Dual Audio)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dubs Only', 'torenter69', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Dubs Only', 'Yameii', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (Disk)', 'FraMeSToR', 'release_group', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (Disk)', 'DV', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (Disk)', 'No FANRES', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (Disk)', 'Not Hybrid', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (Disk)', 'Not Hybrid Release Group', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (w/o HDR fallback)', 'Dolby Vision', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (w/o HDR fallback)', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (w/o HDR fallback)', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (w/o HDR fallback)', 'Not RlsGrp', 'release_group', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (w/o HDR fallback)', 'Not HDR', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV (w/o HDR fallback)', 'Not Hulu', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - DV Boost', 'DV', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Extras', 'Extras (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FanSUB', 'FanSUB', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FastSUB', 'FastSUB', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FLAC', 'Not FLAC', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FLAC', 'Not PCM', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FLAC', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FLAC', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FLAC', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FLAC', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FLAC', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FLUX', 'FLUX', 'release_group', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FOD', 'FOD', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FOD', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FOD', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Anime-Heart', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Kaerizaki-Fansub', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Natsumi-no-Sekai', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'NekoYu''', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Onii-ChanSub', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Owlolf', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Pikari-Teshima', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Seimeisen', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Team Arcedo', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Yarashii', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime FanSub', 'Yangire-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'Darki', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'Delivroozzi', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'Fuceo', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'Good Job! Alexis', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'Punisher694', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'SR-71', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'T3KASHi', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'TANOSHii', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 01', 'Tsundere-Raws', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'Aoi-Project', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'Elecman', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'FUJiSAN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'GundamGuy', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'IssouCorp', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'KAF', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'Nagutos', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'OECUF', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 02', 'XSPITFIRE911', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'BLV', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'D3T3R10R1TY', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'Galactic', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'HANAMi', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'kazuizui', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'KHAYA', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'KushEnthusiast', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'matheousse', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'Monkey-D.Lulu', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'NeoSG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'RONiN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'TheFantastics', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Anime Tier 03', 'TTN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'BLURAY', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'Not 2160p', 'resolution', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'BDHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'FoX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'FRATERNiTY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'FrIeNdS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'MAX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'Psaro', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 01', 'YODA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'BLURAY', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'Not 2160p', 'resolution', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'HDForever', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'HeavyWeight', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'MARBLECAKE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'MYSTERiON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'NoNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'ONLY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'ONLYMOViE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'TkHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR HD Bluray Tier 02', 'UTT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR LQ', 'Ads/Watermarks', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR LQ', 'Bad/False releases', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR LQ', 'DeTAG/ReTAG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR LQ', 'Other reasons', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'BlackAngel', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'Choco', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'HDForever', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'MAX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'ONLY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'Psaro', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'Sicario', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'Tezcat74', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'TyrellCorp', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 01', 'Zapax', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'BDHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'FtLi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'Goldenyann', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'HeavyWeight', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'KTM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'MARBLECAKE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'MUSTANG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'Obi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'PEPiTE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'QUEBEC63', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Remux Tier 02', 'ROMKENT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', '#', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'A (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'B', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'C', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'D', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'E', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'F', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'G', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'H', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'J', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'K', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'L', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'M', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'N (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'O', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'P (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'R', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'S (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'T', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'U (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'V', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'W', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR Scene Groups', 'Z', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', 'FLOP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', 'FRATERNiTY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', 'FoX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', 'Psaro', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', 'SDR', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', 'Not WEBDL', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 01', 'Not WEBRIP', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', 'DUSTiN', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', 'FCK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', 'FrIeNdS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', 'QUALiTY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', 'SDR', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', 'Not WEBDL', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR UHD Bluray Tier 02', 'Not WEBRIP', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'BONBON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'FCK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'FW', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'FoX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'FRATERNiTY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'FrIeNdS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'MOONLY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'MTDK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'PATOPESTO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'Psaro', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'RG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'SUPPLY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'TFA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 01', 'TiNA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'ALLDAYiN', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'ARK01', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'HeavyWeight', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'NEO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'NoNe', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'ONLYMOViE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'POTO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'Slay3R', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'TkHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FR WEB Tier 02', 'WaCkS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FraMeSToR', 'FraMeSToR (2)', 'release_group', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FreeLeech', 'FreeLeech', 'indexer_flag', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - friDay', 'friDay', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - friDay', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - friDay', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FUNi', 'Funimation', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FUNi', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - FUNi', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'BiTOR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'DepraveD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'Flights', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'GuyZo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'SasukeducK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'tarunk9c', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'VD0N', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'VECTOR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'VisionXpert', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'Not HDR10+', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Generated Dynamic HDR', 'DV', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German', 'German', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German', 'NOT Original', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German', 'DL', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German', 'ML', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German', 'Not Subbed', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German 1080p Booster', 'German', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German 1080p Booster', 'Original Language', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German 1080p Booster', '1080p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German 2160p Booster', 'German', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German 2160p Booster', 'Original Language', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German 2160p Booster', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'Baka', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'Pudding-sama', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'RTemp', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'snk', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'Ainz', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'TvR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'Fuuko', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'AO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'CNY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'FumoFriday', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'Waechter', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'GP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'DRiFTKiNG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'Bluray', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 01', 'Not REMUX', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 02', 'ABJ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 02', 'VECTOR (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 02', 'ZeroTwo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 02', 'ZeroTwo Aliases', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 02', 'SiXTYNiNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 02', 'PHM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 02', 'Bluray', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 02', 'Not REMUX', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 03', 'SUBARU', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 03', 'ATAX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 03', 'HDC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 03', 'Mindus', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 03', '4Baka', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 03', 'W33BSHiT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 03', 'AST4u', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Bluray Tier 03', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'ONiGiRi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'STARS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'DMPD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'OHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'SAUERKRAUT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', '3MINA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'FWB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'BiGiNT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'MRW', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'GSG9', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Scene', 'SoW', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'Baka', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'Pudding-sama', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'RTemp', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'snk', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'Ainz', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'TvR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'Tanuki', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'HiSHiRO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'WeebPinn', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'Lynacchi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'DRiFTKiNG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 01', 'WebRip', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'ABJ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'VECTOR (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'ZeroTwo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'ZeroTwo Aliases', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'SiXTYNiNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'AO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'MELD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 02', 'WebRip', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'SUBARU', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'ATAX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'HDC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'Mindus', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'W33BSHiT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'Fuuko', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'Waechter', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'Otaku', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', '4Baka', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Anime Web Tier 03', 'WebRip', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'ZeroTwo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'ZeroTwo Aliases', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'TSCC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'TvR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'NIMA4K', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'TVS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'PXL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'CNY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'WeebPinn', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'MAMA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'WalterBishop', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'Bluray', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 01', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'VECTOR (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'MULTiPLEX (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'SiXTYNiNE (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'Oergel (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'ABJ (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'paranoid06', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'RocketHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'Bluray', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 02', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'RobertDeNiro', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'LeetHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'RHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'HDSource', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'UNFIrED', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'iNCEPTION', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'FX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'RDR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'Bluray', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Bluray Tier 03', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German DL', 'German', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German DL', 'Original Language', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German DL (undefined)', 'NOT Original Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German DL (undefined)', 'German', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German DL (undefined)', 'DL', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German DL (undefined)', 'ML', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', '1XBET', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', '2dead', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'AIDA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'AVTOMAT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'Cancer58', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'CTFOH', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'EMVY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'FORMBA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'FRAGGERS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'FSX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'GETB8', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'HELD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'iSSEYMiYAKE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'kala', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'Kristallprinz', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'LAW', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'LizardSquad', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'LuRCH', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'MBA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'MEGA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'N2D2', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'OJ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'omikron', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'ORCA88', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'P73', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'PaZ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'Pendeti', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'PiKACHU', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'PL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'POE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'PS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'PsO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'REEL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'SD7', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'SHOWE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'SHOWEHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'SunDry', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'TFARC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'TVARCHiV', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'TVP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'Tylor.D', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'UTOPiA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'VideoStar', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'Whistler', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'WOTT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ', 'ZaidaNulled', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ (release title)', 'TVS iTunesHD', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ (release title)', 'Jellyfin-Plex', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German LQ (release title)', 'Double German Tag', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Microsized', 'FuN', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Microsized', 'w00t', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Microsized', 'GTF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Microsized', 'JellyfinPlex', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Microsized', 'BB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Microsized', '266ers', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 01', 'TvR (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 01', 'pmHD (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 01', 'NIMA4K (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 01', 'QfG (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 01', 'WeebPinn', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 01', 'MAMA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 01', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 02', 'MULTiPLEX (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 02', 'RHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 02', 'HDSource', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 02', 'iNCEPTION', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 02', 'FX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 02', 'RocketHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Remux Tier 02', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'DETAiLS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'WAYNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'WOMBAT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'SAUERKRAUT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'WvF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', '4KCONNECTiON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'STARS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'AWARDS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'DMPD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'EXCiTED', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'iNTENTiON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'JaJunge', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'MGE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'MisFiTS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'RUBBiSH', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'RWP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'TMSF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'TV4A', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'HAXE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'muhHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'RiLE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'W4K', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'ENDSTATiON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'HDARCHiV', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'PL3X', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'WATCHABLE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'OHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'ENCOUNTERS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'RSG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'OCA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'UNDERTAKERS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'CDP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'SAViOURHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'RiLE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'CONTRiBUTiON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'GOREHOUNDS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'SPiCY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Scene', 'bi0hazard', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Subbed', 'German Subbed', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Subbed', 'Not German', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Subbed', 'Not German Dubbed', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'CNY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'D02KU', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'KOMET', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'MEDiATHEK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'NIMA4K', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'pmHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'PXL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'QfG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'RiiR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'RiiR Aliases', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'SLiDE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'TSCC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'TvR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'TVS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'WalterBishop', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'WeebPinn', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'ZeroTwo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'ZeroTwo Aliases', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 01', 'WebRip', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', '4SF (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'ABJ (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'FLORiX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'MULTiPLEX (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'Oergel (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'paranoid06', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'SiXTYNiNE (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'VECTOR (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 02', 'WebRip', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 03', 'RobertDeNiro (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 03', 'BALENCiAGA (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 03', 'HDSource', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 03', 'FX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 03', 'RDR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 03', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - German Web Tier 03', 'WebRip', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - hallowed', 'hallowed', 'release_group', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hami', 'Hami', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hami', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hami', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HBO', 'HBO (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HBO', 'HBO Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HBO', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HBO', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'BLURAY', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'Not 2160p', 'resolution', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'BBQ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'BMF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'c0kE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'Chotab', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'CRiSC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'CtrlHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'D-Z0N3', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'Dariush', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'decibeL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'DON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'EbP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'EDPH', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'Geek', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'LolHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'NCmt', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'PTer', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'TayTO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'TDD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'TnP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'VietHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'ZQ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 01', 'ZoroSenpai', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'BLURAY', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'Not 2160p', 'resolution', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'ATELiER', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'EA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'HiDt', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'HiSD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'iFT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'NTb', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'QOQ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'SA89', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 02', 'sbR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'BLURAY', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'Not 2160p', 'resolution', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'BHDStudio', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'hallowed', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'HiFi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'HONE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'LoRD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'playHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'SPHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HD Bluray Tier 03', 'W4NK3R', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HDR', 'DV With HDR10 fallback', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HDR', 'HDR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HDR', 'HDR10', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HDR', 'HDR10+', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HDR', 'HLG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HDR', 'PQ', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HDR', 'RlsGrp (Missing HDR)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HDR10+ Boost', 'HDR10+', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HFR', 'HFR', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HLG', 'HLG', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HLG', 'Not HDR10+', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HLG', 'Not HDR10', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HLG', 'PQ', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HMAX', 'HBO Max', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HMAX', 'HMAX Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HMAX', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HMAX', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HTSR', 'Hotstar', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HTSR', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - HTSR', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hulu', 'Not Hulu', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hulu', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hulu', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hybrid', 'Not Hybrid', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hybrid', 'Not Hybrid Release Group (2)', 'release_group', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Hybrid', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - IMAX', 'IMAX', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - IMAX', 'IMAX Enhanced', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - IMAX Enhanced', 'IMAX Enhanced', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - INTERNAL', 'INTERNAL', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - IP', 'BBC iPlayer', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - IP', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - IP', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - iQIY', 'iQIY', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - iQIY', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - iQIY', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - iT', 'iTunes', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - iT', 'iT Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - iT', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - iT', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ITVX', 'ITVX', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ITVX', 'ITVX Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ITVX', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ITVX', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - KCW', 'KCW', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - KCW', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - KCW', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - KKTV', 'KKTV', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - KKTV', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - KKTV', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Language: Not English', 'Not English Language', 'language', 'radarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Language: Not French', 'Not French Language', 'language', 'radarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Language: Not Original', 'Not Original Language', 'language', 'radarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Language: Original + French', 'Original Language', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Language: Original + French', 'French Language', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Language: Original + French', 'MULTi', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Line/Mic Dubbed', 'Line Dubbed', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Line/Mic Dubbed', 'Mic Dubbed', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LINETV', 'LINETV', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LINETV', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LINETV', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', '24xHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', '41RGB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', '4K4U', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'AOC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'AROMA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'aXXo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'AZAZE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'BARC0DE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'BAUCKLEY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'BdC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'beAst', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'BTM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'C1NEM4', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'C4K', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'CDDHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'CHAOS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'CHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'CiNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'CLEANUP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'COLLECTiVE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'CREATiVE24 (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'CrEwSaDe', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'CTFOH', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'd3g', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'DDR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'DNL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'DRX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'E (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'EPiC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'EuReKA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'FaNGDiNG0', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'Feranki1980 (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'FGT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'FMD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'FRDS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'FS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'FZHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'GalaxyRG (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'GHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'GPTHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'HDHUB4U', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'HDS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'HDT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'HDTime', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'HDWinG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'iNTENSO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'iPlanet', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'iVy', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'jennaortega (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'JFF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'KC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'KiNGDOM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'KIRA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'L0SERNIGHT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'LAMA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'Leffe', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'Liber8', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'LiGaS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'LUCY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'MarkII', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'MeGusta', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'Mesc', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'mHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'mSD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'MTeam', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'MySiLU', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'NhaNc3', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'nHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'nikt0', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'NoGroup', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'nSD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'OFT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'Pahe', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'PATOMiEL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'PRODJi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'PSA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'PTNK', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'RARBG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'RBB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'RDN', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'RiffTrax', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'RU4HD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'SANTi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'Scene', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'SHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'ShieldBearer', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'STUTTERSHIT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'SUNSCREEN', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'SyncUP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'TBS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'TEKNO3D (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'Tigole', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'TIKO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'VISIONPLUSHDR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'WAF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'WiKi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'x0r', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'YIFY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'YTS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ', 'Zeus', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', '1XBET (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'BEN THE MEN', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'D3US', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'EVO (no WEBDL)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'Feranki1980', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'GalaxyRG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'HHWEB (No MA)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'jennaortega', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'PiRaTeS (no WEBDL)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'R&H', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'READ NOTE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'SWTYBLZ', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'TeeWee', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'TEKNO3D', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'UnKn0wn (NoRemux)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - LQ (Release Title)', 'Will1869', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MA', 'Movies Anywhere', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MainFrame', 'MainFrame', 'release_group', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MainFrame', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Masters of Cinema', 'Masters of Cinema', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Masters of Cinema', 'MoC', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MAX', 'Max', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MAX', 'MAX Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MAX', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MAX', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MP3', 'MP3', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MPEG2', 'MPEG2', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MULTi', 'Multi', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MY5', 'My5', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MY5', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MY5', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MyTVSuper', 'MyTVSuper', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MyTVSuper', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - MyTVSuper', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - NF', 'Netflix', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - NF', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - NF', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - No-RlsGroup', 'No Parsed Group', 'release_group', 'radarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German or English', 'Not English Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German or English', 'Not German Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German or English', 'Not German in Title', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese or English', 'Not English Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese or English', 'Not Japanese Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese or English', 'Not German Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese or English', 'Not German in Title', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese, Korean, Chinese or English', 'Not English Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese, Korean, Chinese or English', 'Not Japanese Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese, Korean, Chinese or English', 'Not Korean Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese, Korean, Chinese or English', 'Not Chinese Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese, Korean, Chinese or English', 'Not German Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Not German, Japanese, Korean, Chinese or English', 'Not German in Title', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - NOW', 'NOW', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - NOW', 'NOW Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - NOW', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - NOW', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', '4P', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', '4Planet', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'AsRequested', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'BUYMORE', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'Chamele0n', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'GEROV', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'iNC0GNiTO', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'NZBGeek', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'Obfuscated', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'postbot', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'Rakuv', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'Scrambled (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'WhiteRev', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'xpost', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'WRTEAM', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', 'CAPTCHA', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Obfuscated', '_nzb', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Open Matte', 'Open Matte', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Opus', 'Opus', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Opus', 'Not OPUS Release Group', 'release_group', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - OViD', 'OViD', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - OViD', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - OViD', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - P2P Internal', 'Internal', 'indexer_flag', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Pathe', 'Pathé', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Pathe', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Pathe', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCM', 'Not PCM', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCM', 'AAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCM', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCM', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCM', 'Not TrueHD/ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCM', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCM', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCOK', 'Peacock TV (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCOK', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PCOK', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PLAY', 'PLAY', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PLAY', 'PLAY Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PLAY', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PLAY', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PMTP', 'Paramount+ (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PMTP', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - PMTP', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remaster', 'Remaster', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remaster', 'Not 4K Remaster', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', '3L', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'BiZKiT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'BLURANiUM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'BMF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'CiNEPHiLES', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'FraMeSToR (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'PiRAMiDHEAD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'PmP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'WiLDCAT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 01', 'ZQ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 02', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 02', 'ATELiER', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 02', 'NCmt', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 02', 'playBD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 02', 'SiCFoI', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 02', 'SURFINBIRD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 02', 'TEPES', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'Remux', 'quality_modifier', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', '12GaugeShotgun', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'decibeL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'EPSiLON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'HiFi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'iFT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'KRaLiMaRKo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'NTb', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'PTP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'SumVision', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'TOA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Remux Tier 03', 'TRiToN', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Repack/Proper', 'Repack/Proper/Rerip', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Repack/Proper', 'Not Higher Version Repack/Proper', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Repack2', 'Repack/Proper 2 or REAL.PROPER/REPACK', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Repack2', 'Not Repack/Proper 3', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Repack3', 'Repack/Proper 3 or REAL.REAL.PROPER/REPACK', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Retags', '[rartv]', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Retags', '[rarbg]', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Retags', '[eztv]', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Retags', '[TGx]', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Retags', '.VAV', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Retags', '.heb', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Retags', 'ORARBG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ROKU', 'ROKU', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ROKU', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - ROKU', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Scene', 'Scene Groups + Naming', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Scene', 'Not INFLATE/DEFLATE (2)', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Scene', 'Not GERMAN (2)', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SDR', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SDR', 'HDR Formats', 'release_title', 'radarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SDR', 'SDR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SDR (no WEBDL)', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SDR (no WEBDL)', 'HDR Formats', 'release_title', 'radarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SDR (no WEBDL)', 'SDR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SDR (no WEBDL)', 'Not WEBDL', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SDR (no WEBDL)', 'Not WEBRIP', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SiC', 'SiC (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SiC', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SiC', 'WEBDL', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SiC', 'Not HDR', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - SiC', 'DV', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Sing-Along Versions', 'Sing-Along', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Special Edition', 'Special Edition', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Special Edition', 'Not IMAX Edition', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Special Edition', 'Open Matte', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Special Edition', 'Not Theatrical', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Special Edition', 'Not Extended Clip', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - STAN', 'Stan', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - STAN', 'Stan Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - STAN', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - STAN', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - STRP', 'Star+', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - STRP', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - STRP', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Theatrical Cut', 'Not Theatrical', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TheFarm', 'TheFarm', 'release_group', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD', 'Not TrueHD', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD', 'ATMOS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD', 'Not RlsGrp (TrueHD only)', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD ATMOS', 'TrueHD', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD ATMOS', 'ATMOS (3)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD ATMOS', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD ATMOS', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD ATMOS', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD ATMOS', 'Not DTS X', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TrueHD ATMOS', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TVer', 'TVer', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TVer', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TVer', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TVING', 'TVING', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TVING', 'TVING Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TVING', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - TVING', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - U-NEXT', 'U-NEXT', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - U-NEXT', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - U-NEXT', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 01', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 01', 'Not WEBDL', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 01', 'Not WEBRIP', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 01', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 01', 'CtrlHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 01', 'MainFrame', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 01', 'DON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 01', 'W4NK3R', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 02', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 02', 'Not WEBDL', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 02', 'Not WEBRIP', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 02', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 02', 'HiDt', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 02', 'HQMUX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 02', 'RandomBytes', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'Not REMUX', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'Not WEBDL', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'Not WEBRIP', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', '2160p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'BHDStudio', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'hallowed', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'HONE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'PTer', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'SPHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - UHD Bluray Tier 03', 'WEBDV', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Uncensored', 'Uncensored', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Upscaled', 'AI Upscales (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Upscaled', 'AIUS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Upscaled', 'GuyZo (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Upscaled', 'Regrade', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Upscaled', 'RW', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Upscaled', 'TheUpscaler', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Upscaled', 'Upscaled (2)', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - v0', 'v0', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - v1', 'v1', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - v2', 'v2', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - v2', 'Not Higher Versions', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - v3', 'v3', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - v3', 'Not Higher Versions (2)', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - v4', 'v4', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VC-1', 'VC-1', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VDL', 'Videoland', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VDL', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VDL', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VF2', 'VF2', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VF2', 'Both VFF and VFQ', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VFB', 'Belgian French', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VFF', 'TRUEFRENCH', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VFF', 'Not VF2', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VFI', 'French International', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VFQ', 'Canadian French', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VFQ', 'Not VF2', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Viki', 'Viki', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Viki', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Viki', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Vinegar Syndrome', 'Vinegar Syndrome', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Vinegar Syndrome', 'VS', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Vinegar Syndrome', 'VinSyn', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VIU', 'VIU', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VIU', 'VIU Rename', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VIU', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VIU', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VOF', 'French Original Version', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VOQ', 'Quebec Original Version', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VOSTFR', 'VOSTFR', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VOSTFR', 'SUBFRENCH', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VP9', 'VP9', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VQ', 'Version Québécoise', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VRV', 'VRV (2)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VRV', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - VRV', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WAVVE', 'WAVVE', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WAVVE', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WAVVE', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'ABBIE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'AJP69', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'APEX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'BLUTONiUM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'BYNDR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'CMRG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'CRFW', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'CRUD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'FLUX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'GNOME', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'HONE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'KiNGS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'Kitsune (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'MADSKY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'NOSiViD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'NTb', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'NTG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'RAWR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'SiC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'TEPES', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'TheFarm', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'ZoroSenpai', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 01', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'dB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'Flights', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'MiU', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'monkee', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'MZABI', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'PHOENiX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'playWEB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'SbR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'SMURF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'TOMMY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'XEBEC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 02', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'BLOOM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'Dooky (2)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'GNOMiSSiON', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'HHWEB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'NINJACENTRAL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'NPMS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'ROCCaT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'SiGMA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'SLiGNOME', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'SwAgLaNdEr', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEB Tier 03', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEBDL Boost', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WEBDL Boost', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WETV', 'WETV', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WETV', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WETV', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WiTH AD', 'Audio Description', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WiTH ASL', 'American Sign Language', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WiTH BASL', 'Black American Sign Language', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - WiTH BSL', 'British Sign Language', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - Wrong Language', 'Wrong Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x264', 'x|h264', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x264', 'Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x265', 'x265/HEVC', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x265', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x265 (HD)', 'x265/HEVC', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x265 (HD)', 'Not 2160p', 'resolution', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x265 (no HDR/DV)', 'x265/HEVC', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x265 (no HDR/DV)', 'Not HDR/DV', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x265 (no HDR/DV)', 'Not 2160p', 'resolution', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x266', 'x|h266', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - x266', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - YOUKU', 'YOUKU', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - YOUKU', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Radarr - YOUKU', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 1.0 Mono', 'Mono', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 1.0 Mono', 'Not 3.0ch', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 1.0 Mono', 'Not 4.0ch', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 1.0 Mono', 'Not High Channel Count', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 1080p', '1080p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 10bit', '10bit', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 10bit', 'hi10p', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 2.0 Stereo', 'Stereo', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 2.0 Stereo', 'Not 3.0ch', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 2.0 Stereo', 'Not 4.0ch', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 2.0 Stereo', 'Not High Channel Count', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 2.0 Stereo', 'Mono', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 2160p', '2160p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 3.0 Sound', 'Not 3.0ch', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 3.0 Sound', 'Mono', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 3.0 Sound', 'Stereo', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 3.0 Sound', 'Not 4.0ch', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 3.0 Sound', 'Not High Channel Count', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 4.0 Sound', 'Not 4.0ch', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 4.0 Sound', 'Mono', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 4.0 Sound', 'Stereo', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 4.0 Sound', 'Not 3.0ch', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 4.0 Sound', 'Not High Channel Count', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 4OD', '4OD', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 4OD', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 4OD', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 5.1 Surround', '5.1 Surround', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 5.1 Surround', 'Not 6.1 Surround', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 5.1 Surround', 'Not 7.1 Surround', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 6.1 Surround', 'Not 6.1 Surround', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 6.1 Surround', 'Not 7.1 Surround', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 7.1 Surround', 'Not 7.1 Surround', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 7.1 Surround', 'Not Low Channel Count', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - 720p', '720p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AAC', 'AAC', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AAC', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AAC', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AAC', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AAC', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AAC', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AAC', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ABEMA', 'ABEMA', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ABEMA', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ABEMA', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ABEMA', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ADN', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ADN', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ADN', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ADN', 'ADN', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ALL4', 'ALL4', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ALL4', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ALL4', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AMZN', 'Amazon', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AMZN', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AMZN', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'DVD', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'DemiHuman', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'FLE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'Flugel', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'LYS1TH3A', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'Moxie', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'sam', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'smol', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 01', 'SoM', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'DVD', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Aergia', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Arg0', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Arid', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'BlackRose', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'FateSucks', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'hydes', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'hchcsen', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'JOHNTiTOR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'JySzE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'koala', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Kulot', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'LostYears', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Lulu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Meakes', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Orphan', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'Vodes', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'WAP', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'YURI', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 02', 'ZeroBuild', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'DVD', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'ARC', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'BBT-RMX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'cappybara', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'ChucksMux', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'CRUCiBLE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'CUNNY', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Cunnysseur', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Doc', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'fig', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Headpatter', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Inka-Subs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'LaCroiX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Legion', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Mehul', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'MTBB', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Mysteria', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'NAN0', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'nekotan', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Netaro', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Noiy', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'npz', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'NTRX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Okay-Subs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'P9', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'PMR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'RUDY', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'RaiN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'RMX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Sekkon', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Serendipity', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'sgt', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'SubsMix', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'Sylvar', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'uba', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 03', 'ZR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'DVD', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'ABdex', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Afro', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'aRMX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'BiRJU', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'BKC', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'CBT', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Chimera', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'derp', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'DIY', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'EXP', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Foxtrot', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'grimf', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'IK', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Iznjie Biznjie', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Kaleido-subs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Kametsu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Kawatare', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'KH', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'LazyRemux', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Metal', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'MK', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'neko-kBaraka', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'OZR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Pizza', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'pog42', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Quetzal', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Reza', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'SCY', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Shimatta', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Smoke', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Spirale', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'UDF', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'UQW', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Virtuality', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'Vanilla', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 04', 'VULCAN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'DVD', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Animorphs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'AOmundson', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'ASC', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Baws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Beatrice', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'B00BA', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Cait-Sidhe', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'CsS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'CTR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'D4C', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'deanzel', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Drag', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'eldon', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Freehold', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'GHS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Hark0N', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Holomux', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Judgement', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'MC', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'mottoj', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'NH', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'NTRM', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'o7', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'QM', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Thighs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'TTGA', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'UltraRemux', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'WBDP', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'WSE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 05', 'Yuki', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'DVD', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'ANE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'Bunny-Apocalypse', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'CyC', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'Datte13', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'EJF', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'GetItTwisted', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'GSK_kun', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'iKaos', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'karios', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'Pookie', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'RASETSU', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'Starbez', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'Tsundere', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'Yoghurt', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 06', 'YURASUKA', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'DVD', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', '9volt', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'AC', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Almighty', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Asakura', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Asenshi', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'BlurayDesuYo', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Bolshevik', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Brrrrrrr', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Chihiro', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Commie', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Crow', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Dae', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Dekinai', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Dragon-Releases', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'DragsterPS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Exiled-Destiny', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'FFF', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Final8', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Geonope', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'GJM', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'iAHD', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'inid4c', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Koten_Gars', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'kuchikirukia', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'LCE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'NTW', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'orz', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'RAI', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'REVO', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'SCP-2223', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Senjou', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'SEV', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'THORA', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 07', 'Vivid', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'Bluray Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'DVD', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'AkihitoSubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'Arukoru', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'EDGE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'EMBER', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'GHOST', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'Judas', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'naiyas', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'Nep_Blanc', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'Prof', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime BD Tier 08', 'Shirσ', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Dual Audio', 'Dual Audio', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Dual Audio', 'Not Single Language Only', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Dual Audio', 'Japanese Language', 'language', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Dual Audio', 'Chinese Language', 'language', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Dual Audio', 'Korean Language', 'language', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', '$tore-Chill', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', '0neshot', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', '224', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'A-Destiny', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'AceAres', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'AhmadDev', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Anime Chap', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Anime Land', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Anime Time', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'AnimeDynastyEN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'AnimeKuro', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'AnimeRG', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Animesubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'AnimeTR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Anitsu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'AniVoid', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'ArataEnc', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'AREY', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Ari', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'ASW', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'BJX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'BlackLuster', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'bonkai77', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'CameEsp', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Cat66', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'CBB', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Cerberus', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Cleo', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'CuaP', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'DaddySubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'DARKFLiX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'DB', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'DBArabic', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Deadmau- RAWS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'DKB', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'DP', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'DsunS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Emmid', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'ExREN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'FAV', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Fish', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'FunArts', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'GERMini', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Hakata Ramen', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Hall_of_C', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Hatsuyuki', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'HAV1T', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'HENiL', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Hitoku', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'HollowRoxas', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'HR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'ICEBLUE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'iPUNISHER', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'JacobSwaggedUp', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Johnny-englishsubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Kallango', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Kanjouteki', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'KEKMASTERS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Kirion', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'KQRM', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'KRP', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'LoliHouse', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'M@nI', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'mal lu zen', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Man.K', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Maximus', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'MD', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'mdcx', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Metaljerk', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'MGD', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'MiniFreeza', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'MiniMTBB', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'MinisCuba', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'MiniTheatre', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Mites', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Modders Bay', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Mr. Deadpool', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'NemDiggers', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'neoHEVC', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Nokou', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'NoobSubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'NS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Nyanpasu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'OldCastle', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Pantsu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Pao', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'phazer11', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Pixel', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Plex Friendly', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'PnPSubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Polarwindz', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Project-gxs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'PuyaSubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'QaS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'QCE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Rando235', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Ranger', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Rapta', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Raw Files', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Raze', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Reaktor', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'RightShiftBy2', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Rip Time', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'SAD', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Salieri', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Samir755', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'SanKyuu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'SEiN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'sekkusu&ok', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'SHFS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'shincaps', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'SLAX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Sokudo', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'SRW', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'SSA', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'StrayGods', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Suki Desu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'TeamTurquoize', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Tenrai Sensei', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'TnF', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'TOPKEK', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Trix', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'U3-Web', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'UNBIASED', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'uP', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'USD', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Valenciano', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'VipapkStudios', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Wardevil', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'WtF Anime', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'xiao-av1', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Yabai_Desu_NeRandomRemux', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'YakuboEncodes', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'youshikibi', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'YuiSubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'Yun', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime LQ Groups', 'zza', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'AsukaRaws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Beatrice-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Daddy-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Fumi-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'IrizaRaws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Kawaiika-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'km', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Koi-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Lilith-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'LowPower-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Moozzi2', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'NanakoRaws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'NC-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'neko-raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'New-raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Ohys-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Pandoratv-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Raws-Maji', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'ReinForce', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Scryous-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Seicher-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Raws', 'Shiniori-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'Arg0', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'Arid', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'Baws (2)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'FLE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'LostYears', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'LYS1TH3A', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'McBalls', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'sam', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'SCY', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'Setsugen', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'smol', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'SoM', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'Vodes', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'Z4ST1N', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 01', 'ZeroBuild', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', '0x539', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Asakura', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'BlackRose', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Cyan', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Cytox', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Dae (2)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Foxtrot', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Gao', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'GSK_kun', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Half-Baked', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'HatSubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'MALD', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'MTBB', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Not-Vodes', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Okay-Subs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Pizza', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Reza', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Slyfox', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'SoLCE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 02', 'Tenshi', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 03', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 03', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 03', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 03', 'AnoZu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 03', 'Dooky', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 03', 'Kitsune', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 03', 'SubsPlus+', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 03', 'ZR (2)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 04', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 04', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 04', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 04', 'Erai-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 04', 'ToonsHub', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 04', 'VARYG', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'BlueLobster', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'GST', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'HorribleRips', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'HorribleSubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'KAN3D2M', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'KiyoshiStar', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'Lia', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'NanDesuKa', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'PlayWeb', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'SobsPlease', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'Some-Stuffs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'SubsPlease', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'URANIME', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 05', 'ZigZag', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', '9volt', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'Asenshi', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'Chihiro', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'Commie', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'DameDesuYo', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'Doki', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'GJM', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'Kaleido', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'Kantai', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'KawaSubs', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Anime Web Tier 06', 'Tsundere', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian LQ', 'AppleTor', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian LQ', 'Luvmichelle', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian LQ', 'MagicStar', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian LQ', 'NEXT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian LQ', 'Taengoo', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian LQ', 'unco', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian LQ', 'unco@AvistaZ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'ANDY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'Archie', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'ECLiPSE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'HBO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'HeavenlyOppa', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'iTsOK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'JKCT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'LoveBug', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'MARK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'MMR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'MrHulk', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'Phanteam', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'SH3LBY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'SYNFM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'Wendy', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 01', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 02', 'PandaMoon', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 02', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 02', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 03', 'ADWeb', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 03', 'CHDWEB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 03', 'HDCTV', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 03', 'HHWEB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 03', 'OurTV', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 03', 'SHiNE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 03', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Asian Tier 03', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATMOS (undefined)', 'ATMOS', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATMOS (undefined)', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATMOS (undefined)', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATMOS (undefined)', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATMOS (undefined)', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATMOS (undefined)', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATMOS (undefined)', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATMOS (undefined)', 'Not TrueHD', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATV', 'Apple TV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATV', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATV', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATVP', 'Apple TV+', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATVP', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ATVP', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AUBC', 'AUBC', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AUBC', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AUBC', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AUViO', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AUViO', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AUViO', 'AUViO', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AUViO', 'Radio Télévision Belge Francophone', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - AV1', 'AV1', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - B-Global', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - B-Global', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - B-Global', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - B-Global', 'B-Global', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'alfaHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'BAT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'BiOMA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'BlackBit', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'BNd', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'C.A.A', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'C76', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'Cory', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'CYPHER', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'EniaHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'EXTREME', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'FF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'FOXX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'G4RiS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'GUEIRA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'LCD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'MLH', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'N3G4N', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'PD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'PTHome', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'RiPER', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'RK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'SiGLA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'Tars', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'tokar86a', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'TURG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'vnlls', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'WTV', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'XiQUEXiQUE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'Yatogam1', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'YusukeFLA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'ZigZag (2)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bad Dual Groups', 'ZNM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bilibili', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bilibili', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bilibili', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Bilibili', 'Bilibili', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - BR-DISK', 'BR-DISK (2)', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - BR-DISK (BTN)', 'BR-DISK', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - BW', 'Blackout/B&W/Black&Chrome', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CBC', 'CBC', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CBC', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CBC', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CC', 'Comedy Central', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CC', 'CC Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CC', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CC', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CNLP', 'CNLP', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CNLP', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CNLP', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CPNG', 'CPNG', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CPNG', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CPNG', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CR', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CR', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CR', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CR', 'Crunchyroll', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CRAV', 'Crave', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CRAV', 'Crave Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CRAV', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - CRAV', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DCU', 'DC Universe', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DCU', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DCU', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+', 'Dolby Digital Plus', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+', 'Not TrueHD/ATMOS (2)', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+ ATMOS', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+ ATMOS', 'ATMOS (2)', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+ ATMOS', 'Not TrueHD', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+ ATMOS', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+ ATMOS', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+ ATMOS', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+ ATMOS', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DD+ ATMOS', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DMM-TV', 'DMM-TV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DMM-TV', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DMM-TV', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DSCP', 'Discovery+', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DSCP', 'DSCP Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DSCP', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DSCP', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DSNP', 'Disney+', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DSNP', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DSNP', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'Not DTS', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'DTS-HD MA', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'Not DTS-HD HRA/ES', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'Not DTS X', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS X', 'Not DTS X', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS X', 'Not Basic DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS X', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS X', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS X', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS X', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS X', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS X', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'DTS-ES', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'Not Basic DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'Not DTS X', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-ES', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'DTS-HD HRA', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not Basic DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not DTS X', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not DTS-ES', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD HRA', 'Not 6.1 Surround (2)', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'DTS-HD MA', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'Not DTS X', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DTS-HD MA', 'Not DTS-HD HRA/ES', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dual Audio Asian', 'Dual Audio (2)', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dual Audio Asian', 'Not Single Language Only', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dual Audio Asian', 'Japanese Language', 'language', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dual Audio Asian', 'Chinese Language', 'language', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dual Audio Asian', 'Korean Language', 'language', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dubs Only', 'Dubbed', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dubs Only', 'Golumpa', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dubs Only', 'KaiDubs (Not Dual Audio)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dubs Only', 'KamiFS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dubs Only', 'KS (Not Dual Audio)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dubs Only', 'torenter69', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Dubs Only', 'Yameii', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (Disk)', 'FraMeSToR', 'release_group', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (Disk)', 'DV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (Disk)', 'No FANRES', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (Disk)', 'Not Hybrid', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (Disk)', 'Not Hybrid Release Group', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (w/o HDR fallback)', 'DV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (w/o HDR fallback)', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (w/o HDR fallback)', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (w/o HDR fallback)', 'Not RlsGrp', 'release_group', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (w/o HDR fallback)', 'Not HDR', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV (w/o HDR fallback)', 'Not Hulu', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - DV Boost', 'DV', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Extras', 'Extras', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FanSUB', 'FanSUB', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FastSUB', 'FastSUB', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FLAC', 'Not FLAC', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FLAC', 'Not PCM', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FLAC', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FLAC', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FLAC', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FLAC', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FLAC', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FLUX', 'FLUX', 'release_group', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FOD', 'FOD', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FOD', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FOD', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Anime-Heart', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Kaerizaki-Fansub', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Natsumi-no-Sekai', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'NekoYu''', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Onii-ChanSub', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Owlolf', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Pikari-Teshima', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Seimeisen', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Team Arcedo', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Yarashii', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Yangire-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime FanSub', 'Kaoru Hana FR (KHFR)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'Darki', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'Delivroozzi', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'Fuceo', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'Good Job! Alexis', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'Punisher694', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'SR-71', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'T3KASHi', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'TANOSHii', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 01', 'Tsundere-Raws', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'Aoi-Project', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'Elecman', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'FUJiSAN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'GundamGuy', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'IssouCorp', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'KAF', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'Nagutos', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'OECUF', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 02', 'XSPITFIRE911', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'BLV', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'D3T3R10R1TY', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'Galactic', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'HANAMi', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'kazuizui', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'KHAYA', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'KushEnthusiast', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'matheousse', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'Monkey-D.Lulu', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'NeoSG', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'RONiN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'TheFantastics', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Anime Tier 03', 'TTN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'BLURAY', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'Not 2160p', 'resolution', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'ARK01', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'BONBON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'FRATERNiTY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'FTMVHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'HeavyWeight', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR HD Bluray Tier 01', 'Psaro', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR LQ', 'Ads/Watermarks', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR LQ', 'Bad/False releases', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR LQ', 'DeTAG/ReTAG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR LQ', 'Other reasons', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Remux Tier 01', 'Remux', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Remux Tier 01', 'FtLi', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Remux Tier 01', 'Goldenyann', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Remux Tier 01', 'HDForever', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Remux Tier 01', 'HeavyWeight', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Remux Tier 01', 'ONLY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Remux Tier 01', 'Psaro', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Remux Tier 01', 'TyrellCorp', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', '#', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'A', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'B', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'C', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'D', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'E', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'F', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'G', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'H', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'J', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'K', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'L', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'M', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'N', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'O', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'P', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'R', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'S', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'T', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'U', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'V', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'W', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR Scene Groups', 'Z', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'BONBON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'FCK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'FW', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'FRATERNiTY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'MTDK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'NoLo', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'PATOPESTO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'Psaro', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'SUPPLY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'TFA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 01', 'TiNA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'COLL3CTiF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'FiND', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'FrIeNdS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'HeavyWeight', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'NoNe', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'pERsO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'POTO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'RG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'RiPiT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 02', 'TAT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'ARK01', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'BraD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'dRuIdE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'FTMVHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'LAZARUS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'MYSTERiON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'Scaph', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'WaCkS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FR WEB Tier 03', 'WQM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FreeLeech', 'FreeLeech', 'indexer_flag', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - friDay', 'friDay', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - friDay', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - friDay', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FUNi', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FUNi', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FUNi', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - FUNi', 'Funimation', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German', 'German', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German', 'NOT Original', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German', 'DL', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German', 'ML', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German', 'Not Subbed', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German 1080p Booster', 'German', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German 1080p Booster', 'Original Language', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German 1080p Booster', '1080p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German 2160p Booster', 'German', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German 2160p Booster', 'Original Language', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German 2160p Booster', '2160p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'Baka', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'Pudding-sama', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'RTemp', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'snk', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'Ainz', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'TvR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'Fuuko', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'AO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'CNY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'FumoFriday', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'Waechter', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'GP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'Bluray', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 01', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'ABJ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'DRiFTKiNG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'VECTOR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'ZeroTwo', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'ZeroTwo Aliases', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'SiXTYNiNE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'PHM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'Bluray', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 02', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', 'SUBARU', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', 'ATAX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', 'HDC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', 'Mindus', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', '4Baka', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', 'W33BSHiT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', 'AST4u', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', 'Bluray', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Bluray Tier 03', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', 'ONiGiRi', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', 'STARS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', 'DMPD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', 'OHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', 'SAUERKRAUT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', '3MINA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', 'FWB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', 'BiGiNT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Scene', 'MRW', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'Baka', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'Pudding-sama', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'RTemp', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'snk', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'Ainz', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'TvR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'Tanuki', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'HiSHiRO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'WeebPinn', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'Lynacchi', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'WebDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 01', 'WebRip', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'ABJ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'DRiFTKiNG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'VECTOR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'ZeroTwo', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'ZeroTwo Aliases', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'SiXTYNiNE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'AO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'MELD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'WebDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 02', 'WebRip', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'SUBARU', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'ATAX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'HDC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'Mindus', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'W33BSHiT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'Fuuko', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'Waechter', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'Otaku', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', '4Baka', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'WebDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Anime Web Tier 03', 'WebRip', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'ZeroTwo', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'ZeroTwo Aliases (2)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'TSCC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'TvR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'NIMA4K', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'TVS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'PXL', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'CNY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'WeebPinn', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'WalterBishop', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'Bluray', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 01', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 02', 'VECTOR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 02', 'MULTiPLEX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 02', 'SiXTYNiNE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 02', 'Oergel', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 02', 'ABJ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 02', 'Bluray', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 02', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 03', 'RobertDeNiro', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 03', 'HQC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 03', 'RDR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 03', 'HDSource', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 03', 'Bluray', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Bluray Tier 03', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German DL', 'German', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German DL', 'Original Language', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German DL (undefined)', 'NOT Original Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German DL (undefined)', 'German', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German DL (undefined)', 'DL', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German DL (undefined)', 'ML', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'PsO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'Cancer58', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'Tylor.D', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', '1XBET', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', '2dead', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'HELD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'kala', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'POE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'SHOWE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'SHOWEHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'ORCA88', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'LuRCH', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'N2D2', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'GETB8', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'TFARC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'Kristallprinz', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'LAW', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'CTFOH', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'Pendeti', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'OJ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'PS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'FSX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'EMVY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'ZaidaNulled', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'MEGA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'MBA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'FORMBA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'PaZ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'Whistler', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'omikron', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'WOTT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'SunDry', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'PL', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'TVARCHiV', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'P73', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'LizardSquad', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'AVTOMAT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'iSSEYMiYAKE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'TVP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'AIDA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'UTOPiA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'FRAGGERS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ', 'SD7', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ (release title)', 'TVS iTunesHD', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ (release title)', 'Jellyfin-Plex', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German LQ (release title)', 'Double German Tag', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Microsized', 'FuN', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Microsized', 'w00t', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Microsized', 'GTF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Microsized', 'PaTroL', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Microsized', 'JellyfinPlex', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Microsized', 'BB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Microsized', '266ers', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 01', 'TvR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 01', 'pmHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 01', 'NIMA4K', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 01', 'QfG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 01', 'TSCC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 01', 'Remux', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 02', 'MULTiPLEX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 02', 'HQC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 02', 'HDSource', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Remux Tier 02', 'Remux', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', '4KCONNECTiON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'ACED', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'AWARDS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'bi0hazard', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'CDD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'CDP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'CONTRiBUTiON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'DETAiLS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'DMPD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'ENCOUNTERS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'ENDSTATiON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'euHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'EXCiTED', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'FENDT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'FKKTV', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'GTVG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'HAXE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'HDARCHiV', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'iNTENTiON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'JaJunge', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'MGE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'MisFiTS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'muhHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'OCA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'OHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'PL3X', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'RiLE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'RIPLEY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'RSG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'RUBBiSH', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'RWP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'SAUERKRAUT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'STARS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'TMSF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'TV4A', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'TVNATiON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'W4K', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'WATCHABLE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'WAYNE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'WOMBAT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Scene', 'WvF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Subbed', 'German Subbed', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Subbed', 'Not German', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Subbed', 'Not German Dubbed', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'CNY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'KOMET', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'MEDiATHEK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'NIMA4K', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'PXL', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'QfG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'RiiR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'RiiR Aliases', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'SLiDE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'TSCC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'TvR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'TVS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'WalterBishop', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'WeebPinn', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'ZeroTwo', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'ZeroTwo Aliases (2)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'WebDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 01', 'WebRip', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', '4SF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', '4SF Aliases', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', 'ABJ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', 'FLORiX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', 'MULTiPLEX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', 'Oergel', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', 'SiXTYNiNE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', 'VECTOR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', 'WebDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 02', 'WebRip', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 03', 'RobertDeNiro', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 03', 'BALENCiAGA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 03', 'HQC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 03', 'HDSource', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 03', 'iNCEPTION', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 03', 'RDR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 03', 'WebDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - German Web Tier 03', 'WebRip', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Hami', 'Hami', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Hami', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Hami', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HBO', 'HBO (2)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HBO', 'HBO Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HBO', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HBO', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'BLURAY', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'Not 2160p', 'resolution', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'Chotab', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'CtrlHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'DON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'EbP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'NTb', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 01', 'PTer', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 02', 'BLURAY', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 02', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 02', 'Not 2160p', 'resolution', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 02', 'SA89', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Bluray Tier 02', 'sbR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Streaming Boost', 'Disney+', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Streaming Boost', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Streaming Boost', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HD Streaming Boost', '1080p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HDR', 'DV With HDR10 fallback', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HDR', 'HDR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HDR', 'HDR10', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HDR', 'HDR10+', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HDR', 'HLG', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HDR', 'PQ', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HDR', 'RlsGrp (Missing HDR)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HDR10+ Boost', 'HDR10+', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HFR', 'HFR', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HIDIVE', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HIDIVE', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HIDIVE', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HIDIVE', 'HIDIVE', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HLG', 'HLG', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HLG', 'Not HDR10+', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HLG', 'Not HDR10', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HLG', 'PQ', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HMAX', 'HBO Max', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HMAX', 'HMAX Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HMAX', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HMAX', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HTSR', 'Hotstar', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HTSR', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HTSR', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HULU', 'Not Hulu', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HULU', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - HULU', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Hybrid', 'Not Hybrid', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Hybrid', 'Not Hybrid Release Group (2)', 'release_group', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Hybrid', 'Remux', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Hybrid', 'Bluray', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - INTERNAL', 'INTERNAL', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - IP', 'BBC iPlayer', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - IP', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - IP', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - iQIY', 'iQIY', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - iQIY', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - iQIY', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - iT', 'iTunes', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - iT', 'iT Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - iT', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - iT', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ITVX', 'ITVX', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ITVX', 'ITVX Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ITVX', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ITVX', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - KCW', 'KCW', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - KCW', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - KCW', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - KKTV', 'KKTV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - KKTV', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - KKTV', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Language: Not English', 'Not English Language', 'language', 'sonarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Language: Not French', 'Not French Language', 'language', 'sonarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Language: Not Original', 'Not Original Language', 'language', 'sonarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Language: Original + French', 'Original Language', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Language: Original + French', 'French Language', 'language', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Language: Original + French', 'MULTi', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LINETV', 'LINETV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LINETV', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LINETV', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'BRiNK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'BTM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'CHX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'CTFOH', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'd3g', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'DepraveD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'EVO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'Feranki1980 (2)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'FGT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'FMD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'GHOSTS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'HiQVE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'iNTENSO', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'iVy', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'JFF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'KC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'MeGusta', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'nhanc3', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'OFT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'Pahe', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'PSA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'SasukeducK', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'SHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'ShieldBearer', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'TBS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'TG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'VIDEOHOLE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'worldmkv', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'XLF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ', 'Zero00', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ (Release Title)', 'BEN THE MEN', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ (Release Title)', 'BiTOR (2160p)', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ (Release Title)', 'CREATiVE24', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ (Release Title)', 'Feranki1980', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ (Release Title)', 'R&H', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - LQ (Release Title)', 'TeeWee', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MAX', 'Max', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MAX', 'MAX Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MAX', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MAX', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MP3', 'MP3', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MPEG2', 'MPEG2', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MULTi', 'Multi', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Multi-Episode', 'Multi-Episode', 'release_type', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MY5', 'My5', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MY5', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MY5', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MyCANAL', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MyCANAL', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MyCANAL', 'CANAL+', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MyCANAL', 'MyCANAL', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MyCANAL', 'Not MyCanal RlsGrp', 'release_group', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MyTVSuper', 'MyTVSuper', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MyTVSuper', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - MyTVSuper', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NF', 'Netflix', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NF', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NF', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NLZ', 'NLZiet', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NLZ', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NLZ', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - No-RlsGroup', 'No Parsed Group', 'release_group', 'sonarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German or English', 'Not English Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German or English', 'Not German Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German or English', 'Not German in Title', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese or English', 'Not English Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese or English', 'Not Japanese Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese or English', 'Not German Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese or English', 'Not German in Title', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese, Korean, Chinese or English', 'Not English Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese, Korean, Chinese or English', 'Not Japanese Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese, Korean, Chinese or English', 'Not Korean Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese, Korean, Chinese or English', 'Not Chinese Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese, Korean, Chinese or English', 'Not German Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Not German, Japanese, Korean, Chinese or English', 'Not German in Title', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NOW', 'NOW', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NOW', 'NOW Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NOW', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - NOW', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', '4P', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', '4Planet', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'AsRequested', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'BUYMORE', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'Chamele0n', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'GEROV', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'iNC0GNiTO', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'NZBGeek', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'Obfuscated', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'postbot', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'Rakuv', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'Scrambled', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'WhiteRev', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'xpost', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'WRTEAM', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', 'CAPTCHA', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Obfuscated', '_nzb', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Opus', 'Opus', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Opus', 'Not OPUS Release Group', 'release_group', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - OViD', 'OViD', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - OViD', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - OViD', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - P2P Internal', 'Internal', 'indexer_flag', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCM', 'Not PCM', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCM', 'AAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCM', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCM', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCM', 'Not TrueHD/ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCM', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCM', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCOK', 'Peacock TV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCOK', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PCOK', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PLAY', 'PLAY', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PLAY', 'PLAY Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PLAY', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PLAY', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PMTP', 'Paramount+', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PMTP', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - PMTP', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - QIBI', 'Quibi', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - QIBI', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - QIBI', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - RED', 'YouTube Red', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - RED', 'RED Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - RED', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - RED', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remaster', 'Remaster', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remaster', 'Not 4K Remaster', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 01', 'Remux', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 01', 'BLURANiUM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 01', 'BMF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 01', 'FraMeSToR (2)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 01', 'PmP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'Remux', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', '12GaugeShotgun', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'decibeL', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'EPSiLON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'HiFi', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'KRaLiMaRKo', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'playBD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'PTer', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'SiCFoI', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Remux Tier 02', 'TRiToN', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Repack/Proper', 'Repack/Proper/Rerip', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Repack/Proper', 'Not Higher Version Repack/Proper', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Repack2', 'Repack/Proper 2 or REAL.PROPER/REPACK', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Repack2', 'Not Repack/Proper 3', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Repack3', 'Repack/Proper 3 or REAL.REAL.PROPER/REPACK', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Retags', '.heb', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Retags', '[eztv]', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Retags', '[rarbg]', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Retags', '[rartv]', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Retags', '[TGx]', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ROKU', 'ROKU', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ROKU', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - ROKU', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SALTO', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SALTO', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SALTO', 'SALTO', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Scene', 'Scene Groups + Naming', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Scene', 'Not INFLATE/DEFLATE', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Scene', 'Not GERMAN', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SDR', '2160p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SDR', 'HDR Formats', 'release_title', 'sonarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SDR', 'SDR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SDR (no WEBDL)', '2160p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SDR (no WEBDL)', 'HDR Formats', 'release_title', 'sonarr', 1, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SDR (no WEBDL)', 'SDR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SDR (no WEBDL)', 'Not WEBDL', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SDR (no WEBDL)', 'Not WEBRip', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Season Pack', 'Season Packs', 'release_type', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SHO', 'SHOWTIME', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SHO', 'SHO Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SHO', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SHO', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Single Episode', 'Single Episode', 'release_type', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - STAN', 'Stan', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - STAN', 'Stan Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - STAN', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - STAN', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - STRP', 'Star+', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - STRP', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - STRP', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SYFY', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SYFY', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - SYFY', 'SYFY', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD', 'Not TrueHD', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD', 'ATMOS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD ATMOS', 'Not TrueHD', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD ATMOS', 'ATMOS', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD ATMOS', 'Not Basic Dolby Digital', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD ATMOS', 'Not Dolby Digital Plus', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD ATMOS', 'Not DTS', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD ATMOS', 'Not DTS X', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TrueHD ATMOS', 'Not FLAC', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TVer', 'TVer', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TVer', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TVer', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TVING', 'TVING', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TVING', 'TVING Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TVING', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - TVING', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - U-NEXT', 'U-NEXT', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - U-NEXT', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - U-NEXT', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - UHD Streaming Boost', 'Disney+', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - UHD Streaming Boost', 'HBO Max', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - UHD Streaming Boost', 'HMAX Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - UHD Streaming Boost', 'Netflix', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - UHD Streaming Boost', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - UHD Streaming Boost', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - UHD Streaming Boost', '2160p', 'resolution', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Uncensored', 'Uncensored', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Upscaled', 'AI Upscales', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Upscaled', 'AIUS', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Upscaled', 'Regrade', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Upscaled', 'RW', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Upscaled', 'TheUpscaler', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Upscaled', 'Upscaled', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - v0', 'v0', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - v1', 'v1', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - v2', 'v2', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - v2', 'Not Higher Versions', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - v3', 'v3', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - v3', 'Not Higher Versions (2)', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - v4', 'v4', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VC-1', 'VC-1', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VDL', 'Videoland', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VDL', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VDL', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VF2', 'VF2', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VF2', 'Both VFF and VFQ', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VFB', 'Belgian French', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VFF', 'TRUEFRENCH', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VFF', 'Not VF2', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VFI', 'French International', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VFQ', 'Canadian French', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VFQ', 'Not VF2', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Viki', 'Viki', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Viki', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Viki', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VIU', 'VIU', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VIU', 'VIU Rename', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VIU', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VIU', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VOF', 'French Original Version', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VOQ', 'Quebec Original Version', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VOSTFR', 'VOSTFR', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VOSTFR', 'SUBFRENCH', 'release_title', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VP9', 'VP9', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VQ', 'Version Québécoise', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VRV', 'VRV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VRV', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VRV', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - VRV', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WAVVE', 'WAVVE', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WAVVE', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WAVVE', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Scene', 'DEFLATE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Scene', 'INFLATE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'ABBiE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'AJP69', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'APEX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'CasStudio', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'CRFW', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'CtrlHD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'FLUX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'HONE', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'KiNGS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'Kitsune (2)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'MADSKY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'monkee', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'NOSiViD', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'NTb', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'NTG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'QOQ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'RAWR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'RTN', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'SiC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'T6D', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'TOMMY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'ViSUM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 01', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', '3cTWeB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'BLUTONiUM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'BTW', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'BYNDR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'Chotab', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'Cinefeel', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'CiT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'CMRG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'Coo7', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'dB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'DEEP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'END', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'ETHiCS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'FC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'Flights', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'GNOME', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'iJP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'iKA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'iT00NZ', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'JETIX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'KHN', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'KiMCHI', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'LAZY', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'MiU', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'MZABI', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'NPMS', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'NYH', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'orbitron', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'PHOENiX', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'playWEB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'PSiG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'ROCCaT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'RTFM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'SA89', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'SbR', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'SDCC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'SIGMA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'SMURF', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'SPiRiT', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'TEPES', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'TVSmash', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'WELP', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'XEBEC', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 02', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'BLOOM', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'Dooky (2)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'DRACULA', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'HHWEB', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'NINJACENTRAL', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'SLiGNOME', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'SwAgLaNdEr', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'T4H', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'ViSiON', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WEB Tier 03', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WETV', 'WETV', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WETV', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WETV', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WiTH AD', 'Audio Description', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WiTH ASL', 'American Sign Language', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WiTH BASL', 'Black American Sign Language', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WiTH BSL', 'British Sign Language', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WKN', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WKN', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WKN', 'WEB', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - WKN', 'WKN', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - Wrong Language', 'Wrong Language', 'language', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x264', 'x|h264', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x264', 'Not Remux', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x265', 'x265/HEVC', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x265', 'Not Remux', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x265 (HD)', 'x265/HEVC', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x265 (HD)', 'Not 2160p', 'resolution', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x265 (no HDR/DV)', 'x265/HEVC', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x265 (no HDR/DV)', 'Not HDR/DV', 'release_title', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x265 (no HDR/DV)', 'Not 2160p', 'resolution', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x266', 'x|h266', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - x266', 'Not Remux', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - YOUKU', 'YOUKU', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - YOUKU', 'WEBDL', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Sonarr - YOUKU', 'WEBRIP', 'source', 'sonarr', 0, 0);
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Radarr - 1.0 Mono', 'Radarr');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Radarr - 1.0 Mono', 'Release Title');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Radarr - 1080p', 'Radarr');
