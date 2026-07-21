@@ -234,6 +234,26 @@ class CustomFormatConditionEntry(TypedDict):
     except_value: bool  # Used for language specifications
 
 
+class QualityProfileEntry(TypedDict):
+    name: str
+    description: str | None
+    upgrades_allowed: int
+    minimum_custom_format_score: int
+    upgrade_until_score: int
+    upgrade_score_increment: int
+    tags: set[str]
+    quality_groups: dict[str, set[str]]  # Maps group_name -> set of quality_names
+    qualities: list["QualityProfileQualityEntry"]
+
+
+class QualityProfileQualityEntry(TypedDict):
+    quality_name: str | None
+    quality_group_name: str | None
+    position: int
+    enabled: bool
+    upgrade_until: bool
+
+
 def sql_escape(value: str) -> str:
     return value.replace("'", "''")
 
@@ -242,20 +262,22 @@ def normalize_name(name: str) -> str:
     return " ".join(name.strip().split())
 
 
-def _map_numeric_value(implementation: str, service_key: str, numeric_value: int) -> str | None:
+def _map_numeric_value(implementation: str, service_key: str, numeric_value: int) -> str:
     if implementation == "LanguageSpecification":
-        return LANGUAGE_MAPPING.get(service_key, {}).get(numeric_value)
+        return LANGUAGE_MAPPING[service_key][numeric_value]
     if implementation == "IndexerFlagSpecification":
-        return INDEXER_FLAG_MAPPING.get(service_key, {}).get(numeric_value)
+        return INDEXER_FLAG_MAPPING[service_key][numeric_value]
     if implementation == "SourceSpecification":
-        return SOURCE_MAPPING.get(service_key, {}).get(numeric_value)
+        return SOURCE_MAPPING[service_key][numeric_value]
     if implementation == "ReleaseTypeSpecification":
-        return RELEASE_TYPE_MAPPING.get(service_key, {}).get(numeric_value)
+        return RELEASE_TYPE_MAPPING[service_key][numeric_value]
     if implementation == "QualityModifierSpecification":
-        return QUALITY_MODIFIER_MAPPING.get(service_key, {}).get(numeric_value)
+        return QUALITY_MODIFIER_MAPPING[service_key][numeric_value]
     if implementation == "ResolutionSpecification":
         return f"{numeric_value}p"
-    return None
+
+    print(f"ERROR: unrecongized implementation type: {implementation}")
+    sys.exit(1)
 
 
 def extract_specification_value(
@@ -275,20 +297,11 @@ def extract_specification_value(
     value = fields_dict.get("value")
 
     parsed_value: str | None = None
-    if isinstance(value, str) and value.strip():
-        parsed_value = value.strip()
-    elif isinstance(value, int):
+    if isinstance(value, int):
         parsed_value = _map_numeric_value(implementation, service_key, value)
-        if parsed_value is None:
-            parsed_value = str(value)
-    elif isinstance(value, float) and value.is_integer():
-        int_value = int(value)
-        parsed_value = _map_numeric_value(implementation, service_key, int_value)
-        if parsed_value is None:
-            parsed_value = str(int_value)
-
-    if parsed_value is None:
-        return None, False
+    else:
+        print(f"ERROR: unable to parse value for implementation {implementation}, service: {service_key}, value: {value}")
+        sys.exit(1)
 
     except_value = False
     except_language_raw = fields_dict.get("exceptLanguage")
@@ -305,6 +318,26 @@ def ensure_unique_name(base_name: str, used_names: set[str]) -> str:
         candidate = f"{base_name} ({index})"
         index += 1
     return candidate
+
+
+def get_condition_signature(condition: CustomFormatConditionEntry) -> tuple[object, ...]:
+    return (
+        condition["name"],
+        condition["type"],
+        condition["negate"],
+        condition["required"],
+        condition["value"],
+        condition["except_value"],
+    )
+
+
+def conditions_match(
+    left_conditions: list[CustomFormatConditionEntry],
+    right_conditions: list[CustomFormatConditionEntry],
+) -> bool:
+    return sorted(get_condition_signature(condition) for condition in left_conditions) == sorted(
+        get_condition_signature(condition) for condition in right_conditions
+    )
 
 
 def remove_markdown_comments(text: str) -> str:
@@ -390,6 +423,8 @@ def collect_custom_formats(
     regex_name_by_service_and_pattern: dict[tuple[str, str], str],
 ) -> list[CustomFormatEntry]:
     custom_formats_by_name: dict[str, CustomFormatEntry] = {}
+    custom_format_names_by_raw_name: dict[str, list[str]] = {}
+    used_names: set[str] = set()
 
     for service_key, tag_name in (("sonarr", "Sonarr"), ("radarr", "Radarr")):
         cf_dir = os.path.join(input_dir, service_key, "cf")
@@ -412,6 +447,7 @@ def collect_custom_formats(
             if not isinstance(name_raw, str) or not name_raw.strip():
                 continue
 
+            raw_name = normalize_name(name_raw)
             name = normalize_name(f"{tag_name} - {name_raw}")
             description = None
             cf_desc_filename = name_raw.lower().replace(" ", "-") + ".md"
@@ -508,11 +544,40 @@ def collect_custom_formats(
                             }
                         )
 
-            existing_entry = custom_formats_by_name.get(name)
-            if existing_entry:
-                print(f"Duplicate custom format found. Exiting entry: {existing_entry}, found entry: {name}")
-                sys.exit(1)
+            matching_entry_name = None
+            for existing_name in custom_format_names_by_raw_name.get(raw_name, []):
+                existing_entry = custom_formats_by_name[existing_name]
+                if conditions_match(existing_entry["conditions"], conditions):
+                    matching_entry_name = existing_name
+                    break
 
+            if matching_entry_name is not None:
+                existing_entry = custom_formats_by_name[matching_entry_name]
+                existing_entry["tags"].update({tag_name, *specification_tags})
+                existing_entry["include_in_rename"] = existing_entry["include_in_rename"] or include_in_rename
+                if existing_entry["description"] is None:
+                    existing_entry["description"] = description
+
+                merged_name = raw_name
+                if existing_entry["name"] != merged_name and (
+                    merged_name not in custom_formats_by_name
+                    or custom_formats_by_name[merged_name] is existing_entry
+                ):
+                    del custom_formats_by_name[matching_entry_name]
+                    used_names.discard(existing_entry["name"])
+                    existing_entry["name"] = merged_name
+                    custom_formats_by_name[merged_name] = existing_entry
+                    used_names.add(merged_name)
+                    raw_names = custom_format_names_by_raw_name.get(raw_name, [])
+                    custom_format_names_by_raw_name[raw_name] = [
+                        merged_name if existing_name == matching_entry_name else existing_name
+                        for existing_name in raw_names
+                    ]
+
+                continue
+
+            name = ensure_unique_name(name, used_names)
+            used_names.add(name)
             custom_formats_by_name[name] = {
                 "name": name,
                 "description": description,
@@ -520,8 +585,165 @@ def collect_custom_formats(
                 "tags": {tag_name, *specification_tags},
                 "conditions": conditions,
             }
+            custom_format_names_by_raw_name.setdefault(raw_name, []).append(name)
 
     return sorted(custom_formats_by_name.values(), key=lambda item: item["name"].lower())
+
+
+def collect_quality_profile_groups(input_dir: str) -> dict[str, set[str]]:
+    """Collect quality profile groups and return mapping of trash_id to group names."""
+    trash_id_to_groups: dict[str, set[str]] = {}
+
+    for service_key in ("sonarr", "radarr"):
+        groups_file = os.path.join(
+            input_dir, service_key, "quality-profile-groups", "groups.json"
+        )
+        if not os.path.isfile(groups_file):
+            continue
+
+        with open(groups_file, "r", encoding="utf-8") as f:
+            groups = json.load(f)
+
+        for group in groups:
+            group_name = group.get("name")
+            if not group_name:
+                continue
+
+            profiles = group.get("profiles", {})
+            for trash_id in profiles.values():
+                if trash_id not in trash_id_to_groups:
+                    trash_id_to_groups[trash_id] = set()
+                trash_id_to_groups[trash_id].add(group_name)
+
+    return trash_id_to_groups
+
+
+def collect_quality_profiles(input_dir: str) -> list[QualityProfileEntry]:
+    quality_profiles_by_name: dict[str, QualityProfileEntry] = {}
+    trash_id_to_groups = collect_quality_profile_groups(input_dir)
+
+    for service_key in ("sonarr", "radarr"):
+        qp_dir = os.path.join(input_dir, service_key, "quality-profiles")
+        if not os.path.isdir(qp_dir):
+            continue
+
+        for filename in sorted(os.listdir(qp_dir)):
+            if not filename.endswith(".json"):
+                continue
+
+            file_path = os.path.join(qp_dir, filename)
+            with open(file_path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+
+            name = payload.get("name")
+            if not name:
+                continue
+
+            description = payload.get("trash_description")
+            upgrades_allowed = 1 if payload.get("upgradeAllowed", True) else 0
+            minimum_custom_format_score = payload.get("minFormatScore", 0)
+            upgrade_until_score = payload.get("cutoffFormatScore", 0)
+            upgrade_score_increment = payload.get("minUpgradeFormatScore", 1)
+            trash_id = payload.get("trash_id", "")
+            tags = trash_id_to_groups.get(trash_id, set()).copy()
+            quality_groups: dict[str, set[str]] = {}
+            qualities: list[QualityProfileQualityEntry] = []
+
+            items_raw = payload.get("items")
+            if isinstance(items_raw, list):
+                items = cast(list[object], items_raw)
+                cutoff_raw = payload.get("cutoff")
+                cutoff_name = normalize_name(cutoff_raw) if isinstance(cutoff_raw, str) else None
+
+                for position, item_obj in enumerate(items):
+                    if not isinstance(item_obj, dict):
+                        continue
+
+                    item_dict = cast(dict[str, object], item_obj)
+                    group_name_raw = item_dict.get("name")
+                    if not isinstance(group_name_raw, str) or not group_name_raw.strip():
+                        continue
+
+                    group_name = normalize_name(group_name_raw)
+                    allowed_raw = item_dict.get("allowed")
+                    enabled = bool(allowed_raw) if isinstance(allowed_raw, bool) else False
+                    upgrade_until = cutoff_name is not None and group_name == cutoff_name
+
+                    group_items = item_dict.get("items")
+                    if isinstance(group_items, list) and group_items:
+                        group_items = cast(list[str], group_items)
+
+                        # Extract quality names from the group items
+                        group_members: set[str] = set()
+                        for group_item in group_items:
+                            group_members.add(group_item.strip())
+
+                        if group_members:
+                            quality_groups[group_name] = group_members
+                            qualities.append(
+                                {
+                                    "quality_name": None,
+                                    "quality_group_name": group_name,
+                                    "position": position,
+                                    "enabled": enabled,
+                                    "upgrade_until": upgrade_until,
+                                }
+                            )
+                        continue
+
+                    qualities.append(
+                        {
+                            "quality_name": group_name,
+                            "quality_group_name": None,
+                            "position": position,
+                            "enabled": enabled,
+                            "upgrade_until": upgrade_until,
+                        }
+                    )
+
+            existing_entry = quality_profiles_by_name.get(name)
+            if existing_entry is not None:
+                existing_entry["tags"].update(tags)
+                for group_name, members in quality_groups.items():
+                    if group_name not in existing_entry["quality_groups"]:
+                        existing_entry["quality_groups"][group_name] = set()
+                    existing_entry["quality_groups"][group_name].update(members)
+                existing_entry["qualities"].extend(qualities)
+                if existing_entry["description"] is None:
+                    existing_entry["description"] = description
+                continue
+
+            quality_profiles_by_name[name] = {
+                "name": name,
+                "description": description,
+                "upgrades_allowed": upgrades_allowed,
+                "minimum_custom_format_score": minimum_custom_format_score,
+                "upgrade_until_score": upgrade_until_score,
+                "upgrade_score_increment": upgrade_score_increment,
+                "tags": tags,
+                "quality_groups": quality_groups,
+                "qualities": qualities,
+            }
+
+    for entry in quality_profiles_by_name.values():
+        deduped_qualities: list[QualityProfileQualityEntry] = []
+        seen_quality_keys: set[tuple[object, ...]] = set()
+        for quality in sorted(entry["qualities"], key=lambda item: item["position"]):
+            quality_key = (
+                quality["quality_name"],
+                quality["quality_group_name"],
+                quality["position"],
+            )
+            if quality_key in seen_quality_keys:
+                continue
+
+            seen_quality_keys.add(quality_key)
+            deduped_qualities.append(quality)
+
+        entry["qualities"] = deduped_qualities
+
+    return sorted(quality_profiles_by_name.values(), key=lambda item: item["name"].lower())
+
 
 def main():
     if len(sys.argv) != 3:
@@ -556,6 +778,11 @@ def main():
             "Indexer Flag",
             "Quality Modifier",
             "Release Type",
+            "French",
+            "German",
+            "Default",
+            "SQP",
+            "Anime"
         ]:
             f.write(f"INSERT INTO tags (name) VALUES ('{tag_name}');\n")
 
@@ -694,6 +921,77 @@ def main():
                     f"VALUES ('{escaped_name}', '{tag_name}');\n"
                 )
 
+        quality_profile_entries = collect_quality_profiles(input_dir)
+        for entry in quality_profile_entries:
+            escaped_name = sql_escape(entry["name"])
+            escaped_description = (
+                f"'{sql_escape(entry['description'])}'"
+                if entry["description"] is not None
+                else "NULL"
+            )
+            upgrades_allowed = entry["upgrades_allowed"]
+            minimum_custom_format_score = entry["minimum_custom_format_score"]
+            upgrade_until_score = entry["upgrade_until_score"]
+            upgrade_score_increment = entry["upgrade_score_increment"]
+            f.write(
+                "INSERT INTO quality_profiles "
+                "(name, description, upgrades_allowed, minimum_custom_format_score, "
+                "upgrade_until_score, upgrade_score_increment) "
+                f"VALUES ('{escaped_name}', {escaped_description}, {upgrades_allowed}, "
+                f"{minimum_custom_format_score}, {upgrade_until_score}, {upgrade_score_increment});\n"
+            )
+
+        for entry in quality_profile_entries:
+            escaped_quality_profile_name = sql_escape(entry["name"])
+            for tag_name in sorted(entry["tags"]):
+                f.write(
+                    "INSERT INTO quality_profile_tags "
+                    "(quality_profile_name, tag_name) "
+                    f"VALUES ('{escaped_quality_profile_name}', '{tag_name}');\n"
+                )
+
+        for entry in quality_profile_entries:
+            escaped_quality_profile_name = sql_escape(entry["name"])
+            for group_name in sorted(entry["quality_groups"].keys()):
+                escaped_group_name = sql_escape(group_name)
+                f.write(
+                    "INSERT INTO quality_groups "
+                    "(quality_profile_name, name) "
+                    f"VALUES ('{escaped_quality_profile_name}', '{escaped_group_name}');\n"
+                )
+
+        for entry in quality_profile_entries:
+            escaped_quality_profile_name = sql_escape(entry["name"])
+            for group_name in sorted(entry["quality_groups"].keys()):
+                escaped_group_name = sql_escape(group_name)
+                for quality_name in sorted(entry["quality_groups"][group_name]):
+                    escaped_quality_name = sql_escape(quality_name)
+                    f.write(
+                        "INSERT INTO quality_group_members "
+                        "(quality_profile_name, quality_group_name, quality_name) "
+                        f"VALUES ('{escaped_quality_profile_name}', '{escaped_group_name}', "
+                        f"'{escaped_quality_name}');\n"
+                    )
+
+        for entry in quality_profile_entries:
+            escaped_quality_profile_name = sql_escape(entry["name"])
+            for quality in sorted(entry["qualities"], key=lambda item: item["position"]):
+                escaped_quality_name = (
+                    f"'{sql_escape(quality['quality_name'])}'" if quality["quality_name"] is not None else "NULL"
+                )
+                escaped_quality_group_name = (
+                    f"'{sql_escape(quality['quality_group_name'])}'"
+                    if quality["quality_group_name"] is not None
+                    else "NULL"
+                )
+                enabled = 1 if quality["enabled"] else 0
+                upgrade_until = 1 if quality["upgrade_until"] else 0
+                f.write(
+                    "INSERT INTO quality_profile_qualities "
+                    "(quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) "
+                    f"VALUES ('{escaped_quality_profile_name}', {escaped_quality_name}, {escaped_quality_group_name}, "
+                    f"{quality['position']}, {enabled}, {upgrade_until});\n"
+                )
 
 if __name__ == "__main__":
     main()
