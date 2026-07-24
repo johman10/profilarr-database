@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import re
+from enum import StrEnum
 from typing import TypedDict, cast
 
 
@@ -209,11 +210,38 @@ QUALITY_MODIFIER_MAPPING = {
     }
 }
 
+QUALITY_SIZE_NAME_MAPPING = {
+    "movie": "Movie",
+    "anime": "Anime",
+    "sqp-streaming": "SQP Streaming",
+    "sqp-uhd": "SQP UHD",
+    "series": "Series",
+}
+
 
 class RegexEntry(TypedDict):
     name: str
     pattern: str
     tags: set[str]
+
+
+class ServiceKey(StrEnum):
+    SONARR = "sonarr"
+    RADARR = "radarr"
+
+    @classmethod
+    def all(cls) -> tuple["ServiceKey", ...]:
+        return tuple(cls)
+
+
+type ByServiceEntry[T] = dict[ServiceKey, T]
+
+class CustomFormatServiceEntry(TypedDict):
+    trash_id: str
+    trash_scores: dict[str, int]
+
+
+type CustomFormatByServiceEntry = ByServiceEntry[CustomFormatServiceEntry]
 
 
 class CustomFormatEntry(TypedDict):
@@ -222,16 +250,30 @@ class CustomFormatEntry(TypedDict):
     include_in_rename: bool
     tags: set[str]
     conditions: list["CustomFormatConditionEntry"]
+    by_service: CustomFormatByServiceEntry
 
 
 class CustomFormatConditionEntry(TypedDict):
     name: str
     type: str
-    arr_type: str
+    arr_type: ServiceKey
     negate: bool
     required: bool
     value: str | None  # Used for non-regex specifications
     except_value: bool  # Used for language specifications
+
+
+class QualityProfileByServiceEntry(TypedDict):
+    format_items: dict[str, str]
+    trash_score_set: str
+
+
+class QualityProfileQualityEntry(TypedDict):
+    quality_name: str | None
+    quality_group_name: str | None
+    position: int
+    enabled: bool
+    upgrade_until: bool
 
 
 class QualityProfileEntry(TypedDict):
@@ -243,15 +285,35 @@ class QualityProfileEntry(TypedDict):
     upgrade_score_increment: int
     tags: set[str]
     quality_groups: dict[str, set[str]]  # Maps group_name -> set of quality_names
-    qualities: list["QualityProfileQualityEntry"]
+    qualities: list[QualityProfileQualityEntry]
+    by_service: ByServiceEntry[QualityProfileByServiceEntry]
 
 
-class QualityProfileQualityEntry(TypedDict):
-    quality_name: str | None
-    quality_group_name: str | None
-    position: int
-    enabled: bool
-    upgrade_until: bool
+class QualityDefinitionEntry(TypedDict):
+    name: str
+    quality_name: str
+    min_size: int
+    max_size: int
+    preferred_size: int
+
+
+class RadarrNamingEntry(TypedDict):
+    name: str
+    movie_format: str
+    movie_folder_format: str
+
+
+class SonarrNamingEntry(TypedDict):
+    name: str
+    standard_episode_format: str
+    daily_episode_format: str
+    anime_episode_format: str
+    series_folder_format: str
+    season_folder_format: str
+
+
+def round_half_up(value: float | int) -> int:
+    return int(float(value) + 0.5)
 
 
 def sql_escape(value: str) -> str:
@@ -281,7 +343,7 @@ def _map_numeric_value(implementation: str, service_key: str, numeric_value: int
 
 
 def extract_specification_value(
-    specification_dict: dict[str, object], implementation: str, service_key: str
+    specification_dict: dict[str, object], implementation: str, service_key: ServiceKey
 ) -> tuple[str | None, bool]:
     """Extract the value and except flag from a specification.
 
@@ -349,7 +411,7 @@ def collect_regexes(input_dir: str) -> tuple[list[RegexEntry], dict[tuple[str, s
     regex_name_by_service_and_pattern: dict[tuple[str, str], str] = {}
     used_names: set[str] = set()
 
-    for service_key, tag_name in (("sonarr", "Sonarr"), ("radarr", "Radarr")):
+    for service_key, tag_name in ((ServiceKey.SONARR, "Sonarr"), (ServiceKey.RADARR, "Radarr")):
         cf_dir = os.path.join(input_dir, service_key, "cf")
         if not os.path.isdir(cf_dir):
             continue
@@ -426,7 +488,7 @@ def collect_custom_formats(
     custom_format_names_by_raw_name: dict[str, list[str]] = {}
     used_names: set[str] = set()
 
-    for service_key, tag_name in (("sonarr", "Sonarr"), ("radarr", "Radarr")):
+    for service_key, tag_name in ((ServiceKey.SONARR, "Sonarr"), (ServiceKey.RADARR, "Radarr")):
         cf_dir = os.path.join(input_dir, service_key, "cf")
         if not os.path.isdir(cf_dir):
             continue
@@ -449,6 +511,9 @@ def collect_custom_formats(
 
             raw_name = normalize_name(name_raw)
             name = normalize_name(f"{tag_name} - {name_raw}")
+            trash_id = payload.get("trash_id", "")
+            trash_scores_raw = payload.get("trash_scores", {})
+            trash_scores = cast(dict[str, int], trash_scores_raw) if isinstance(trash_scores_raw, dict) else {}
             description = None
             cf_desc_filename = name_raw.lower().replace(" ", "-") + ".md"
             # Move to root of TRaSH-Guides and dive into includes for descriptions
@@ -557,6 +622,10 @@ def collect_custom_formats(
                 existing_entry["include_in_rename"] = existing_entry["include_in_rename"] or include_in_rename
                 if existing_entry["description"] is None:
                     existing_entry["description"] = description
+                existing_entry["by_service"][service_key] = {
+                    "trash_id": trash_id,
+                    "trash_scores": trash_scores,
+                }
 
                 merged_name = raw_name
                 if existing_entry["name"] != merged_name and (
@@ -578,12 +647,19 @@ def collect_custom_formats(
 
             name = ensure_unique_name(name, used_names)
             used_names.add(name)
+            service_entry: CustomFormatServiceEntry = {
+                "trash_id": trash_id,
+                "trash_scores": trash_scores,
+            }
             custom_formats_by_name[name] = {
                 "name": name,
                 "description": description,
                 "include_in_rename": include_in_rename,
                 "tags": {tag_name, *specification_tags},
                 "conditions": conditions,
+                "by_service": {
+                    service_key: service_entry
+                },
             }
             custom_format_names_by_raw_name.setdefault(raw_name, []).append(name)
 
@@ -594,7 +670,7 @@ def collect_quality_profile_groups(input_dir: str) -> dict[str, set[str]]:
     """Collect quality profile groups and return mapping of trash_id to group names."""
     trash_id_to_groups: dict[str, set[str]] = {}
 
-    for service_key in ("sonarr", "radarr"):
+    for service_key in ServiceKey.all():
         groups_file = os.path.join(
             input_dir, service_key, "quality-profile-groups", "groups.json"
         )
@@ -622,7 +698,7 @@ def collect_quality_profiles(input_dir: str) -> list[QualityProfileEntry]:
     quality_profiles_by_name: dict[str, QualityProfileEntry] = {}
     trash_id_to_groups = collect_quality_profile_groups(input_dir)
 
-    for service_key in ("sonarr", "radarr"):
+    for service_key in ServiceKey.all():
         qp_dir = os.path.join(input_dir, service_key, "quality-profiles")
         if not os.path.isdir(qp_dir):
             continue
@@ -648,6 +724,11 @@ def collect_quality_profiles(input_dir: str) -> list[QualityProfileEntry]:
             tags = trash_id_to_groups.get(trash_id, set()).copy()
             quality_groups: dict[str, set[str]] = {}
             qualities: list[QualityProfileQualityEntry] = []
+
+            # Extract formatItems and trash_score_set
+            format_items = payload.get("formatItems", {})
+            format_items_dict = cast(dict[str, str], format_items) if isinstance(format_items, dict) else {}
+            trash_score_set = cast(str, payload.get("trash_score_set", "default"))
 
             items_raw = payload.get("items")
             if isinstance(items_raw, list):
@@ -711,6 +792,12 @@ def collect_quality_profiles(input_dir: str) -> list[QualityProfileEntry]:
                 existing_entry["qualities"].extend(qualities)
                 if existing_entry["description"] is None:
                     existing_entry["description"] = description
+                # Store service-specific format items and trash_score_set
+                by_service_value: QualityProfileByServiceEntry = {
+                    "format_items": format_items_dict,
+                    "trash_score_set": trash_score_set
+                }
+                existing_entry["by_service"][service_key] = by_service_value
                 continue
 
             quality_profiles_by_name[name] = {
@@ -723,6 +810,12 @@ def collect_quality_profiles(input_dir: str) -> list[QualityProfileEntry]:
                 "tags": tags,
                 "quality_groups": quality_groups,
                 "qualities": qualities,
+                "by_service": {
+                    service_key: {
+                        "format_items": format_items_dict,
+                        "trash_score_set": trash_score_set
+                    }
+                }
             }
 
     for entry in quality_profiles_by_name.values():
@@ -743,6 +836,211 @@ def collect_quality_profiles(input_dir: str) -> list[QualityProfileEntry]:
         entry["qualities"] = deduped_qualities
 
     return sorted(quality_profiles_by_name.values(), key=lambda item: item["name"].lower())
+
+
+def collect_quality_definitions(input_dir: str) -> dict[ServiceKey, list[QualityDefinitionEntry]]:
+    quality_definitions_by_service: dict[ServiceKey, list[QualityDefinitionEntry]] = {
+        ServiceKey.SONARR: [],
+        ServiceKey.RADARR: [],
+    }
+
+    for service_key in ServiceKey.all():
+        quality_size_dir = os.path.join(input_dir, service_key, "quality-size")
+        if not os.path.isdir(quality_size_dir):
+            continue
+
+        for filename in sorted(os.listdir(quality_size_dir)):
+            if not filename.endswith(".json"):
+                continue
+
+            file_path = os.path.join(quality_size_dir, filename)
+            with open(file_path, "r", encoding="utf-8") as f:
+                try:
+                    payload = json.load(f)
+                except json.JSONDecodeError:
+                    print(f"Warning: Skipping invalid JSON file: {file_path}")
+                    continue
+
+            if not isinstance(payload, dict):
+                continue
+
+            payload_dict = cast(dict[str, object], payload)
+
+            definition_type_raw = payload_dict.get("type")
+            if not isinstance(definition_type_raw, str) or not definition_type_raw.strip():
+                continue
+
+            definition_name = QUALITY_SIZE_NAME_MAPPING.get(
+                definition_type_raw,
+                normalize_name(definition_type_raw.replace("-", " ")),
+            )
+
+            qualities_raw = payload_dict.get("qualities")
+            if not isinstance(qualities_raw, list):
+                continue
+
+            qualities = cast(list[object], qualities_raw)
+            for quality_obj in qualities:
+                if not isinstance(quality_obj, dict):
+                    continue
+
+                quality_dict = cast(dict[str, object], quality_obj)
+                quality_name_raw = quality_dict.get("quality")
+                min_size_raw = quality_dict.get("min")
+                max_size_raw = quality_dict.get("max")
+                preferred_size_raw = quality_dict.get("preferred")
+
+                if not isinstance(quality_name_raw, str) or not quality_name_raw.strip():
+                    continue
+                if not isinstance(min_size_raw, (int, float)):
+                    continue
+                if not isinstance(max_size_raw, (int, float)):
+                    continue
+                if not isinstance(preferred_size_raw, (int, float)):
+                    continue
+
+                quality_definitions_by_service[service_key].append(
+                    {
+                        "name": definition_name,
+                        "quality_name": quality_name_raw.strip(),
+                        "min_size": round_half_up(min_size_raw),
+                        "max_size": round_half_up(max_size_raw),
+                        "preferred_size": round_half_up(preferred_size_raw),
+                    }
+                )
+
+    for service_key, entries in quality_definitions_by_service.items():
+        quality_definitions_by_service[service_key] = sorted(
+            entries,
+            key=lambda item: (item["name"].lower(), item["quality_name"].lower()),
+        )
+
+    return quality_definitions_by_service
+
+
+def collect_radarr_naming_patterns(input_dir: str) -> list[RadarrNamingEntry]:
+    """Collect Radarr naming patterns from JSON files.
+
+    For each movie format, find the closest matching folder format.
+    If no exact match exists, use the default folder format.
+    """
+    naming_entries: list[RadarrNamingEntry] = []
+
+    naming_file = os.path.join(input_dir, "radarr", "naming", "radarr-naming.json")
+    if not os.path.isfile(naming_file):
+        return naming_entries
+
+    with open(naming_file, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+
+    folder_formats = cast(dict[str, str], payload.get("folder", {})) if isinstance(payload.get("folder"), dict) else {}
+    file_formats = cast(dict[str, str], payload.get("file", {})) if isinstance(payload.get("file"), dict) else {}
+
+    # Get default folder format
+    default_folder_format = folder_formats.get("default", "")
+
+    for file_name, file_format in sorted(file_formats.items()):
+        # Try to find a matching folder format by name
+        # Strategy: exact match > base name match > default
+        folder_format = folder_formats.get(file_name, None)
+
+        if folder_format is None:
+            # Try to find by base name (e.g., "plex-imdb" -> "plex" part)
+            base_name = file_name.split("-")[0]
+            for folder_key in sorted(folder_formats.keys()):
+                if folder_key.startswith(base_name) and folder_key != "default":
+                    folder_format = folder_formats[folder_key]
+                    break
+
+        # Fallback to default
+        if folder_format is None:
+            folder_format = default_folder_format
+
+        naming_entries.append({
+            "name": file_name,
+            "movie_format": file_format,
+            "movie_folder_format": folder_format,
+        })
+
+    return naming_entries
+
+
+def collect_sonarr_naming_patterns(input_dir: str) -> list[SonarrNamingEntry]:
+    """Collect Sonarr naming patterns from JSON files.
+
+    Creates entries for each series format name and resolves matching episode formats.
+    """
+    naming_entries: list[SonarrNamingEntry] = []
+
+    naming_file = os.path.join(input_dir, "sonarr", "naming", "sonarr-naming.json")
+    if not os.path.isfile(naming_file):
+        return naming_entries
+
+    with open(naming_file, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+
+    season_formats = cast(dict[str, str], payload.get("season", {})) if isinstance(payload.get("season"), dict) else {}
+    series_formats = cast(dict[str, str], payload.get("series", {})) if isinstance(payload.get("series"), dict) else {}
+    episodes_data = payload.get("episodes", {})
+
+    # Get default formats
+    default_season_format = season_formats.get("default", "Season {season:00}")
+    if not isinstance(episodes_data, dict):
+        return naming_entries
+
+    episodes_dict = cast(dict[str, object], episodes_data)
+
+    # Collect episode formats by type for lookup.
+    episode_formats_by_type: dict[str, dict[str, str]] = {}
+
+    for episode_type_name, episode_formats_raw in episodes_dict.items():
+        if not isinstance(episode_formats_raw, dict):
+            continue
+
+        episode_formats = cast(dict[str, str], episode_formats_raw)
+        episode_formats_by_type[episode_type_name] = episode_formats
+
+    def resolve_format(formats: dict[str, str], format_name: str, default_value: str) -> str:
+        format_value = formats.get(format_name)
+        if format_value is not None:
+            return format_value
+
+        base_name = format_name.split("-")[0]
+        for format_key in sorted(formats.keys()):
+            if format_key.startswith(base_name) and format_key != "default":
+                return formats[format_key]
+
+        return default_value
+
+    # Create one entry per series format name.
+    for format_name, series_format in sorted(series_formats.items()):
+        standard_episode_format = resolve_format(
+            episode_formats_by_type.get("standard", {}),
+            format_name,
+            episode_formats_by_type.get("standard", {}).get("default", ""),
+        )
+        daily_episode_format = resolve_format(
+            episode_formats_by_type.get("daily", {}),
+            format_name,
+            episode_formats_by_type.get("daily", {}).get("default", ""),
+        )
+        anime_episode_format = resolve_format(
+            episode_formats_by_type.get("anime", {}),
+            format_name,
+            episode_formats_by_type.get("anime", {}).get("default", ""),
+        )
+        season_folder_format = resolve_format(season_formats, format_name, default_season_format)
+
+        naming_entries.append({
+            "name": format_name,
+            "standard_episode_format": standard_episode_format,
+            "daily_episode_format": daily_episode_format,
+            "anime_episode_format": anime_episode_format,
+            "series_folder_format": series_format,
+            "season_folder_format": season_folder_format,
+        })
+
+    return naming_entries
 
 
 def main():
@@ -766,6 +1064,29 @@ def main():
 
     initial_sql_file = os.path.join(ops_dir, "1.initial.sql")
 
+    # Collect data from source files
+    regex_entries, regex_name_by_service_and_pattern = collect_regexes(input_dir)
+    custom_format_entries = collect_custom_formats(input_dir, regex_name_by_service_and_pattern)
+    custom_format_by_service_and_trash_id: dict[tuple[ServiceKey, str], tuple[str, dict[str, int]]] = {}
+    for entry in custom_format_entries:
+        for service_key, service_entry in entry["by_service"].items():
+            trash_id = service_entry["trash_id"]
+            if not trash_id:
+                continue
+
+            lookup_key = (service_key, trash_id)
+            if lookup_key in custom_format_by_service_and_trash_id:
+                print(
+                    "ERROR: duplicate custom format for "
+                    f"service={service_key.value}, trash_id={trash_id}"
+                )
+                sys.exit(1)
+
+            custom_format_by_service_and_trash_id[lookup_key] = (
+                entry["name"],
+                service_entry["trash_scores"],
+            )
+
     with open(initial_sql_file, "w", encoding="utf-8") as f:
         for tag_name in [
             "Sonarr",
@@ -786,7 +1107,6 @@ def main():
         ]:
             f.write(f"INSERT INTO tags (name) VALUES ('{tag_name}');\n")
 
-        regex_entries, regex_name_by_service_and_pattern = collect_regexes(input_dir)
         for entry in regex_entries:
             escaped_name = sql_escape(entry["name"])
             escaped_pattern = sql_escape(entry["pattern"])
@@ -804,7 +1124,6 @@ def main():
                     f"VALUES ('{escaped_name}', '{tag_name}');\n"
                 )
 
-        custom_format_entries = collect_custom_formats(input_dir, regex_name_by_service_and_pattern)
         for entry in custom_format_entries:
             escaped_name = sql_escape(entry["name"])
             escaped_description = (
@@ -992,6 +1311,84 @@ def main():
                     f"VALUES ('{escaped_quality_profile_name}', {escaped_quality_name}, {escaped_quality_group_name}, "
                     f"{quality['position']}, {enabled}, {upgrade_until});\n"
                 )
+
+        # Extract quality profile custom formats from formatItems
+        for entry in quality_profile_entries:
+            profile_name = entry["name"]
+            escaped_qp_name = sql_escape(profile_name)
+
+            for service_key, profile_service_entry in entry["by_service"].items():
+                format_items = profile_service_entry["format_items"]
+                trash_score_set = profile_service_entry["trash_score_set"]
+
+                for cf_trash_id in format_items.values():
+                    # One direct lookup by (service, trash_id) avoids nested searches.
+                    cf_lookup = custom_format_by_service_and_trash_id.get((service_key, cf_trash_id))
+                    if cf_lookup is None:
+                        print(
+                            "ERROR: missing custom format for "
+                            f"service={service_key.value}, trash_id={cf_trash_id}, "
+                            f"quality_profile={profile_name}"
+                        )
+                        sys.exit(1)
+
+                    cf_name, trash_scores = cf_lookup
+                    # If the specific trash_score_set is not found, use "default" or 0.
+                    cf_score = trash_scores.get(trash_score_set, trash_scores.get("default", 0))
+
+                    escaped_cf_name = sql_escape(cf_name)
+                    f.write(
+                        "INSERT INTO quality_profile_custom_formats "
+                        "(quality_profile_name, custom_format_name, arr_type, score) "
+                        f"VALUES ('{escaped_qp_name}', '{escaped_cf_name}', '{service_key.value}', {cf_score});\n"
+                    )
+
+        quality_definition_entries = collect_quality_definitions(input_dir)
+        for service_key in (ServiceKey.RADARR, ServiceKey.SONARR):
+            table_name = f"{service_key.value}_quality_definitions"
+            for entry in quality_definition_entries[service_key]:
+                escaped_name = sql_escape(entry["name"])
+                escaped_quality_name = sql_escape(entry["quality_name"])
+                f.write(
+                    f"INSERT INTO {table_name} "
+                    "(name, quality_name, min_size, max_size, preferred_size) "
+                    f"VALUES ('{escaped_name}', '{escaped_quality_name}', "
+                    f"{entry['min_size']}, {entry['max_size']}, {entry['preferred_size']});\n"
+                )
+
+        # Collect and insert Radarr naming patterns
+        radarr_naming_entries = collect_radarr_naming_patterns(input_dir)
+        for entry in radarr_naming_entries:
+            escaped_name = sql_escape(entry["name"])
+            escaped_movie_format = sql_escape(entry["movie_format"])
+            escaped_movie_folder_format = sql_escape(entry["movie_folder_format"])
+            f.write(
+                "INSERT INTO radarr_naming "
+                "(name, rename, movie_format, movie_folder_format, replace_illegal_characters, "
+                "colon_replacement_format) "
+                f"VALUES ('{escaped_name}', 1, '{escaped_movie_format}', '{escaped_movie_folder_format}', "
+                f"0, 'smart');\n"
+            )
+
+        # Collect and insert Sonarr naming patterns
+        sonarr_naming_entries = collect_sonarr_naming_patterns(input_dir)
+        for entry in sonarr_naming_entries:
+            escaped_name = sql_escape(entry["name"])
+            escaped_standard_episode_format = sql_escape(entry["standard_episode_format"])
+            escaped_daily_episode_format = sql_escape(entry["daily_episode_format"])
+            escaped_anime_episode_format = sql_escape(entry["anime_episode_format"])
+            escaped_series_folder_format = sql_escape(entry["series_folder_format"])
+            escaped_season_folder_format = sql_escape(entry["season_folder_format"])
+            f.write(
+                "INSERT INTO sonarr_naming "
+                "(name, rename, standard_episode_format, daily_episode_format, anime_episode_format, "
+                "series_folder_format, season_folder_format, replace_illegal_characters, "
+                "colon_replacement_format, multi_episode_style) "
+                f"VALUES ('{escaped_name}', 1, '{escaped_standard_episode_format}', "
+                f"'{escaped_daily_episode_format}', '{escaped_anime_episode_format}', "
+                f"'{escaped_series_folder_format}', '{escaped_season_folder_format}', 0, 4, 5);\n"
+            )
+
 
 if __name__ == "__main__":
     main()
